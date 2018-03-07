@@ -1451,23 +1451,29 @@ class Form
                     }
                 }
 
-                //check if the requester has any backups
-                $nexusDB = $this->login->getNexusDB();
-                $vars4 = array(':empId' => $empUID);
-                $backupIds = $nexusDB->prepared_query('SELECT * FROM relation_employee_backup WHERE empUID =:empId', $vars4);
-
                 if ($empUID == $this->login->getEmpUID())
                 {
                     return true;
                 }
-                    //check and provide access to backups
-                    foreach ($backupIds as $row)
+                //check and provide access to backups
+                $backupIds = [];
+                if (isset($this->cache['hasDependencyAccess_backups_' . $empUID])) {
+                    $backupIds = $this->cache['hasDependencyAccess_backups_' . $empUID];
+                }
+                else {
+                    $nexusDB = $this->login->getNexusDB();
+                    $vars4 = array(':empId' => $empUID);
+                    $backupIds = $nexusDB->prepared_query('SELECT * FROM relation_employee_backup WHERE empUID =:empId', $vars4);
+                    $this->cache['hasDependencyAccess_backups_' . $empUID] = $backupIds;
+                }
+
+                foreach ($backupIds as $row)
+                {
+                    if ($row['backupEmpUID'] == $this->login->getEmpUID())
                     {
-                        if ($row['backupEmpUID'] == $this->login->getEmpUID())
-                        {
-                            return true;
-                        }
+                        return true;
                     }
+                }
 
                 break;
             case -2: // dependencyID -2 : requestor followup
