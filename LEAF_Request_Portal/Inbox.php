@@ -116,16 +116,23 @@ class Inbox
 		                $resEmpUID = $this->form->getIndicator($res[$i]['indicatorID_for_assigned_empUID'], 1, $res[$i]['recordID']);
 		                $empUID = $resEmpUID[$res[$i]['indicatorID_for_assigned_empUID']]['value'];
                         $res[$i]['dependencyID'] = '-1_' . $empUID;
-
-                        //check if the requester has any backups
-                        $nexusDB = $this->login->getNexusDB();
-                        $vars4 = array(':empId' => $empUID);
-                        $backupIds =  $nexusDB->prepared_query("SELECT * FROM relation_employee_backup WHERE empUID =:empId", $vars4);
                         
                     	if($empUID == $this->login->getEmpUID()) {
                     		$res[$i]['hasAccess'] = true;
-                    	}else{
+                    	}
+                    	else {
                             //check and provide access to backups
+                            $backupIds = [];
+                    	    if(isset($this->cache['getInbox_backups_' . $empUID])) {
+                    	        $backupIds = $this->cache['getInbox_backups_' . $empUID];
+                    	    }
+                    	    else {
+                    	        $nexusDB = $this->login->getNexusDB();
+                    	        $vars4 = array(':empId' => $empUID);
+                    	        $backupIds = $nexusDB->prepared_query("SELECT * FROM relation_employee_backup WHERE empUID =:empId", $vars4);
+                    	        $this->cache['getInbox_backups_' . $empUID] = $backupIds;
+                    	    }
+
                             foreach($backupIds as $row) {
                                 if($row['backupEmpUID'] == $this->login->getEmpUID()) {
                                     $res[$i]['hasAccess'] = true;
@@ -263,19 +270,22 @@ class Inbox
                         $resEmpUID = $this->form->getIndicator($record['indicatorID_for_assigned_empUID'], 1, $record['recordID']);
                         $empUID = $resEmpUID[$record['indicatorID_for_assigned_empUID']]['value'];
                         
-                        //check if the requester has any backups
-                        $nexusDB = $this->login->getNexusDB();
-                        $vars4 = array(':empId' => $empUID);
-                        $backupIds =  $nexusDB->prepared_query("SELECT * FROM relation_employee_backup WHERE empUID =:empId", $vars4);
-                        
                         if($empUID == $this->login->getEmpUID()) {
                             return 1;
-                        }else{
-                            //check and provide access to backups
-                            foreach($backupIds as $row) {
-                                if($row['backupEmpUID'] == $this->login->getEmpUID()) {
-                                    return 1;
+                        }
+                        else {
+                            // check and provide access to backups
+                            if(!isset($this->cache['getInboxStatus_backups_' . $empUID])) {
+                                $nexusDB = $this->login->getNexusDB();
+                                $vars4 = array(':empId' => $empUID);
+                                $backupIds =  $nexusDB->prepared_query("SELECT * FROM relation_employee_backup WHERE empUID =:empId", $vars4);
+                                
+                                foreach($backupIds as $row) {
+                                    if($row['backupEmpUID'] == $this->login->getEmpUID()) {
+                                        return 1;
+                                    }
                                 }
+                                $this->cache['getInboxStatus_backups_' . $empUID] = 1;
                             }
                         }
 
@@ -352,4 +362,3 @@ class Inbox
         return $res[0]['COUNT(*)'];
     }
 }
-
