@@ -204,7 +204,8 @@ employeeSelector.prototype.search = function() {
 		                		email = response[i].data[6] != undefined ? '<b>Email:</b> ' + response[i].data[6].data + '<br />' : '';
 		                	}
 
-		                	phone = response[i].data[5] != undefined ? '<b>Phone:</b> ' + response[i].data[5].data + '<br />' : '';
+		                	var phone = response[i].data[5].data != '' ? '<b>Phone:</b> ' + response[i].data[5].data + '<br />' : '';
+		                	var mobile = response[i].data[16].data != '' ? '<b>Phone:</b> ' + response[i].data[16].data + '<br />' : '';
 
 		                	midName = response[i].middleName == '' ? '' : '&nbsp;' + response[i].middleName + '.';
 		                	linkText = response[i].lastName + ', ' + response[i].firstName + midName;
@@ -215,14 +216,14 @@ employeeSelector.prototype.search = function() {
 		                	if(t.outputStyle == 'micro') {
 			                	$('#' + t.prefixID + 'result_table').append('<tr id="'+ t.prefixID + 'emp' + response[i].empUID +'">\
 			                			<td class="employeeSelectorName" title="' + response[i].empUID + ' - ' + response[i].userName + '">' + photo + linkText + '<br /><span class="employeeSelectorTitle">'+ positionTitle +'</span></td>\
-			                			<td class="employeeSelectorContact">'+ email + phone +'</td>\
+			                			<td class="employeeSelectorContact">'+ email + phone + mobile +'</td>\
 			                			</tr>');
 		                	}
 		                	else {
 			                	$('#' + t.prefixID + 'result_table').append('<tr id="'+ t.prefixID + 'emp' + response[i].empUID +'">\
 			                			<td class="employeeSelectorName" title="' + response[i].empUID + ' - ' + response[i].userName + '">' + photo + linkText + '<br /><span class="employeeSelectorTitle">'+ positionTitle +'</span></td>\
 		                    			<td class="employeeSelectorService">'+ groupTitle + '<span>' +  room + '</span></td>\
-		                    			<td class="employeeSelectorContact">'+ email + phone +'</td>\
+		                    			<td class="employeeSelectorContact">'+ email + phone + mobile +'</td>\
 			                			</tr>');
 		                	}
 
