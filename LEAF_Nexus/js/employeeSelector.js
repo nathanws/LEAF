@@ -205,7 +205,7 @@ employeeSelector.prototype.search = function() {
 		                	}
 
 		                	var phone = response[i].data[5].data != '' ? '<b>Phone:</b> ' + response[i].data[5].data + '<br />' : '';
-		                	var mobile = response[i].data[16].data != '' ? '<b>Phone:</b> ' + response[i].data[16].data + '<br />' : '';
+		                	var mobile = response[i].data[16].data != '' ? '<b>Mobile:</b> ' + response[i].data[16].data + '<br />' : '';
 
 		                	midName = response[i].middleName == '' ? '' : '&nbsp;' + response[i].middleName + '.';
 		                	linkText = response[i].lastName + ', ' + response[i].firstName + midName;
