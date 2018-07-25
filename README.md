@@ -19,8 +19,8 @@ FROM mysql/mysql-server:5.7
 Copy `globals.php.example` to `globals.php` and change the following variables to reflect your setup:
 
 ```php
-const DIRECTORY_HOST = 'mysql_host';
-const DIRECTORY_DB = 'leaf_users';
+const DIRECTORY_HOST = 'phpunit-db';
+const DIRECTORY_DB = 'nexus_testing';
 const DIRECTORY_USER = 'tester';
 const DIRECTORY_PASS = 'tester';
 ```
@@ -28,10 +28,10 @@ const DIRECTORY_PASS = 'tester';
 Copy `config-example.php` to `config.php` and change the following variables to reflect your setup:
 
 ```php
-$dbHost = 'mysql'
-$dbName = 'leaf_users'
-$dbUser = 'tester'
-$dbPass = 'tester'
+public $dbHost = 'phpunit-db';
+public $dbName = 'nexus_testing';
+public $dbUser = 'tester';
+public $dbPass = 'tester';
 ```
 
 #### LEAF_Request_Portal 
@@ -39,31 +39,36 @@ $dbPass = 'tester'
 Copy `globals.php.example` to `globals.php` and change the following variables to reflect your setup:
 
 ```php
-const DIRECTORY_HOST = 'mysql_host';
-const DIRECTORY_DB = 'leaf_portal';
+const DIRECTORY_HOST = 'phpunit-db';
+const DIRECTORY_DB = 'portal_testing';
 const DIRECTORY_USER = 'tester';
 const DIRECTORY_PASS = 'tester';
-const LEAF_NEXUS_URL = 'https://Localhost/LEAF_NEXUS';
+const LEAF_NEXUS_URL = 'https://Localhost/LEAF_NEXUS/';
 ```
 
 Copy `db_config-example.php` to `db_config.php` and change the following variables to reflect your setup:
 
 ```php
-$dbHost = 'phpunit-db'
-$dbName = 'portal_testing'
-$dbUser = 'tester'
-$dbPass = 'tester'
+public $dbHost = 'phpunit-db';
+public $dbName = 'portal_testing';
+public $dbUser = 'tester';
+public $dbPass = 'tester';
 
-$phonedbHost = 'mysql'
-$phonedbName = 'leaf_users'
-$phonedbUser = 'tester'
-$phonedbPass = 'tester'	
+public $phonedbHost = 'mysql';
+public $phonedbName = 'leaf_users';
+public $phonedbUser = 'tester';
+public $phonedbPass = 'tester';
 
 # this should point to the LEAF Nexus base path 
 $orgchartPath = '../LEAF_Nexus'
 ```
+### Composer
+Get inside the docker container by running
+```
+docker-compose exec phpunit bash
+```
 
-<!-- Install [composer](https://getcomposer.org/).
+Once inside the docker container, navigate to the `/app/test` directory and install [composer](https://getcomposer.org/).
 
 Composer handles any PHP dependencies for the testing project. Initialize composer dependencies with:
 
@@ -71,7 +76,7 @@ Composer handles any PHP dependencies for the testing project. Initialize compos
 composer install
 ```
 
-Composer will install `PHPUnit` and `Phinx`, so they do not need to installed separately. Both `PHPUnit` and `Phinx` can be installed globally to avoid the `./vendor/bin/` prefix when running commands, just make sure the versions installed globally match the versions listed in [composer.json](composer.json).  -->
+Composer will install `PHPUnit` and `Phinx`, so they do not need to installed separately. Both `PHPUnit` and `Phinx` can be installed globally to avoid the `./vendor/bin/` prefix when running commands, just make sure the versions installed globally match the versions listed in [composer.json](composer.json).
 
 ### Configuring Phinx
 
