@@ -26,8 +26,9 @@ final class SystemControllerTest extends DatabaseTest
      */
     public function testGetDatabaseVersion() : void
     {
-        $version = self::$reqClient->get(array('a'=>'system/dbversion'));
+        $version = self::$reqClient->get('?a=system/dbversion');
+
         $this->assertNotNull($version);
-        $this->assertEquals("4030", $version);
+        $this->assertEquals("4232", $version);
     }
 }
