@@ -1,8 +1,7 @@
 <?php
 
 declare(strict_types = 1);
-include '../../LEAF_Request_Portal/db_mysql.php';
-include '../../LEAF_Request_Portal/db_config.php';
+
 use LEAFTest\LEAFClient;
 
 
