@@ -1002,10 +1002,6 @@ class Form
                 {
                     $_POST[$key] = serialize($_POST[$key]); // special case for radio/checkbox items
                 }
-                else
-                {
-                    $_POST[$key] = XSSHelpers::sanitizeHTML($_POST[$key]);
-                }
 
                 $vars = array(':recordID' => $recordID,
                               ':indicatorID' => $key,
@@ -1013,6 +1009,11 @@ class Form
                 $res = $this->db->prepared_query('SELECT data, format FROM data
                 									LEFT JOIN indicators USING (indicatorID)
                 									WHERE recordID=:recordID AND indicatorID=:indicatorID AND series=:series', $vars);
+
+                // indicators of type "raw_data" should not be sanitized
+                if (isset($res[0]['format']) && $res[0]['format'] != 'raw_data') {
+                    $_POST[$key] = XSSHelpers::sanitizeHTML($_POST[$key]);
+                }
 
                 // handle fileupload indicator type
                 if (isset($res[0]['format'])

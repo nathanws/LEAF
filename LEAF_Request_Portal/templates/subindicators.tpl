@@ -689,7 +689,7 @@
             <!--{$indicator.html}-->
         <!--{/if}-->
         <!--{if $indicator.format == 'raw_data' && ($indicator.isMasked == 0 || $indicator.value == '')}-->
-            <input type="text" id="<!--{$indicator.indicatorID|strip_tags}-->" name="<!--{$indicator.indicatorID|strip_tags}-->" value="<!--{$indicator.value|sanitize}-->" style="display: none" />
+            <input type="text" id="<!--{$indicator.indicatorID|strip_tags}-->" name="<!--{$indicator.indicatorID|strip_tags}-->" value="<!--{$indicator.value}-->" style="display: none" />
             <!--{$indicator.html}-->
         <!--{/if}-->
         <!--{include file=$subindicatorsTemplate form=$indicator.child depth=$depth+4 recordID=$recordID}-->

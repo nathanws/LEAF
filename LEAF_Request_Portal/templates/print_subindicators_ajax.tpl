@@ -180,7 +180,7 @@
             </span>
         <!--{/if}-->
         <!--{if $indicator.format == 'raw_data'}-->
-            <textarea class="printResponse" id="data_<!--{$indicator.indicatorID}-->_<!--{$indicator.series}-->" style="display: none"><!--{$indicator.value|sanitize}--></textarea>
+            <textarea class="printResponse" id="data_<!--{$indicator.indicatorID}-->_<!--{$indicator.series}-->" style="display: none"><!--{$indicator.value}--></textarea>
             <!--{$indicator.htmlPrint}-->
         <!--{/if}-->
         <!--{include file="print_subindicators.tpl" form=$indicator.child depth=$depth+4 recordID=$recordID}-->

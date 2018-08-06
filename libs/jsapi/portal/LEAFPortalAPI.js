@@ -53,7 +53,7 @@ var LEAFRequestPortalAPI = function () {
 };
 
 /**
- * API for working with Forms
+ * API for working with Forms ("api/?a=form/")
  *
  * @param baseAPIURL    string the base URL for the LEAF Portal API (e.g. "/LEAF_Request_Portal/api/?a=") 
  */
@@ -88,6 +88,46 @@ var PortalFormsAPI = function (baseAPIURL) {
         },
 
         /**
+         * Get the structure of a form from its record ID
+         * 
+         * @param recordID  int                 the ID of the record to retrieve
+         * @param onSuccess function(results)   callback containing the results object
+         * @param onFail    function(error)     callback when action fails
+         */
+        getFormByRecord = function (recordID, onSuccess, onFail) {
+            var fetchURL = apiURL + '/' + recordID;
+
+            $.ajax({
+                method: 'GET',
+                url: fetchURL,
+                dataType: 'json'
+            })
+                .done(onSuccess)
+                .fail(onFail);
+            // .always(function() {});
+        },
+
+        /**
+         * Get the data associated of a form by its record ID
+         * 
+         * @param recordID  int                 the ID of the record to retrieve
+         * @param onSuccess function(results)   callback containing the results object
+         * @param onFail    function(error)     callback when action fails
+         */
+        getFormDataByRecord = function (recordID, onSuccess, onFail) {
+            var fetchURL = apiURL + '/' + recordID + '/data';
+
+            $.ajax({
+                method: 'GET',
+                url: fetchURL,
+                dataType: 'json'
+            })
+                .done(onSuccess)
+                .fail(onFail);
+            // .always(function() {});
+        },
+
+        /**
          * Query a form using the Report Builder JSON syntax
          *
          * @param query     object              the JSON query object
@@ -114,6 +154,8 @@ var PortalFormsAPI = function (baseAPIURL) {
     return {
         getAPIURL: getAPIURL,
         getBaseAPIURL: getBaseAPIURL,
+        getFormByRecord: getFormByRecord,
+        getFormDataByRecord: getFormDataByRecord,
         setBaseAPIURL: setBaseAPIURL,
         query: query
     };

@@ -462,7 +462,14 @@ switch ($action) {
 
         break;
     default:
-        $main->assign('javascripts', array('js/form.js', 'js/formGrid.js', 'js/formQuery.js', 'js/formSearch.js'));
+        $main->assign('javascripts', array(
+            'js/form.js',
+            'js/formGrid.js',
+            'js/formQuery.js',
+            'js/formSearch.js',
+            '../libs/js/LEAF/XSSHelpers.js',
+            '../libs/jsapi/portal/LEAFPortalAPI.js',
+        ));
         $main->assign('useLiteUI', true);
 
         $o_login = $t_login->fetch('login.tpl');
