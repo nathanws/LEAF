@@ -15,8 +15,8 @@
 </div>
 
 <!--{foreach from=$bookmarks item=record}-->
-<div id="bookmark_<!--{$record.recordID|strip_tags}-->" style="float: left; border: 1px solid black; margin: 8px; padding: 0px; background-color: <!--{$record.stepBgColor|strip_tags}-->; color: <!--{$record.stepFontColor|strip_tags}-->; width: 370px">    
-    <div style="float: left; cursor: pointer; background-color: black; font-size: 150%; font-weight: bold; color: white; padding: 8px; text-align: center" onclick="window.location='?a=printview&amp;recordID=<!--{$record.recordID|strip_tags}-->'">
+<div id="bookmark_<!--{$record.recordID|strip_tags}-->" style="float: left; border: 1px solid black; margin: 8px; padding: 0px; background-color: <!--{$record.stepBgColor|strip_tags}-->; color: <!--{$record.stepFontColor|strip_tags}-->; width: 370px">
+    <div style="float: left; cursor: pointer; background-color: black; font-size: 150%; font-weight: bold; color: white; padding: 8px; text-align: center" onclick="window.location='?a=printview&amp;recordID=<!--{$record.recordID|strip_tags}-->'" role="button" tabindex="0">
         <!--{$record.recordID}--><br />
         <!--{if $record.actionIcon != ''}-->
         <img src="../libs/dynicons/?img=<!--{$record.actionIcon|strip_tags}-->&amp;w=32" alt="<!--{$record.stepTitle|strip_tags}--> <!--{$record.actionTextPasttense|strip_tags}-->" title="<!--{$record.stepTitle|strip_tags}--> <!--{$record.actionTextPasttense|strip_tags}-->" />
@@ -26,11 +26,11 @@
     </div>
     <div>
         <div style="background-color: #e0e0e0; font-weight: bold; border-bottom: 1px solid black; padding: 2px">
-                        <span style="float: right; cursor: pointer"><img src="../libs/dynicons/?img=process-stop.svg&amp;w=16" alt="Delete Bookmark" title="Delete Bookmark" onclick="removeBookmark(<!--{$record.recordID|strip_tags}-->)"/></span>
+                        <span style="float: right; cursor: pointer"><img src="../libs/dynicons/?img=process-stop.svg&amp;w=16" alt="Delete Bookmark" title="Delete Bookmark" onclick="removeBookmark(<!--{$record.recordID|strip_tags}-->)" role="button" tabindex="0"/></span>
                 <span style="padding: 4px; font-size: 140%"><a href="?a=printview&amp;recordID=<!--{$record.recordID|strip_tags}-->" style="text-decoration: none"><!--{$record.title|truncate:25:"...":true|sanitize}--></a></span>
-        </div>    
+        </div>
         <div style="padding: 4px">
-            <!--{if $record.submitted == 0}-->                
+            <!--{if $record.submitted == 0}-->
                 <!--{if $record.stepTitle != ''}-->
                     <span style="padding: 4px; font-weight: bold">Status:</span>
                     <!--{$record.lastStatus|sanitize}--><br /><br />
