@@ -59,8 +59,6 @@
 <script type="text/javascript">
 /* <![CDATA[ */
 
-$("")
-
 function removeBookmark(recordID) {
     dojo.style('bookmark_' + recordID, 'opacity', '0.2');
     dojo.xhrPost({
