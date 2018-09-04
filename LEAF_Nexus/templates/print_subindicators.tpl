@@ -67,7 +67,22 @@
         <!--{/if}-->
     <!--{/foreach}-->
     </div>
-    <span class="tempText" style="float: right; text-decoration: underline; font-size: 80%; cursor: pointer" onclick="$('.printformblock').css('display', 'inline');$('.notrequired').css('display', 'inline');$('.tempText').css('display', 'none');">Show_all_fields</span>
+    <span role="button" tabindex="0" class="tempText" id="showallfields" style="float: right; text-decoration: underline; font-size: 80%; cursor: pointer" onkeypress="triggerClick(event, 'showallfields')" onclick="showAllFields(); announceAction('displaying all fields');">Show_all_fields</span>
     <br />
     <!--{/if}-->
 <!--{/strip}-->
+<script type="text/javascript">
+    function triggerClick(e, id) {
+        if(e.keyCode === 13) {
+            $('#' + id).trigger('click');
+        }
+    }
+    function announceAction(actionName) {
+        $('#buttonClick').attr('aria-label', actionName);
+    }
+    function showAllFields() {
+        $('.printformblock').css('display', 'inline');
+        $('.notrequired').css('display', 'inline');
+        $('.tempText').css('display', 'none');
+    }
+</script>
