@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>MockRunner | API</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:MockRunner" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                            <li><a href="namespaces.html">Namespaces</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            MockRunner
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>MockRunner</strong>        extends <a href="PHPUnit/Runner/BaseTestRunner.html"><abbr title="PHPUnit\Runner\BaseTestRunner">BaseTestRunner</abbr></a>
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>STATUS_PASSED</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STATUS_SKIPPED</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STATUS_INCOMPLETE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STATUS_FAILURE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STATUS_ERROR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STATUS_RISKY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STATUS_WARNING</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SUITE_METHODNAME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="PHPUnit/Runner/TestSuiteLoader.html"><abbr title="PHPUnit\Runner\TestSuiteLoader">TestSuiteLoader</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLoader">getLoader</a>()
+        
+                                            <p>Returns the loader to be used.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PHPUnit/Runner/BaseTestRunner.html#method_getLoader"><abbr title="PHPUnit\Runner\BaseTestRunner">BaseTestRunner</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTest">getTest</a>(string $suiteClassName, string $suiteClassFile = &#039;&#039;, mixed $suffixes = &#039;&#039;)
+        
+                                            <p>Returns the Test corresponding to the given suite.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PHPUnit/Runner/BaseTestRunner.html#method_getTest"><abbr title="PHPUnit\Runner\BaseTestRunner">BaseTestRunner</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/ReflectionClass">ReflectionClass</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadSuiteClass">loadSuiteClass</a>(string $suiteClassName, string $suiteClassFile = &#039;&#039;)
+        
+                                            <p>Returns the loaded ReflectionClass for a suite name.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PHPUnit/Runner/BaseTestRunner.html#method_loadSuiteClass"><abbr title="PHPUnit\Runner\BaseTestRunner">BaseTestRunner</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearStatus">clearStatus</a>()
+        
+                                            <p>Clears the status message.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PHPUnit/Runner/BaseTestRunner.html#method_clearStatus"><abbr title="PHPUnit\Runner\BaseTestRunner">BaseTestRunner</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runFailed">runFailed</a>(string $message)
+        
+                                            <p>Override to define how to handle a failed loading of
+a test suite.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getLoader">
+        <div class="location">in <a href="PHPUnit/Runner/BaseTestRunner.html#method_getLoader"><abbr title="PHPUnit\Runner\BaseTestRunner">BaseTestRunner</abbr></a> at         line 38</div>
+        <code>                    <a href="PHPUnit/Runner/TestSuiteLoader.html"><abbr title="PHPUnit\Runner\TestSuiteLoader">TestSuiteLoader</abbr></a>
+    <strong>getLoader</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the loader to be used.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit/Runner/TestSuiteLoader.html"><abbr title="PHPUnit\Runner\TestSuiteLoader">TestSuiteLoader</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTest">
+        <div class="location">in <a href="PHPUnit/Runner/BaseTestRunner.html#method_getTest"><abbr title="PHPUnit\Runner\BaseTestRunner">BaseTestRunner</abbr></a> at         line 54</div>
+        <code>                    <a href="PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a>|null
+    <strong>getTest</strong>(string $suiteClassName, string $suiteClassFile = &#039;&#039;, mixed $suffixes = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the Test corresponding to the given suite.</p>                    <p>This is a template method, subclasses override
+the runFailed() and clearStatus() methods.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$suiteClassName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$suiteClassFile</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$suffixes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadSuiteClass">
+        <div class="location">in <a href="PHPUnit/Runner/BaseTestRunner.html#method_loadSuiteClass"><abbr title="PHPUnit\Runner\BaseTestRunner">BaseTestRunner</abbr></a> at         line 126</div>
+        <code>            protected        <a target="_blank" href="http://php.net/ReflectionClass">ReflectionClass</a>
+    <strong>loadSuiteClass</strong>(string $suiteClassName, string $suiteClassFile = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the loaded ReflectionClass for a suite name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$suiteClassName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$suiteClassFile</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/ReflectionClass">ReflectionClass</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearStatus">
+        <div class="location">in <a href="PHPUnit/Runner/BaseTestRunner.html#method_clearStatus"><abbr title="PHPUnit\Runner\BaseTestRunner">BaseTestRunner</abbr></a> at         line 136</div>
+        <code>            protected        
+    <strong>clearStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clears the status message.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runFailed">
+        <div class="location">at         line 6</div>
+        <code>            protected        
+    <strong>runFailed</strong>(string $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Override to define how to handle a failed loading of
+a test suite.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

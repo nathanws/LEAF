@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PHPUnit\Framework\MockObject\MockBuilder | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PHPUnit_Framework_MockObject_MockBuilder" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PHPUnit.html">PHPUnit</a></li><li class="backslash">\</li><li><a href="../../../PHPUnit/Framework.html">Framework</a></li><li class="backslash">\</li><li><a href="../../../PHPUnit/Framework/MockObject.html">MockObject</a></li><li class="backslash">\</li><li>MockBuilder</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            MockBuilder
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>MockBuilder</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Implementation of the Builder pattern for Mock objects.</p>                                </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../PHPUnit/Framework/TestCase.html"><abbr title="PHPUnit\Framework\TestCase">TestCase</abbr></a> $testCase, array|string $type)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockObject.html"><abbr title="PHPUnit\Framework\MockObject\MockObject">MockObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMock">getMock</a>()
+        
+                                            <p>Creates a mock object using a fluent interface.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockObject.html"><abbr title="PHPUnit\Framework\MockObject\MockObject">MockObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMockForAbstractClass">getMockForAbstractClass</a>()
+        
+                                            <p>Creates a mock object for an abstract class using a fluent interface.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockObject.html"><abbr title="PHPUnit\Framework\MockObject\MockObject">MockObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMockForTrait">getMockForTrait</a>()
+        
+                                            <p>Creates a mock object for a trait using a fluent interface.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMethods">setMethods</a>(array $methods = null)
+        
+                                            <p>Specifies the subset of methods to mock. Default is to mock none of them.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMethodsExcept">setMethodsExcept</a>(array $methods = [])
+        
+                                            <p>Specifies the subset of methods to not mock. Default is to mock all of them.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setConstructorArgs">setConstructorArgs</a>(array $args)
+        
+                                            <p>Specifies the arguments for the constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMockClassName">setMockClassName</a>(string $name)
+        
+                                            <p>Specifies the name for the mock class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disableOriginalConstructor">disableOriginalConstructor</a>()
+        
+                                            <p>Disables the invocation of the original constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enableOriginalConstructor">enableOriginalConstructor</a>()
+        
+                                            <p>Enables the invocation of the original constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disableOriginalClone">disableOriginalClone</a>()
+        
+                                            <p>Disables the invocation of the original clone constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enableOriginalClone">enableOriginalClone</a>()
+        
+                                            <p>Enables the invocation of the original clone constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disableAutoload">disableAutoload</a>()
+        
+                                            <p>Disables the use of class autoloading while creating the mock object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enableAutoload">enableAutoload</a>()
+        
+                                            <p>Enables the use of class autoloading while creating the mock object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disableArgumentCloning">disableArgumentCloning</a>()
+        
+                                            <p>Disables the cloning of arguments passed to mocked methods.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enableArgumentCloning">enableArgumentCloning</a>()
+        
+                                            <p>Enables the cloning of arguments passed to mocked methods.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enableProxyingToOriginalMethods">enableProxyingToOriginalMethods</a>()
+        
+                                            <p>Enables the invocation of the original methods.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disableProxyingToOriginalMethods">disableProxyingToOriginalMethods</a>()
+        
+                                            <p>Disables the invocation of the original methods.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setProxyTarget">setProxyTarget</a>(object $object)
+        
+                                            <p>Sets the proxy target.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_allowMockingUnknownTypes">allowMockingUnknownTypes</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disallowMockingUnknownTypes">disallowMockingUnknownTypes</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 93</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../PHPUnit/Framework/TestCase.html"><abbr title="PHPUnit\Framework\TestCase">TestCase</abbr></a> $testCase, array|string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestCase.html"><abbr title="PHPUnit\Framework\TestCase">TestCase</abbr></a></td>
+                <td>$testCase</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMock">
+        <div class="location">at         line 105</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockObject.html"><abbr title="PHPUnit\Framework\MockObject\MockObject">MockObject</abbr></a>
+    <strong>getMock</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a mock object using a fluent interface.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockObject.html"><abbr title="PHPUnit\Framework\MockObject\MockObject">MockObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMockForAbstractClass">
+        <div class="location">at         line 131</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockObject.html"><abbr title="PHPUnit\Framework\MockObject\MockObject">MockObject</abbr></a>
+    <strong>getMockForAbstractClass</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a mock object for an abstract class using a fluent interface.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockObject.html"><abbr title="PHPUnit\Framework\MockObject\MockObject">MockObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMockForTrait">
+        <div class="location">at         line 154</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockObject.html"><abbr title="PHPUnit\Framework\MockObject\MockObject">MockObject</abbr></a>
+    <strong>getMockForTrait</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a mock object for a trait using a fluent interface.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockObject.html"><abbr title="PHPUnit\Framework\MockObject\MockObject">MockObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMethods">
+        <div class="location">at         line 179</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>setMethods</strong>(array $methods = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Specifies the subset of methods to mock. Default is to mock none of them.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$methods</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMethodsExcept">
+        <div class="location">at         line 193</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>setMethodsExcept</strong>(array $methods = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Specifies the subset of methods to not mock. Default is to mock all of them.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$methods</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConstructorArgs">
+        <div class="location">at         line 214</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>setConstructorArgs</strong>(array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Specifies the arguments for the constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMockClassName">
+        <div class="location">at         line 228</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>setMockClassName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Specifies the name for the mock class.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disableOriginalConstructor">
+        <div class="location">at         line 240</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>disableOriginalConstructor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Disables the invocation of the original constructor.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enableOriginalConstructor">
+        <div class="location">at         line 252</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>enableOriginalConstructor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Enables the invocation of the original constructor.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disableOriginalClone">
+        <div class="location">at         line 264</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>disableOriginalClone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Disables the invocation of the original clone constructor.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enableOriginalClone">
+        <div class="location">at         line 276</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>enableOriginalClone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Enables the invocation of the original clone constructor.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disableAutoload">
+        <div class="location">at         line 288</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>disableAutoload</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Disables the use of class autoloading while creating the mock object.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enableAutoload">
+        <div class="location">at         line 300</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>enableAutoload</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Enables the use of class autoloading while creating the mock object.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disableArgumentCloning">
+        <div class="location">at         line 312</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>disableArgumentCloning</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Disables the cloning of arguments passed to mocked methods.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enableArgumentCloning">
+        <div class="location">at         line 324</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>enableArgumentCloning</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Enables the cloning of arguments passed to mocked methods.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enableProxyingToOriginalMethods">
+        <div class="location">at         line 336</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>enableProxyingToOriginalMethods</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Enables the invocation of the original methods.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disableProxyingToOriginalMethods">
+        <div class="location">at         line 348</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>disableProxyingToOriginalMethods</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Disables the invocation of the original methods.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setProxyTarget">
+        <div class="location">at         line 363</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>setProxyTarget</strong>(object $object)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the proxy target.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_allowMockingUnknownTypes">
+        <div class="location">at         line 373</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>allowMockingUnknownTypes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disallowMockingUnknownTypes">
+        <div class="location">at         line 383</div>
+        <code>                    <a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a>
+    <strong>disallowMockingUnknownTypes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Framework/MockObject/MockBuilder.html"><abbr title="PHPUnit\Framework\MockObject\MockBuilder">MockBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

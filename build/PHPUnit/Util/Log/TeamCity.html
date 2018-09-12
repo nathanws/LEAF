@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PHPUnit\Util\Log\TeamCity | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PHPUnit_Util_Log_TeamCity" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PHPUnit.html">PHPUnit</a></li><li class="backslash">\</li><li><a href="../../../PHPUnit/Util.html">Util</a></li><li class="backslash">\</li><li><a href="../../../PHPUnit/Util/Log.html">Log</a></li><li class="backslash">\</li><li>TeamCity</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            TeamCity
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>TeamCity</strong>        extends <a href="../../../PHPUnit/TextUI/ResultPrinter.html"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>A TestListener that generates a logfile of the test execution using the
+TeamCity format (for use with PhpStorm, for instance).</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>EVENT_TEST_START</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>EVENT_TEST_END</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>EVENT_TESTSUITE_START</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>EVENT_TESTSUITE_END</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COLOR_NEVER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COLOR_AUTO</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COLOR_ALWAYS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COLOR_DEFAULT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_autoFlush">
+                                        protected                                        bool
+                </td>
+                <td>$autoFlush</td>
+                <td class="last">If true, flush output after every write.</td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/Util/Printer.html#property_autoFlush"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_out">
+                                        protected                                        resource
+                </td>
+                <td>$out</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/Util/Printer.html#property_out"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_outTarget">
+                                        protected                                        string
+                </td>
+                <td>$outTarget</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/Util/Printer.html#property_outTarget"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_column">
+                                        protected                                        int
+                </td>
+                <td>$column</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#property_column"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_maxColumn">
+                                        protected                                        int
+                </td>
+                <td>$maxColumn</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#property_maxColumn"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_lastTestFailed">
+                                        protected                                        bool
+                </td>
+                <td>$lastTestFailed</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#property_lastTestFailed"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_numAssertions">
+                                        protected                                        int
+                </td>
+                <td>$numAssertions</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#property_numAssertions"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_numTests">
+                                        protected                                        int
+                </td>
+                <td>$numTests</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#property_numTests"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_numTestsRun">
+                                        protected                                        int
+                </td>
+                <td>$numTestsRun</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#property_numTestsRun"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_numTestsWidth">
+                                        protected                                        int
+                </td>
+                <td>$numTestsWidth</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#property_numTestsWidth"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_colors">
+                                        protected                                        bool
+                </td>
+                <td>$colors</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#property_colors"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debug">
+                                        protected                                        bool
+                </td>
+                <td>$debug</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#property_debug"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_verbose">
+                                        protected                                        bool
+                </td>
+                <td>$verbose</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#property_verbose"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(mixed $out = null, bool $verbose = false, string $colors = self::COLOR_DEFAULT, bool $debug = false, int|string $numberOfColumns = 80, bool $reverse = false)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method___construct"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_flush">flush</a>()
+        
+                                            <p>Flush buffer and close output if it's not to a PHP stream</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/Printer.html#method_flush"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_incrementalFlush">incrementalFlush</a>()
+        
+                                            <p>Performs a safe, incremental flush.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/Printer.html#method_incrementalFlush"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_write">write</a>(string $buffer)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/Printer.html#method_write"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAutoFlush">getAutoFlush</a>()
+        
+                                            <p>Check auto-flush mode.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/Printer.html#method_getAutoFlush"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAutoFlush">setAutoFlush</a>(bool $autoFlush)
+        
+                                            <p>Set auto-flushing mode.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/Printer.html#method_setAutoFlush"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printResult">printResult</a>(<a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printDefects">printDefects</a>(array $defects, string $type)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printDefects"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printDefect">printDefect</a>(<a href="../../../PHPUnit/Framework/TestFailure.html"><abbr title="PHPUnit\Framework\TestFailure">TestFailure</abbr></a> $defect, int $count)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printDefect"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printDefectHeader">printDefectHeader</a>(<a href="../../../PHPUnit/Framework/TestFailure.html"><abbr title="PHPUnit\Framework\TestFailure">TestFailure</abbr></a> $defect, int $count)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printDefectHeader"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printDefectTrace">printDefectTrace</a>(<a href="../../../PHPUnit/Framework/TestFailure.html"><abbr title="PHPUnit\Framework\TestFailure">TestFailure</abbr></a> $defect)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printDefectTrace"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printErrors">printErrors</a>(<a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printErrors"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printFailures">printFailures</a>(<a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printFailures"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printWarnings">printWarnings</a>(<a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printWarnings"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printIncompletes">printIncompletes</a>(<a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printIncompletes"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printRisky">printRisky</a>(<a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printRisky"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printSkipped">printSkipped</a>(<a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printSkipped"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printHeader">printHeader</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printHeader"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printFooter">printFooter</a>(<a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printFooter"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printWaitPrompt">printWaitPrompt</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printWaitPrompt"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addError">addError</a>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a target="_blank" href="http://php.net/Exception">Exception</a> $e, float $time)
+        
+                                            <p>An error occurred.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addFailure">addFailure</a>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a href="../../../PHPUnit/Framework/AssertionFailedError.html"><abbr title="PHPUnit\Framework\AssertionFailedError">AssertionFailedError</abbr></a> $e, float $time)
+        
+                                            <p>A failure occurred.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addWarning">addWarning</a>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a href="../../../PHPUnit/Framework/Warning.html"><abbr title="PHPUnit\Framework\Warning">Warning</abbr></a> $e, float $time)
+        
+                                            <p>A warning occurred.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addIncompleteTest">addIncompleteTest</a>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a target="_blank" href="http://php.net/Exception">Exception</a> $e, float $time)
+        
+                                            <p>Incomplete test.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addRiskyTest">addRiskyTest</a>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a target="_blank" href="http://php.net/Exception">Exception</a> $e, float $time)
+        
+                                            <p>Risky test.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addSkippedTest">addSkippedTest</a>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a target="_blank" href="http://php.net/Exception">Exception</a> $e, float $time)
+        
+                                            <p>Skipped test.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startTestSuite">startTestSuite</a>(<a href="../../../PHPUnit/Framework/TestSuite.html"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> $suite)
+        
+                                            <p>A testsuite started.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_endTestSuite">endTestSuite</a>(<a href="../../../PHPUnit/Framework/TestSuite.html"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> $suite)
+        
+                                            <p>A testsuite ended.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startTest">startTest</a>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test)
+        
+                                            <p>A test started.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_endTest">endTest</a>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, float $time)
+        
+                                            <p>A test ended.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeProgress">writeProgress</a>(string $progress)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeNewLine">writeNewLine</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_writeNewLine"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatWithColor">formatWithColor</a>(string $color, string $buffer)
+        
+                                            <p>Formats a buffer with a specified ANSI color sequence if colors are
+enabled.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_formatWithColor"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeWithColor">writeWithColor</a>(string $color, string $buffer, bool $lf = true)
+        
+                                            <p>Writes a buffer out with a color sequence if colors are enabled.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_writeWithColor"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeProgressWithColor">writeProgressWithColor</a>(string $color, string $buffer)
+        
+                                            <p>Writes progress with a color sequence if colors are enabled.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_writeProgressWithColor"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printIgnoredTest">printIgnoredTest</a>($testName, <a target="_blank" href="http://php.net/Exception">Exception</a> $e)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method___construct"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 143</div>
+        <code>                    
+    <strong>__construct</strong>(mixed $out = null, bool $verbose = false, string $colors = self::COLOR_DEFAULT, bool $debug = false, int|string $numberOfColumns = 80, bool $reverse = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$out</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$verbose</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$colors</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$debug</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|string</td>
+                <td>$numberOfColumns</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$reverse</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Exception.html"><abbr title="PHPUnit\Framework\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flush">
+        <div class="location">in <a href="../../../PHPUnit/Util/Printer.html#method_flush"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a> at         line 73</div>
+        <code>                    
+    <strong>flush</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Flush buffer and close output if it's not to a PHP stream</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_incrementalFlush">
+        <div class="location">in <a href="../../../PHPUnit/Util/Printer.html#method_incrementalFlush"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a> at         line 87</div>
+        <code>                    
+    <strong>incrementalFlush</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Performs a safe, incremental flush.</p>                    <p>Do not confuse this function with the flush() function of this class,
+since the flush() function may close the file being written to, rendering
+the current object no longer usable.</p>                            </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_write">
+        <div class="location">in <a href="../../../PHPUnit/Util/Printer.html#method_write"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a> at         line 99</div>
+        <code>                    
+    <strong>write</strong>(string $buffer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$buffer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAutoFlush">
+        <div class="location">in <a href="../../../PHPUnit/Util/Printer.html#method_getAutoFlush"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a> at         line 125</div>
+        <code>                    bool
+    <strong>getAutoFlush</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check auto-flush mode.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAutoFlush">
+        <div class="location">in <a href="../../../PHPUnit/Util/Printer.html#method_setAutoFlush"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a> at         line 138</div>
+        <code>                    
+    <strong>setAutoFlush</strong>(bool $autoFlush)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set auto-flushing mode.</p>                    <p>If set, <em>incremental</em> flushes will be done after each write. This should
+not be confused with the different effects of this class' flush() method.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$autoFlush</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printResult">
+        <div class="location">at         line 58</div>
+        <code>                    
+    <strong>printResult</strong>(<a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printDefects">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printDefects"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 214</div>
+        <code>            protected        
+    <strong>printDefects</strong>(array $defects, string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$defects</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printDefect">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printDefect"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 253</div>
+        <code>            protected        
+    <strong>printDefect</strong>(<a href="../../../PHPUnit/Framework/TestFailure.html"><abbr title="PHPUnit\Framework\TestFailure">TestFailure</abbr></a> $defect, int $count)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestFailure.html"><abbr title="PHPUnit\Framework\TestFailure">TestFailure</abbr></a></td>
+                <td>$defect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printDefectHeader">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printDefectHeader"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 263</div>
+        <code>            protected        
+    <strong>printDefectHeader</strong>(<a href="../../../PHPUnit/Framework/TestFailure.html"><abbr title="PHPUnit\Framework\TestFailure">TestFailure</abbr></a> $defect, int $count)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestFailure.html"><abbr title="PHPUnit\Framework\TestFailure">TestFailure</abbr></a></td>
+                <td>$defect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printDefectTrace">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printDefectTrace"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 277</div>
+        <code>            protected        
+    <strong>printDefectTrace</strong>(<a href="../../../PHPUnit/Framework/TestFailure.html"><abbr title="PHPUnit\Framework\TestFailure">TestFailure</abbr></a> $defect)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestFailure.html"><abbr title="PHPUnit\Framework\TestFailure">TestFailure</abbr></a></td>
+                <td>$defect</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printErrors">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printErrors"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 290</div>
+        <code>            protected        
+    <strong>printErrors</strong>(<a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printFailures">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printFailures"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 298</div>
+        <code>            protected        
+    <strong>printFailures</strong>(<a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printWarnings">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printWarnings"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 306</div>
+        <code>            protected        
+    <strong>printWarnings</strong>(<a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printIncompletes">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printIncompletes"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 314</div>
+        <code>            protected        
+    <strong>printIncompletes</strong>(<a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printRisky">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printRisky"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 322</div>
+        <code>            protected        
+    <strong>printRisky</strong>(<a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printSkipped">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printSkipped"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 330</div>
+        <code>            protected        
+    <strong>printSkipped</strong>(<a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printHeader">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printHeader"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 335</div>
+        <code>            protected        
+    <strong>printHeader</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printFooter">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printFooter"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 343</div>
+        <code>            protected        
+    <strong>printFooter</strong>(<a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printWaitPrompt">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_printWaitPrompt"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 419</div>
+        <code>                    
+    <strong>printWaitPrompt</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addError">
+        <div class="location">at         line 71</div>
+        <code>                    
+    <strong>addError</strong>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a target="_blank" href="http://php.net/Exception">Exception</a> $e, float $time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>An error occurred.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addFailure">
+        <div class="location">at         line 109</div>
+        <code>                    
+    <strong>addFailure</strong>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a href="../../../PHPUnit/Framework/AssertionFailedError.html"><abbr title="PHPUnit\Framework\AssertionFailedError">AssertionFailedError</abbr></a> $e, float $time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A failure occurred.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/AssertionFailedError.html"><abbr title="PHPUnit\Framework\AssertionFailedError">AssertionFailedError</abbr></a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addWarning">
+        <div class="location">at         line 90</div>
+        <code>                    
+    <strong>addWarning</strong>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a href="../../../PHPUnit/Framework/Warning.html"><abbr title="PHPUnit\Framework\Warning">Warning</abbr></a> $e, float $time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A warning occurred.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Warning.html"><abbr title="PHPUnit\Framework\Warning">Warning</abbr></a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addIncompleteTest">
+        <div class="location">at         line 151</div>
+        <code>                    
+    <strong>addIncompleteTest</strong>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a target="_blank" href="http://php.net/Exception">Exception</a> $e, float $time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Incomplete test.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addRiskyTest">
+        <div class="location">at         line 163</div>
+        <code>                    
+    <strong>addRiskyTest</strong>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a target="_blank" href="http://php.net/Exception">Exception</a> $e, float $time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Risky test.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addSkippedTest">
+        <div class="location">at         line 175</div>
+        <code>                    
+    <strong>addSkippedTest</strong>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a target="_blank" href="http://php.net/Exception">Exception</a> $e, float $time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Skipped test.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startTestSuite">
+        <div class="location">at         line 204</div>
+        <code>                    
+    <strong>startTestSuite</strong>(<a href="../../../PHPUnit/Framework/TestSuite.html"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> $suite)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A testsuite started.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestSuite.html"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></td>
+                <td>$suite</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_endTestSuite">
+        <div class="location">at         line 250</div>
+        <code>                    
+    <strong>endTestSuite</strong>(<a href="../../../PHPUnit/Framework/TestSuite.html"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> $suite)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A testsuite ended.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestSuite.html"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></td>
+                <td>$suite</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startTest">
+        <div class="location">at         line 276</div>
+        <code>                    
+    <strong>startTest</strong>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A test started.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_endTest">
+        <div class="location">at         line 297</div>
+        <code>                    
+    <strong>endTest</strong>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, float $time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A test ended.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeProgress">
+        <div class="location">at         line 51</div>
+        <code>            protected        
+    <strong>writeProgress</strong>(string $progress)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$progress</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeNewLine">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_writeNewLine"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 612</div>
+        <code>            protected        
+    <strong>writeNewLine</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatWithColor">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_formatWithColor"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 627</div>
+        <code>            protected        string
+    <strong>formatWithColor</strong>(string $color, string $buffer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Formats a buffer with a specified ANSI color sequence if colors are
+enabled.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$color</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$buffer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeWithColor">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_writeWithColor"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 660</div>
+        <code>            protected        
+    <strong>writeWithColor</strong>(string $color, string $buffer, bool $lf = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Writes a buffer out with a color sequence if colors are enabled.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$color</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$buffer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$lf</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeProgressWithColor">
+        <div class="location">in <a href="../../../PHPUnit/TextUI/ResultPrinter.html#method_writeProgressWithColor"><abbr title="PHPUnit\TextUI\ResultPrinter">ResultPrinter</abbr></a> at         line 675</div>
+        <code>            protected        
+    <strong>writeProgressWithColor</strong>(string $color, string $buffer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Writes progress with a color sequence if colors are enabled.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$color</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$buffer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printIgnoredTest">
+        <div class="location">at         line 187</div>
+        <code>                    
+    <strong>printIgnoredTest</strong>($testName, <a target="_blank" href="http://php.net/Exception">Exception</a> $e)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$testName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

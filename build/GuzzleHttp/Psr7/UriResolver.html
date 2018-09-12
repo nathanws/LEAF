@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>GuzzleHttp\Psr7\UriResolver | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:GuzzleHttp_Psr7_UriResolver" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../GuzzleHttp.html">GuzzleHttp</a></li><li class="backslash">\</li><li><a href="../../GuzzleHttp/Psr7.html">Psr7</a></li><li class="backslash">\</li><li>UriResolver</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            UriResolver
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>UriResolver</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Resolves a URI reference in the context of a base URI and the opposite way.</p>                                </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeDotSegments">removeDotSegments</a>(string $path)
+        
+                                            <p>Removes dot segments from a path and returns the new path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolve">resolve</a>(<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $base, <a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $rel)
+        
+                                            <p>Converts the relative URI into a new URI that is resolved against the base URI.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_relativize">relativize</a>(<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $base, <a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $target)
+        
+                                            <p>Returns the target URI as a relative reference from the base URI.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_removeDotSegments">
+        <div class="location">at         line 23</div>
+        <code>        static            string
+    <strong>removeDotSegments</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes dot segments from a path and returns the new path.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolve">
+        <div class="location">at         line 62</div>
+        <code>        static            <a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a>
+    <strong>resolve</strong>(<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $base, <a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $rel)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts the relative URI into a new URI that is resolved against the base URI.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+                <td>$base</td>
+                <td>Base URI</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+                <td>$rel</td>
+                <td>Relative URI</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_relativize">
+        <div class="location">at         line 137</div>
+        <code>        static            <a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a>
+    <strong>relativize</strong>(<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $base, <a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $target)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the target URI as a relative reference from the base URI.</p>                    <p>This method is the counterpart to resolve():</p>
+
+<p>(string) $target === (string) UriResolver::resolve($base, UriResolver::relativize($base, $target))</p>
+
+<p>One use-case is to use the current request URI as base URI and then generate relative links in your documents
+to reduce the document size or offer self-contained downloadable document archives.</p>
+
+<p>$base = new Uri('http://example.com/a/b/');
+   echo UriResolver::relativize($base, new Uri('http://example.com/a/b/c'));  // prints 'c'.
+   echo UriResolver::relativize($base, new Uri('http://example.com/a/x/y'));  // prints '../x/y'.
+   echo UriResolver::relativize($base, new Uri('http://example.com/a/b/?q')); // prints '?q'.
+   echo UriResolver::relativize($base, new Uri('http://example.org/a/b/'));   // prints '//example.org/a/b/'.</p>
+
+<p>This method also accepts a target that is already relative and will try to relativize it further. Only a
+relative-path reference will be returned as-is.</p>
+
+<p>echo UriResolver::relativize($base, new Uri('/a/b/c'));  // prints 'c' as well</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+                <td>$base</td>
+                <td>Base URI</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+                <td>$target</td>
+                <td>Target URI</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+            <td>The relative URI reference</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PHPUnit\Util\PHP\DefaultPhpProcess | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PHPUnit_Util_PHP_DefaultPhpProcess" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PHPUnit.html">PHPUnit</a></li><li class="backslash">\</li><li><a href="../../../PHPUnit/Util.html">Util</a></li><li class="backslash">\</li><li><a href="../../../PHPUnit/Util/PHP.html">PHP</a></li><li class="backslash">\</li><li>DefaultPhpProcess</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            DefaultPhpProcess
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>DefaultPhpProcess</strong>        extends <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Default utility for PHP sub-processes.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_runtime">
+                                        protected                                        <a href="../../../SebastianBergmann/Environment/Runtime.html"><abbr title="SebastianBergmann\Environment\Runtime">Runtime</abbr></a>
+                </td>
+                <td>$runtime</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#property_runtime"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_stderrRedirection">
+                                        protected                                        bool
+                </td>
+                <td>$stderrRedirection</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#property_stderrRedirection"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_stdin">
+                                        protected                                        string
+                </td>
+                <td>$stdin</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#property_stdin"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_args">
+                                        protected                                        string
+                </td>
+                <td>$args</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#property_args"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_env">
+                                        protected                                        <abbr title="PHPUnit\Util\PHP\array<string,">array<string,</abbr>
+                </td>
+                <td>$env</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#property_env"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_timeout">
+                                        protected                                        int
+                </td>
+                <td>$timeout</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#property_timeout"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tempFile">
+                                        protected                                        string
+                </td>
+                <td>$tempFile</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_useTempFile">
+                                        protected                                        bool
+                </td>
+                <td>$useTempFile</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p>Creates internal Runtime instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method___construct"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUseStderrRedirection">setUseStderrRedirection</a>(bool $stderrRedirection)
+        
+                                            <p>Defines if should use STDERR redirection or not.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_setUseStderrRedirection"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_useStderrRedirection">useStderrRedirection</a>()
+        
+                                            <p>Returns TRUE if uses STDERR redirection or FALSE if not.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_useStderrRedirection"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStdin">setStdin</a>(string $stdin)
+        
+                                            <p>Sets the input string to be sent via STDIN</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_setStdin"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStdin">getStdin</a>()
+        
+                                            <p>Returns the input string to be sent via STDIN</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_getStdin"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setArgs">setArgs</a>(string $args)
+        
+                                            <p>Sets the string of arguments to pass to the php job</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_setArgs"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getArgs">getArgs</a>()
+        
+                                            <p>Returns the string of arguments to pass to the php job</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_getArgs"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEnv">setEnv</a>(array $env)
+        
+                                            <p>Sets the array of environment variables to start the child process with</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_setEnv"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="PHPUnit\Util\PHP\array<string,">array<string,</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEnv">getEnv</a>()
+        
+                                            <p>Returns the array of environment variables to start the child process with</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_getEnv"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTimeout">setTimeout</a>(int $timeout)
+        
+                                            <p>Sets the amount of seconds to wait before timing out</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_setTimeout"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTimeout">getTimeout</a>()
+        
+                                            <p>Returns the amount of seconds to wait before timing out</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_getTimeout"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_factory">factory</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_factory"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runTestJob">runTestJob</a>(string $job, <a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        
+                                            <p>Runs a single test in a separate PHP process.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_runTestJob"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCommand">getCommand</a>(array $settings, string|null $file = null)
+        
+                                            <p>Returns the command based into the configurations.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_getCommand"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runJob">runJob</a>(string $job, array $settings = [])
+        
+                                            <p>Runs a single job (PHP code) using a separate PHP process.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_settingsToParameters">settingsToParameters</a>(array $settings)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_settingsToParameters"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHandles">getHandles</a>()
+        
+                                            <p>Returns an array of file handles to be used in place of pipes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="PHPUnit\Util\PHP\array<string,">array<string,</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runProcess">runProcess</a>(string $job, array $settings)
+        
+                                            <p>Handles creating the child process and returning the STDOUT and STDERR</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_process">process</a>(resource $pipe, string $job)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cleanup">cleanup</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method___construct"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a> at         line 61</div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates internal Runtime instance.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUseStderrRedirection">
+        <div class="location">in <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_setUseStderrRedirection"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a> at         line 75</div>
+        <code>                    
+    <strong>setUseStderrRedirection</strong>(bool $stderrRedirection)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Defines if should use STDERR redirection or not.</p>                    <p>Then $stderrRedirection is TRUE, STDERR is redirected to STDOUT.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$stderrRedirection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Exception.html"><abbr title="PHPUnit\Framework\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_useStderrRedirection">
+        <div class="location">in <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_useStderrRedirection"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a> at         line 89</div>
+        <code>                    bool
+    <strong>useStderrRedirection</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns TRUE if uses STDERR redirection or FALSE if not.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStdin">
+        <div class="location">in <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_setStdin"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a> at         line 99</div>
+        <code>                    
+    <strong>setStdin</strong>(string $stdin)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the input string to be sent via STDIN</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$stdin</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStdin">
+        <div class="location">in <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_getStdin"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a> at         line 109</div>
+        <code>                    string
+    <strong>getStdin</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the input string to be sent via STDIN</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setArgs">
+        <div class="location">in <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_setArgs"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a> at         line 119</div>
+        <code>                    
+    <strong>setArgs</strong>(string $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the string of arguments to pass to the php job</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getArgs">
+        <div class="location">in <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_getArgs"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a> at         line 129</div>
+        <code>                    
+    <strong>getArgs</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the string of arguments to pass to the php job</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEnv">
+        <div class="location">in <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_setEnv"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a> at         line 139</div>
+        <code>                    
+    <strong>setEnv</strong>(array $env)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the array of environment variables to start the child process with</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$env</td>
+                <td>string> $env</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEnv">
+        <div class="location">in <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_getEnv"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a> at         line 149</div>
+        <code>                    <abbr title="PHPUnit\Util\PHP\array<string,">array<string,</abbr>
+    <strong>getEnv</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the array of environment variables to start the child process with</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="PHPUnit\Util\PHP\array<string,">array<string,</abbr></td>
+            <td>string></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTimeout">
+        <div class="location">in <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_setTimeout"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a> at         line 159</div>
+        <code>                    
+    <strong>setTimeout</strong>(int $timeout)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the amount of seconds to wait before timing out</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$timeout</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTimeout">
+        <div class="location">in <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_getTimeout"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a> at         line 169</div>
+        <code>                    int
+    <strong>getTimeout</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the amount of seconds to wait before timing out</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_factory">
+        <div class="location">in <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_factory"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a> at         line 177</div>
+        <code>        static            <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a>
+    <strong>factory</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runTestJob">
+        <div class="location">in <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_runTestJob"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a> at         line 195</div>
+        <code>                    
+    <strong>runTestJob</strong>(string $job, <a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Runs a single test in a separate PHP process.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$job</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Exception.html"><abbr title="PHPUnit\Framework\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCommand">
+        <div class="location">in <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_getCommand"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a> at         line 217</div>
+        <code>                    string
+    <strong>getCommand</strong>(array $settings, string|null $file = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the command based into the configurations.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$settings</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runJob">
+        <div class="location">at         line 39</div>
+        <code>                    array
+    <strong>runJob</strong>(string $job, array $settings = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Runs a single job (PHP code) using a separate PHP process.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$job</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$settings</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Exception.html"><abbr title="PHPUnit\Framework\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_settingsToParameters">
+        <div class="location">in <a href="../../../PHPUnit/Util/PHP/AbstractPhpProcess.html#method_settingsToParameters"><abbr title="PHPUnit\Util\PHP\AbstractPhpProcess">AbstractPhpProcess</abbr></a> at         line 262</div>
+        <code>            protected        string
+    <strong>settingsToParameters</strong>(array $settings)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$settings</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHandles">
+        <div class="location">at         line 60</div>
+        <code>            protected        array
+    <strong>getHandles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns an array of file handles to be used in place of pipes</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runProcess">
+        <div class="location">at         line 75</div>
+        <code>            protected        <abbr title="PHPUnit\Util\PHP\array<string,">array<string,</abbr>
+    <strong>runProcess</strong>(string $job, array $settings)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Handles creating the child process and returning the STDOUT and STDERR</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$job</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$settings</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="PHPUnit\Util\PHP\array<string,">array<string,</abbr></td>
+            <td>string></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Exception.html"><abbr title="PHPUnit\Framework\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_process">
+        <div class="location">at         line 221</div>
+        <code>            protected        
+    <strong>process</strong>(resource $pipe, string $job)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource</td>
+                <td>$pipe</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$job</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Exception.html"><abbr title="PHPUnit\Framework\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cleanup">
+        <div class="location">at         line 226</div>
+        <code>            protected        
+    <strong>cleanup</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

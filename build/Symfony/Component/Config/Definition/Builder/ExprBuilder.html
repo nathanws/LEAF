@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Symfony\Component\Config\Definition\Builder\ExprBuilder | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/sami.css">
+        <script src="../../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../../js/typeahead.min.js"></script>
+        <script src="../../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Symfony_Component_Config_Definition_Builder_ExprBuilder" data-root-path="../../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../../Symfony.html">Symfony</a></li><li class="backslash">\</li><li><a href="../../../../../Symfony/Component.html">Component</a></li><li class="backslash">\</li><li><a href="../../../../../Symfony/Component/Config.html">Config</a></li><li class="backslash">\</li><li><a href="../../../../../Symfony/Component/Config/Definition.html">Definition</a></li><li class="backslash">\</li><li><a href="../../../../../Symfony/Component/Config/Definition/Builder.html">Builder</a></li><li class="backslash">\</li><li>ExprBuilder</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ExprBuilder
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ExprBuilder</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class builds an if expression.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_node">
+                                        protected                                        
+                </td>
+                <td>$node</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ifPart">
+                                                                                
+                </td>
+                <td>$ifPart</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_thenPart">
+                                                                                
+                </td>
+                <td>$thenPart</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../../Symfony/Component/Config/Definition/Builder/NodeDefinition.html"><abbr title="Symfony\Component\Config\Definition\Builder\NodeDefinition">NodeDefinition</abbr></a> $node)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_always">always</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $then = null)
+        
+                                            <p>Marks the expression as being always used.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ifTrue">ifTrue</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $closure = null)
+        
+                                            <p>Sets a closure to use as tests.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ifString">ifString</a>()
+        
+                                            <p>Tests if the value is a string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ifNull">ifNull</a>()
+        
+                                            <p>Tests if the value is null.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../../Symfony/Component/Config/Definition/Builder/ExprBuilder.html"><abbr title="Symfony\Component\Config\Definition\Builder\ExprBuilder">ExprBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ifEmpty">ifEmpty</a>()
+        
+                                            <p>Tests if the value is empty.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ifArray">ifArray</a>()
+        
+                                            <p>Tests if the value is an array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ifInArray">ifInArray</a>(array $array)
+        
+                                            <p>Tests if the value is in an array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ifNotInArray">ifNotInArray</a>(array $array)
+        
+                                            <p>Tests if the value is not in an array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_castToArray">castToArray</a>()
+        
+                                            <p>Transforms variables of any type into an array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_then">then</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $closure)
+        
+                                            <p>Sets the closure to run if the test pass.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_thenEmptyArray">thenEmptyArray</a>()
+        
+                                            <p>Sets a closure returning an empty array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_thenInvalid">thenInvalid</a>(string $message)
+        
+                                            <p>Sets a closure marking the value as invalid at validation time.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_thenUnset">thenUnset</a>()
+        
+                                            <p>Sets a closure unsetting this key of the array at validation time.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../../Symfony/Component/Config/Definition/Builder/NodeDefinition.html"><abbr title="Symfony\Component\Config\Definition\Builder\NodeDefinition">NodeDefinition</abbr></a>|<a href="../../../../../Symfony/Component/Config/Definition/Builder/ArrayNodeDefinition.html"><abbr title="Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition">ArrayNodeDefinition</abbr></a>|<a href="../../../../../Symfony/Component/Config/Definition/Builder/VariableNodeDefinition.html"><abbr title="Symfony\Component\Config\Definition\Builder\VariableNodeDefinition">VariableNodeDefinition</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_end">end</a>()
+        
+                                            <p>Returns the related node.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_buildExpressions">buildExpressions</a>(array $expressions)
+        
+                                            <p>Builds the expressions.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 28</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../../Symfony/Component/Config/Definition/Builder/NodeDefinition.html"><abbr title="Symfony\Component\Config\Definition\Builder\NodeDefinition">NodeDefinition</abbr></a> $node)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../Symfony/Component/Config/Definition/Builder/NodeDefinition.html"><abbr title="Symfony\Component\Config\Definition\Builder\NodeDefinition">NodeDefinition</abbr></a></td>
+                <td>$node</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_always">
+        <div class="location">at         line 38</div>
+        <code>                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+    <strong>always</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $then = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Marks the expression as being always used.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$then</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ifTrue">
+        <div class="location">at         line 56</div>
+        <code>                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+    <strong>ifTrue</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $closure = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets a closure to use as tests.</p>                    <p>The default one tests if the value is true.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$closure</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ifString">
+        <div class="location">at         line 72</div>
+        <code>                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+    <strong>ifString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Tests if the value is a string.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ifNull">
+        <div class="location">at         line 84</div>
+        <code>                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+    <strong>ifNull</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Tests if the value is null.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ifEmpty">
+        <div class="location">at         line 96</div>
+        <code>                    <a href="../../../../../Symfony/Component/Config/Definition/Builder/ExprBuilder.html"><abbr title="Symfony\Component\Config\Definition\Builder\ExprBuilder">ExprBuilder</abbr></a>
+    <strong>ifEmpty</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Tests if the value is empty.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../Symfony/Component/Config/Definition/Builder/ExprBuilder.html"><abbr title="Symfony\Component\Config\Definition\Builder\ExprBuilder">ExprBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ifArray">
+        <div class="location">at         line 108</div>
+        <code>                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+    <strong>ifArray</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Tests if the value is an array.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ifInArray">
+        <div class="location">at         line 120</div>
+        <code>                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+    <strong>ifInArray</strong>(array $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Tests if the value is in an array.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ifNotInArray">
+        <div class="location">at         line 132</div>
+        <code>                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+    <strong>ifNotInArray</strong>(array $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Tests if the value is not in an array.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_castToArray">
+        <div class="location">at         line 144</div>
+        <code>                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+    <strong>castToArray</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Transforms variables of any type into an array.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_then">
+        <div class="location">at         line 157</div>
+        <code>                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+    <strong>then</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $closure)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the closure to run if the test pass.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$closure</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_thenEmptyArray">
+        <div class="location">at         line 169</div>
+        <code>                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+    <strong>thenEmptyArray</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets a closure returning an empty array.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_thenInvalid">
+        <div class="location">at         line 187</div>
+        <code>                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+    <strong>thenInvalid</strong>(string $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets a closure marking the value as invalid at validation time.</p>                    <p>if you want to add the value of the node in your message just use a %s placeholder.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_thenUnset">
+        <div class="location">at         line 201</div>
+        <code>                    <abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr>
+    <strong>thenUnset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets a closure unsetting this key of the array at validation time.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Config\Definition\Builder\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../Symfony/Component/Config/Definition/Exception/UnsetKeyException.html"><abbr title="Symfony\Component\Config\Definition\Exception\UnsetKeyException">UnsetKeyException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_end">
+        <div class="location">at         line 215</div>
+        <code>                    <a href="../../../../../Symfony/Component/Config/Definition/Builder/NodeDefinition.html"><abbr title="Symfony\Component\Config\Definition\Builder\NodeDefinition">NodeDefinition</abbr></a>|<a href="../../../../../Symfony/Component/Config/Definition/Builder/ArrayNodeDefinition.html"><abbr title="Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition">ArrayNodeDefinition</abbr></a>|<a href="../../../../../Symfony/Component/Config/Definition/Builder/VariableNodeDefinition.html"><abbr title="Symfony\Component\Config\Definition\Builder\VariableNodeDefinition">VariableNodeDefinition</abbr></a>
+    <strong>end</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the related node.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../Symfony/Component/Config/Definition/Builder/NodeDefinition.html"><abbr title="Symfony\Component\Config\Definition\Builder\NodeDefinition">NodeDefinition</abbr></a>|<a href="../../../../../Symfony/Component/Config/Definition/Builder/ArrayNodeDefinition.html"><abbr title="Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition">ArrayNodeDefinition</abbr></a>|<a href="../../../../../Symfony/Component/Config/Definition/Builder/VariableNodeDefinition.html"><abbr title="Symfony\Component\Config\Definition\Builder\VariableNodeDefinition">VariableNodeDefinition</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildExpressions">
+        <div class="location">at         line 234</div>
+        <code>        static            array
+    <strong>buildExpressions</strong>(array $expressions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Builds the expressions.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$expressions</td>
+                <td>An array of ExprBuilder instances to build</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

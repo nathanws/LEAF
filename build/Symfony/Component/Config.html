@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Symfony\Component\Config | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="namespace" data-name="namespace:Symfony_Component_Config" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                <div class="namespace-breadcrumbs">
+        <ol class="breadcrumb">
+            <li><span class="label label-default">Namespace</span></li>
+                    <li><a href="../../Symfony.html">Symfony</a></li><li class="backslash">\</li><li><a href="../../Symfony/Component.html">Component</a></li><li class="backslash">\</li><li><a href="../../Symfony/Component/Config.html">Config</a></li><li class="backslash">\</li>
+        </ol>
+    </div>
+            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Symfony\Component\Config</h1>
+    </div>
+
+            <h2>Namespaces</h2>
+        <div class="namespace-list">
+            <a href="../../Symfony/Component/Config/Definition.html">Symfony\Component\Config\Definition</a><a href="../../Symfony/Component/Config/Exception.html">Symfony\Component\Config\Exception</a><a href="../../Symfony/Component/Config/Loader.html">Symfony\Component\Config\Loader</a><a href="../../Symfony/Component/Config/Resource.html">Symfony\Component\Config\Resource</a><a href="../../Symfony/Component/Config/Tests.html">Symfony\Component\Config\Tests</a><a href="../../Symfony/Component/Config/Util.html">Symfony\Component\Config\Util</a>        </div>
+    
+            <h2>Classes</h2>
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Symfony/Component/Config/ConfigCache.html"><abbr title="Symfony\Component\Config\ConfigCache">ConfigCache</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    ConfigCache caches arbitrary content in files on disk.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Symfony/Component/Config/ConfigCacheFactory.html"><abbr title="Symfony\Component\Config\ConfigCacheFactory">ConfigCacheFactory</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Basic implementation of ConfigCacheFactoryInterface that
+creates an instance of the default ConfigCache.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Symfony/Component/Config/FileLocator.html"><abbr title="Symfony\Component\Config\FileLocator">FileLocator</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    FileLocator uses an array of pre-defined paths to find files.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Symfony/Component/Config/ResourceCheckerConfigCache.html"><abbr title="Symfony\Component\Config\ResourceCheckerConfigCache">ResourceCheckerConfigCache</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    ResourceCheckerConfigCache uses instances of ResourceCheckerInterface
+to check whether cached data is still fresh.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Symfony/Component/Config/ResourceCheckerConfigCacheFactory.html"><abbr title="Symfony\Component\Config\ResourceCheckerConfigCacheFactory">ResourceCheckerConfigCacheFactory</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    A ConfigCacheFactory implementation that validates the
+cache with an arbitrary set of ResourceCheckers.
+                </div>
+            </div>
+            </div>
+    
+            <h2>Interfaces</h2>
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="../../Symfony/Component/Config/ConfigCacheFactoryInterface.html"><abbr title="Symfony\Component\Config\ConfigCacheFactoryInterface">ConfigCacheFactoryInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Interface for a ConfigCache factory. This factory creates
+an instance of ConfigCacheInterface and initializes the
+cache if necessary.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="../../Symfony/Component/Config/ConfigCacheInterface.html"><abbr title="Symfony\Component\Config\ConfigCacheInterface">ConfigCacheInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Interface for ConfigCache.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="../../Symfony/Component/Config/FileLocatorInterface.html"><abbr title="Symfony\Component\Config\FileLocatorInterface">FileLocatorInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="../../Symfony/Component/Config/ResourceCheckerInterface.html"><abbr title="Symfony\Component\Config\ResourceCheckerInterface">ResourceCheckerInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Interface for ResourceCheckers.
+                </div>
+            </div>
+            </div>
+    
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

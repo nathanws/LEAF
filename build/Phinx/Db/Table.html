@@ -1,0 +1,2115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Phinx\Db\Table | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Phinx_Db_Table" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Phinx.html">Phinx</a></li><li class="backslash">\</li><li><a href="../../Phinx/Db.html">Db</a></li><li class="backslash">\</li><li>Table</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Table
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Table</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This object is based loosely on: http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/Table.html.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_name">
+                                        protected                                        string
+                </td>
+                <td>$name</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_options">
+                                        protected                                        array
+                </td>
+                <td>$options</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_adapter">
+                                        protected                                        <a href="../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+                </td>
+                <td>$adapter</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_columns">
+                                        protected                                        array
+                </td>
+                <td>$columns</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_indexes">
+                                        protected                                        array
+                </td>
+                <td>$indexes</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_foreignKeys">
+                                        protected                                        <a href="../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>[]
+                </td>
+                <td>$foreignKeys</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_data">
+                                        protected                                        array
+                </td>
+                <td>$data</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $name, array $options = [], <a href="../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a> $adapter = null)
+        
+                                            <p>Class Constuctor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setName">setName</a>(string $name)
+        
+                                            <p>Sets the table name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Gets the table name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOptions">setOptions</a>(array $options)
+        
+                                            <p>Sets the table options.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>()
+        
+                                            <p>Gets the table options.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAdapter">setAdapter</a>(<a href="../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a> $adapter)
+        
+                                            <p>Sets the database adapter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAdapter">getAdapter</a>()
+        
+                                            <p>Gets the database adapter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exists">exists</a>()
+        
+                                            <p>Does the table exist?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_drop">drop</a>()
+        
+                                            <p>Drops the database table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rename">rename</a>(string $newTableName)
+        
+                                            <p>Renames the database table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setColumns">setColumns</a>(array $columns)
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                                            <p>Sets an array of columns waiting to be committed.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getColumns">getColumns</a>()
+        
+                                            <p>Gets an array of the table columns.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPendingColumns">setPendingColumns</a>(array $columns)
+        
+                                            <p>Sets an array of columns waiting to be committed.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPendingColumns">getPendingColumns</a>()
+        
+                                            <p>Gets an array of columns waiting to be committed.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIndexes">setIndexes</a>(array $indexes)
+        
+                                            <p>Sets an array of columns waiting to be indexed.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIndexes">getIndexes</a>()
+        
+                                            <p>Gets an array of indexes waiting to be committed.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setForeignKeys">setForeignKeys</a>(<a href="../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>[] $foreignKeys)
+        
+                                            <p>Sets an array of foreign keys waiting to be commited.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|<a href="../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getForeignKeys">getForeignKeys</a>()
+        
+                                            <p>Gets an array of foreign keys waiting to be commited.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setData">setData</a>(array $data)
+        
+                                            <p>Sets an array of data to be inserted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getData">getData</a>()
+        
+                                            <p>Gets the data waiting to be inserted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reset">reset</a>()
+        
+                                            <p>Resets all of the pending table changes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addColumn">addColumn</a>(string|<a href="../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a> $columnName, string $type = null, array $options = [])
+        
+                                            <p>Add a table column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeColumn">removeColumn</a>(string $columnName)
+        
+                                            <p>Remove a table column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renameColumn">renameColumn</a>(string $oldName, string $newName)
+        
+                                            <p>Rename a table column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_changeColumn">changeColumn</a>(string $columnName, string|<a href="../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a> $newColumnType, array $options = [])
+        
+                                            <p>Change a table column type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasColumn">hasColumn</a>(string $columnName)
+        
+                                            <p>Checks to see if a column exists.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addIndex">addIndex</a>(string|array|<a href="../../Phinx/Db/Table/Index.html"><abbr title="Phinx\Db\Table\Index">Index</abbr></a> $columns, array $options = [])
+        
+                                            <p>Add an index to a database table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeIndex">removeIndex</a>(array $columns)
+        
+                                            <p>Removes the given index from a table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeIndexByName">removeIndexByName</a>(string $name)
+        
+                                            <p>Removes the given index identified by its name from a table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasIndex">hasIndex</a>($columns)
+        
+                                            <p>Checks to see if an index exists.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addForeignKey">addForeignKey</a>(string|array $columns, string|<a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a> $referencedTable, string|array $referencedColumns = [&#039;id&#039;], array $options = [])
+        
+                                            <p>Add a foreign key to a database table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dropForeignKey">dropForeignKey</a>(string|array $columns, null|string $constraint = null)
+        
+                                            <p>Removes the given foreign key from the table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasForeignKey">hasForeignKey</a>(string|array $columns, null|string $constraint = null)
+        
+                                            <p>Checks to see if a foreign key exists.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addTimestamps">addTimestamps</a>(string $createdAtColumnName = &#039;created_at&#039;, string $updatedAtColumnName = &#039;updated_at&#039;)
+        
+                                            <p>Add timestamp columns created_at and updated_at to the table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insert">insert</a>(array $data)
+        
+                                            <p>Insert data into the table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>()
+        
+                                            <p>Creates a table from the object instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>()
+        
+                                            <p>Updates a table from the object instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_saveData">saveData</a>()
+        
+                                            <p>Commit the pending data waiting for insertion.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_truncate">truncate</a>()
+        
+                                            <p>Truncates the table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>()
+        
+                                            <p>Commits the table changes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 84</div>
+        <code>                    
+    <strong>__construct</strong>(string $name, array $options = [], <a href="../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a> $adapter = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class Constuctor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Table Name</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Options</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a></td>
+                <td>$adapter</td>
+                <td>Database Adapter</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location">at         line 100</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>setName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the table name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Table Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">at         line 112</div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the table name.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOptions">
+        <div class="location">at         line 123</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>setOptions</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the table options.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">at         line 135</div>
+        <code>                    array
+    <strong>getOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the table options.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAdapter">
+        <div class="location">at         line 146</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>setAdapter</strong>(<a href="../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a> $adapter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the database adapter.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a></td>
+                <td>$adapter</td>
+                <td>Database Adapter</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAdapter">
+        <div class="location">at         line 158</div>
+        <code>                    <a href="../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+    <strong>getAdapter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the database adapter.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exists">
+        <div class="location">at         line 168</div>
+        <code>                    bool
+    <strong>exists</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Does the table exist?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_drop">
+        <div class="location">at         line 178</div>
+        <code>                    void
+    <strong>drop</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Drops the database table.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rename">
+        <div class="location">at         line 189</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>rename</strong>(string $newTableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Renames the database table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$newTableName</td>
+                <td>New Table Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setColumns">
+        <div class="location">at         line 205</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>setColumns</strong>(array $columns)
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
+    </h3>
+    <div class="details">
+            
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </p>
+    
+
+                    <div class="method-description">
+                                    <p>Sets an array of columns waiting to be committed.</p>                    <p>Use setPendingColumns</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td>Columns</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getColumns">
+        <div class="location">at         line 217</div>
+        <code>                    <a href="../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a>[]
+    <strong>getColumns</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets an array of the table columns.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPendingColumns">
+        <div class="location">at         line 228</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>setPendingColumns</strong>(array $columns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets an array of columns waiting to be committed.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td>Columns</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPendingColumns">
+        <div class="location">at         line 240</div>
+        <code>                    <a href="../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a>[]
+    <strong>getPendingColumns</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets an array of columns waiting to be committed.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIndexes">
+        <div class="location">at         line 251</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>setIndexes</strong>(array $indexes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets an array of columns waiting to be indexed.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$indexes</td>
+                <td>Indexes</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIndexes">
+        <div class="location">at         line 263</div>
+        <code>                    array
+    <strong>getIndexes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets an array of indexes waiting to be committed.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setForeignKeys">
+        <div class="location">at         line 274</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>setForeignKeys</strong>(<a href="../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>[] $foreignKeys)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets an array of foreign keys waiting to be commited.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>[]</td>
+                <td>$foreignKeys</td>
+                <td>foreign keys</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getForeignKeys">
+        <div class="location">at         line 286</div>
+        <code>                    array|<a href="../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>[]
+    <strong>getForeignKeys</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets an array of foreign keys waiting to be commited.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|<a href="../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setData">
+        <div class="location">at         line 297</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>setData</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets an array of data to be inserted.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td>Data</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getData">
+        <div class="location">at         line 309</div>
+        <code>                    array
+    <strong>getData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the data waiting to be inserted.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset">
+        <div class="location">at         line 319</div>
+        <code>                    void
+    <strong>reset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resets all of the pending table changes.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addColumn">
+        <div class="location">at         line 342</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>addColumn</strong>(string|<a href="../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a> $columnName, string $type = null, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a table column.</p>                    <p>Type can be: string, text, integer, float, decimal, datetime, timestamp,
+time, date, binary, boolean.</p>
+
+<p>Valid options can be: limit, default, null, precision or scale.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a></td>
+                <td>$columnName</td>
+                <td>Column Name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>Column Type</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Column Options</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeColumn">
+        <div class="location">at         line 379</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>removeColumn</strong>(string $columnName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove a table column.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$columnName</td>
+                <td>Column Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renameColumn">
+        <div class="location">at         line 393</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>renameColumn</strong>(string $oldName, string $newName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Rename a table column.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$oldName</td>
+                <td>Old Column Name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$newName</td>
+                <td>New Column Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_changeColumn">
+        <div class="location">at         line 408</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>changeColumn</strong>(string $columnName, string|<a href="../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a> $newColumnType, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Change a table column type.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$columnName</td>
+                <td>Column Name</td>
+            </tr>
+                    <tr>
+                <td>string|<a href="../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a></td>
+                <td>$newColumnType</td>
+                <td>New Column Type</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Options</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasColumn">
+        <div class="location">at         line 435</div>
+        <code>                    bool
+    <strong>hasColumn</strong>(string $columnName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks to see if a column exists.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$columnName</td>
+                <td>Column Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addIndex">
+        <div class="location">at         line 449</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>addIndex</strong>(string|array|<a href="../../Phinx/Db/Table/Index.html"><abbr title="Phinx\Db\Table\Index">Index</abbr></a> $columns, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add an index to a database table.</p>                    <p>In $options you can specific unique = true/false or name (index name).</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array|<a href="../../Phinx/Db/Table/Index.html"><abbr title="Phinx\Db\Table\Index">Index</abbr></a></td>
+                <td>$columns</td>
+                <td>Table Column(s)</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Index Options</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeIndex">
+        <div class="location">at         line 474</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>removeIndex</strong>(array $columns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes the given index from a table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td>Columns</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeIndexByName">
+        <div class="location">at         line 487</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>removeIndexByName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes the given index identified by its name from a table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Index name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasIndex">
+        <div class="location">at         line 501</div>
+        <code>                    bool
+    <strong>hasIndex</strong>($columns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks to see if an index exists.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addForeignKey">
+        <div class="location">at         line 518</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>addForeignKey</strong>(string|array $columns, string|<a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a> $referencedTable, string|array $referencedColumns = [&#039;id&#039;], array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a foreign key to a database table.</p>                    <p>In $options you can specify on_delete|on_delete = cascade|no_action ..,
+on_update, constraint = constraint name.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$columns</td>
+                <td>Columns</td>
+            </tr>
+                    <tr>
+                <td>string|<a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+                <td>$referencedTable</td>
+                <td>Referenced Table</td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$referencedColumns</td>
+                <td>Referenced Columns</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Options</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dropForeignKey">
+        <div class="location">at         line 544</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>dropForeignKey</strong>(string|array $columns, null|string $constraint = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes the given foreign key from the table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$columns</td>
+                <td>Column(s)</td>
+            </tr>
+                    <tr>
+                <td>null|string</td>
+                <td>$constraint</td>
+                <td>Constraint names</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasForeignKey">
+        <div class="location">at         line 565</div>
+        <code>                    bool
+    <strong>hasForeignKey</strong>(string|array $columns, null|string $constraint = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks to see if a foreign key exists.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$columns</td>
+                <td>Column(s)</td>
+            </tr>
+                    <tr>
+                <td>null|string</td>
+                <td>$constraint</td>
+                <td>Constraint names</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addTimestamps">
+        <div class="location">at         line 578</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>addTimestamps</strong>(string $createdAtColumnName = &#039;created_at&#039;, string $updatedAtColumnName = &#039;updated_at&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add timestamp columns created_at and updated_at to the table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$createdAtColumnName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$updatedAtColumnName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location">at         line 606</div>
+        <code>                    <a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>insert</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Insert data into the table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td>array of data in the form:
+             array(
+                 array("col1" => "value1", "col2" => "anotherValue1"),
+                 array("col2" => "value2", "col2" => "anotherValue2"),
+             )
+             or array("col1" => "value1", "col2" => "anotherValue1")</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         line 626</div>
+        <code>                    void
+    <strong>create</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a table from the object instance.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at         line 639</div>
+        <code>                    void
+    <strong>update</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Updates a table from the object instance.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_saveData">
+        <div class="location">at         line 667</div>
+        <code>                    void
+    <strong>saveData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Commit the pending data waiting for insertion.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_truncate">
+        <div class="location">at         line 699</div>
+        <code>                    void
+    <strong>truncate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Truncates the table.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">at         line 711</div>
+        <code>                    void
+    <strong>save</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Commits the table changes.</p>                    <p>If the table doesn't exist it is created otherwise it is updated.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>GuzzleHttp\Psr7\Request | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:GuzzleHttp_Psr7_Request" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../GuzzleHttp.html">GuzzleHttp</a></li><li class="backslash">\</li><li><a href="../../GuzzleHttp/Psr7.html">Psr7</a></li><li class="backslash">\</li><li>Request</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Request
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Request</strong>        implements
+        <a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>PSR-7 request implementation.</p>                                </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../GuzzleHttp/Psr7/MessageTrait.html"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Trait implementing functionality common to requests and responses.
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProtocolVersion">getProtocolVersion</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getProtocolVersion"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withProtocolVersion">withProtocolVersion</a>($version)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withProtocolVersion"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHeaders">getHeaders</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getHeaders"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasHeader">hasHeader</a>($header)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_hasHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHeader">getHeader</a>($header)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHeaderLine">getHeaderLine</a>($header)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getHeaderLine"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withHeader">withHeader</a>($header, $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withAddedHeader">withAddedHeader</a>($header, $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withAddedHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withoutHeader">withoutHeader</a>($header)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withoutHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBody">getBody</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getBody"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withBody">withBody</a>(<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $body)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withBody"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $method, string|<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri, array $headers = [], string|null|resource|<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $body = null, string $version = &#039;1.1&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestTarget">getRequestTarget</a>()
+        
+                                            <p>Retrieves the message's request target.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withRequestTarget">withRequestTarget</a>(mixed $requestTarget)
+        
+                                            <p>Return an instance with the specific request-target.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMethod">getMethod</a>()
+        
+                                            <p>Retrieves the HTTP method of the request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withMethod">withMethod</a>(string $method)
+        
+                                            <p>Return an instance with the provided HTTP method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUri">getUri</a>()
+        
+                                            <p>Retrieves the URI instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withUri">withUri</a>(<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri, bool $preserveHost = false)
+        
+                                            <p>Returns an instance with the provided URI.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getProtocolVersion">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getProtocolVersion"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 23</div>
+        <code>                    
+    <strong>getProtocolVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withProtocolVersion">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withProtocolVersion"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 28</div>
+        <code>                    
+    <strong>withProtocolVersion</strong>($version)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$version</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeaders">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getHeaders"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 39</div>
+        <code>                    
+    <strong>getHeaders</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasHeader">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_hasHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 44</div>
+        <code>                    
+    <strong>hasHeader</strong>($header)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$header</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeader">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 49</div>
+        <code>                    
+    <strong>getHeader</strong>($header)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$header</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeaderLine">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getHeaderLine"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 62</div>
+        <code>                    
+    <strong>getHeaderLine</strong>($header)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$header</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withHeader">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 67</div>
+        <code>                    
+    <strong>withHeader</strong>($header, $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$header</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withAddedHeader">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withAddedHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 86</div>
+        <code>                    
+    <strong>withAddedHeader</strong>($header, $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$header</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withoutHeader">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withoutHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 107</div>
+        <code>                    
+    <strong>withoutHeader</strong>($header)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$header</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBody">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getBody"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 123</div>
+        <code>                    
+    <strong>getBody</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withBody">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withBody"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 132</div>
+        <code>                    
+    <strong>withBody</strong>(<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $body)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a></td>
+                <td>$body</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 32</div>
+        <code>                    
+    <strong>__construct</strong>(string $method, string|<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri, array $headers = [], string|null|resource|<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $body = null, string $version = &#039;1.1&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>HTTP method</td>
+            </tr>
+                    <tr>
+                <td>string|<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+                <td>$uri</td>
+                <td>URI</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td>Request headers</td>
+            </tr>
+                    <tr>
+                <td>string|null|resource|<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a></td>
+                <td>$body</td>
+                <td>Request body</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$version</td>
+                <td>Protocol version</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestTarget">
+        <div class="location">at         line 57</div>
+        <code>                    string
+    <strong>getRequestTarget</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the message's request target.</p>                    <p>Retrieves the message's request-target either as it will appear (for
+clients), as it appeared at request (for servers), or as it was
+specified for the instance (see withRequestTarget()).</p>
+
+<p>In most cases, this will be the origin-form of the composed URI,
+unless a value was provided to the concrete implementation (see
+withRequestTarget() below).</p>
+
+<p>If no URI is available, and no request-target has been specifically
+provided, this method MUST return the string "/".</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withRequestTarget">
+        <div class="location">at         line 74</div>
+        <code>                    <a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a>
+    <strong>withRequestTarget</strong>(mixed $requestTarget)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an instance with the specific request-target.</p>                    <p>If the request needs a non-origin-form request-target — e.g., for
+specifying an absolute-form, authority-form, or asterisk-form —
+this method may be used to create an instance with the specified
+request-target, verbatim.</p>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return an instance that has the
+changed request target.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$requestTarget</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMethod">
+        <div class="location">at         line 87</div>
+        <code>                    string
+    <strong>getMethod</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the HTTP method of the request.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Returns the request method.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withMethod">
+        <div class="location">at         line 92</div>
+        <code>                    <a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a>
+    <strong>withMethod</strong>(string $method)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an instance with the provided HTTP method.</p>                    <p>While HTTP method names are typically all uppercase characters, HTTP
+method names are case-sensitive and thus implementations SHOULD NOT
+modify the given string.</p>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return an instance that has the
+changed request method.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>Case-sensitive method.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>for invalid HTTP methods.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUri">
+        <div class="location">at         line 99</div>
+        <code>                    <a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a>
+    <strong>getUri</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the URI instance.</p>                    <p>This method MUST return a UriInterface instance.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+            <td>Returns a UriInterface instance
+    representing the URI of the request.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withUri">
+        <div class="location">at         line 104</div>
+        <code>                    <a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a>
+    <strong>withUri</strong>(<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri, bool $preserveHost = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns an instance with the provided URI.</p>                    <p>This method MUST update the Host header of the returned request by
+default if the URI contains a host component. If the URI does not
+contain a host component, any pre-existing Host header MUST be carried
+over to the returned request.</p>
+
+<p>You can opt-in to preserving the original state of the Host header by
+setting <code>$preserveHost</code> to <code>true</code>. When <code>$preserveHost</code> is set to
+<code>true</code>, this method interacts with the Host header in the following ways:</p>
+
+<ul>
+<li>If the Host header is missing or empty, and the new URI contains
+a host component, this method MUST update the Host header in the returned
+request.</li>
+<li>If the Host header is missing or empty, and the new URI does not contain a
+host component, this method MUST NOT update the Host header in the returned
+request.</li>
+<li>If a Host header is present and non-empty, this method MUST NOT update
+the Host header in the returned request.</li>
+</ul>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return an instance that has the
+new UriInterface instance.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+                <td>$uri</td>
+                <td>New request URI to use.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$preserveHost</td>
+                <td>Preserve the original state of the Host header.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

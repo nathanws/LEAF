@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PHPUnit\Framework\DataProviderTestSuite | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PHPUnit_Framework_DataProviderTestSuite" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../PHPUnit.html">PHPUnit</a></li><li class="backslash">\</li><li><a href="../../PHPUnit/Framework.html">Framework</a></li><li class="backslash">\</li><li>DataProviderTestSuite</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            DataProviderTestSuite
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>DataProviderTestSuite</strong>        extends <a href="../../PHPUnit/Framework/TestSuite.html"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a>
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_backupGlobals">
+                                        protected                                        bool
+                </td>
+                <td>$backupGlobals</td>
+                <td class="last">Enable or disable the backup and restoration of the $GLOBALS array.</td>
+                <td><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#property_backupGlobals"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_backupStaticAttributes">
+                                        protected                                        bool
+                </td>
+                <td>$backupStaticAttributes</td>
+                <td class="last">Enable or disable the backup and restoration of static attributes.</td>
+                <td><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#property_backupStaticAttributes"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_runTestInSeparateProcess">
+                                        protected                                        bool
+                </td>
+                <td>$runTestInSeparateProcess</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#property_runTestInSeparateProcess"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_name">
+                                        protected                                        string
+                </td>
+                <td>$name</td>
+                <td class="last">The name of the test suite.</td>
+                <td><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#property_name"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_groups">
+                                        protected                                        array
+                </td>
+                <td>$groups</td>
+                <td class="last">The test groups of the test suite.</td>
+                <td><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#property_groups"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tests">
+                                        protected                                        <a href="../../PHPUnit/Framework/TestCase.html"><abbr title="PHPUnit\Framework\TestCase">TestCase</abbr></a>[]
+                </td>
+                <td>$tests</td>
+                <td class="last">The tests in the test suite.</td>
+                <td><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#property_tests"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_numTests">
+                                        protected                                        int
+                </td>
+                <td>$numTests</td>
+                <td class="last">The number of tests in the test suite.</td>
+                <td><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#property_numTests"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_testCase">
+                                        protected                                        bool
+                </td>
+                <td>$testCase</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#property_testCase"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_foundClasses">
+                                        protected                                        array
+                </td>
+                <td>$foundClasses</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#property_foundClasses"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(mixed $theClass = &#039;&#039;, string $name = &#039;&#039;)
+        
+                                            <p>Constructs a new TestSuite:</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method___construct"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toString">toString</a>()
+        
+                                            <p>Returns a string representation of the test suite.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_toString"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addTest">addTest</a>(<a href="../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, array $groups = [])
+        
+                                            <p>Adds a test to the suite.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_addTest"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addTestSuite">addTestSuite</a>(mixed $testClass)
+        
+                                            <p>Adds the tests from the given class to the suite.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_addTestSuite"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addTestFile">addTestFile</a>(string $filename)
+        
+                                            <p>Wraps both <code>addTest()</code> and <code>addTestSuite</code>
+as well as the separate import statements for the user's convenience.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_addTestFile"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addTestFiles">addTestFiles</a>(array|<a target="_blank" href="http://php.net/Iterator">Iterator</a> $filenames)
+        
+                                            <p>Wrapper for addTestFile() that adds multiple test files.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_addTestFiles"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>(bool $preferCache = false)
+        
+                                            <p>Counts the number of test cases that will be run by this test.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_count"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createTest">createTest</a>(<a target="_blank" href="http://php.net/ReflectionClass">ReflectionClass</a> $theClass, string $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_createTest"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createResult">createResult</a>()
+        
+                                            <p>Creates a default TestResult object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_createResult"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Returns the name of the suite.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_getName"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGroups">getGroups</a>()
+        
+                                            <p>Returns the test groups of the suite.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_getGroups"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGroupDetails">getGroupDetails</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_getGroupDetails"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGroupDetails">setGroupDetails</a>(array $groups)
+        
+                                            <p>Set tests groups of the test case</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_setGroupDetails"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_run">run</a>(<a href="../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result = null)
+        
+                                            <p>Runs the tests and collects their result in a TestResult.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_run"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRunTestInSeparateProcess">setRunTestInSeparateProcess</a>(bool $runTestInSeparateProcess)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_setRunTestInSeparateProcess"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runTest">runTest</a>(<a href="../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a href="../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                                            <p>Runs a test.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_runTest"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setName">setName</a>(string $name)
+        
+                                            <p>Sets the name of the suite.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_setName"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a>|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testAt">testAt</a>(int|false $index)
+        
+                                            <p>Returns the test at the given index.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_testAt"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_tests">tests</a>()
+        
+                                            <p>Returns the tests as an enumeration.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_tests"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTests">setTests</a>(array $tests)
+        
+                                            <p>Set tests of the test suite</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_setTests"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_markTestSuiteSkipped">markTestSuiteSkipped</a>(string $message = &#039;&#039;)
+        
+                                            <p>Mark the test suite as skipped.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_markTestSuiteSkipped"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addTestMethod">addTestMethod</a>(<a target="_blank" href="http://php.net/ReflectionClass">ReflectionClass</a> $class, <a target="_blank" href="http://php.net/ReflectionMethod">ReflectionMethod</a> $method)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_addTestMethod"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTestMethod">isTestMethod</a>(<a target="_blank" href="http://php.net/ReflectionMethod">ReflectionMethod</a> $method)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_isTestMethod"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../PHPUnit/Framework/WarningTestCase.html"><abbr title="PHPUnit\Framework\WarningTestCase">WarningTestCase</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_warning">warning</a>(string $message)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_warning"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../PHPUnit/Framework/SkippedTestCase.html"><abbr title="PHPUnit\Framework\SkippedTestCase">SkippedTestCase</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_skipTest">skipTest</a>(string $class, string $methodName, string $message)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_skipTest"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../PHPUnit/Framework/IncompleteTestCase.html"><abbr title="PHPUnit\Framework\IncompleteTestCase">IncompleteTestCase</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_incompleteTest">incompleteTest</a>(string $class, string $methodName, string $message)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_incompleteTest"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setBeStrictAboutChangesToGlobalState">setBeStrictAboutChangesToGlobalState</a>(bool $beStrictAboutChangesToGlobalState)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_setBeStrictAboutChangesToGlobalState"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setBackupGlobals">setBackupGlobals</a>(bool $backupGlobals)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_setBackupGlobals"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setBackupStaticAttributes">setBackupStaticAttributes</a>(bool $backupStaticAttributes)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_setBackupStaticAttributes"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PHPUnit/Framework/TestSuiteIterator.html"><abbr title="PHPUnit\Framework\TestSuiteIterator">TestSuiteIterator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIterator">getIterator</a>()
+        
+                                            <p>Returns an iterator for this test suite.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_getIterator"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_injectFilter">injectFilter</a>(<a href="../../PHPUnit/Runner/Filter/Factory.html"><abbr title="PHPUnit\Runner\Filter\Factory">Factory</abbr></a> $filter)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_injectFilter"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUp">setUp</a>()
+        
+                                            <p>Template Method that is called before the tests
+of this test suite are run.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_setUp"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_tearDown">tearDown</a>()
+        
+                                            <p>Template Method that is called after the tests
+of this test suite have finished running.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../PHPUnit/Framework/TestSuite.html#method_tearDown"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDependencies">setDependencies</a>(array $dependencies)
+        
+                                            <p>Sets the dependencies of a TestCase.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method___construct"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 129</div>
+        <code>                    
+    <strong>__construct</strong>(mixed $theClass = &#039;&#039;, string $name = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructs a new TestSuite:</p>                    <p><ul>
+<li><p>PHPUnit\Framework\TestSuite() constructs an empty TestSuite.</p>
+
+<ul>
+<li><p>PHPUnit\Framework\TestSuite(ReflectionClass) constructs a
+TestSuite from the given class.</p></li>
+<li><p>PHPUnit\Framework\TestSuite(ReflectionClass, String)
+constructs a TestSuite from the given class with the given
+name.</p></li>
+<li><p>PHPUnit\Framework\TestSuite(String) either constructs a
+TestSuite from the given class (if the passed string is the
+name of an existing class) or constructs an empty TestSuite
+with the given name.</p></li>
+</ul></li>
+</ul>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$theClass</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PHPUnit/Framework/Exception.html"><abbr title="PHPUnit\Framework\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toString">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_toString"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 209</div>
+        <code>                    string
+    <strong>toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a string representation of the test suite.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addTest">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_addTest"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 220</div>
+        <code>                    
+    <strong>addTest</strong>(<a href="../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, array $groups = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a test to the suite.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$groups</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addTestSuite">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_addTestSuite"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 257</div>
+        <code>                    
+    <strong>addTestSuite</strong>(mixed $testClass)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds the tests from the given class to the suite.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$testClass</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PHPUnit/Framework/Exception.html"><abbr title="PHPUnit\Framework\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addTestFile">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_addTestFile"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 309</div>
+        <code>                    
+    <strong>addTestFile</strong>(string $filename)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Wraps both <code>addTest()</code> and <code>addTestSuite</code>
+as well as the separate import statements for the user's convenience.</p>                    <p>If the named file cannot be read or there are no new tests that can be
+added, a <code>PHPUnit\Framework\WarningTestCase</code> will be created instead,
+leaving the current test run untouched.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PHPUnit/Framework/Exception.html"><abbr title="PHPUnit\Framework\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addTestFiles">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_addTestFiles"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 392</div>
+        <code>                    
+    <strong>addTestFiles</strong>(array|<a target="_blank" href="http://php.net/Iterator">Iterator</a> $filenames)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Wrapper for addTestFile() that adds multiple test files.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|<a target="_blank" href="http://php.net/Iterator">Iterator</a></td>
+                <td>$filenames</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PHPUnit/Framework/Exception.html"><abbr title="PHPUnit\Framework\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_count"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 414</div>
+        <code>                    int
+    <strong>count</strong>(bool $preferCache = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Counts the number of test cases that will be run by this test.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$preferCache</td>
+                <td>Indicates if cache is preferred.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createTest">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_createTest"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 439</div>
+        <code>        static            <a href="../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a>
+    <strong>createTest</strong>(<a target="_blank" href="http://php.net/ReflectionClass">ReflectionClass</a> $theClass, string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/ReflectionClass">ReflectionClass</a></td>
+                <td>$theClass</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PHPUnit/Framework/Exception.html"><abbr title="PHPUnit\Framework\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createResult">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_createResult"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 630</div>
+        <code>            protected        <a href="../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a>
+    <strong>createResult</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a default TestResult object.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_getName"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 640</div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the name of the suite.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGroups">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_getGroups"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 650</div>
+        <code>                    array
+    <strong>getGroups</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the test groups of the suite.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGroupDetails">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_getGroupDetails"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 655</div>
+        <code>                    
+    <strong>getGroupDetails</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setGroupDetails">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_setGroupDetails"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 665</div>
+        <code>                    
+    <strong>setGroupDetails</strong>(array $groups)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set tests groups of the test case</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$groups</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_run">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_run"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 677</div>
+        <code>                    <a href="../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a>
+    <strong>run</strong>(<a href="../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Runs the tests and collects their result in a TestResult.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRunTestInSeparateProcess">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_setRunTestInSeparateProcess"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 776</div>
+        <code>                    
+    <strong>setRunTestInSeparateProcess</strong>(bool $runTestInSeparateProcess)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$runTestInSeparateProcess</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PHPUnit/Framework/Exception.html"><abbr title="PHPUnit\Framework\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runTest">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_runTest"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 793</div>
+        <code>                    
+    <strong>runTest</strong>(<a href="../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a href="../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a> $result)
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
+    </h3>
+    <div class="details">
+            
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </p>
+    
+
+                    <div class="method-description">
+                                    <p>Runs a test.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../PHPUnit/Framework/TestResult.html"><abbr title="PHPUnit\Framework\TestResult">TestResult</abbr></a></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_setName"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 803</div>
+        <code>                    
+    <strong>setName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the name of the suite.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testAt">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_testAt"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 815</div>
+        <code>                    <a href="../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a>|false
+    <strong>testAt</strong>(int|false $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the test at the given index.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|false</td>
+                <td>$index</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a>|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tests">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_tests"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 829</div>
+        <code>                    array
+    <strong>tests</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the tests as an enumeration.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTests">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_setTests"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 839</div>
+        <code>                    
+    <strong>setTests</strong>(array $tests)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set tests of the test suite</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$tests</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_markTestSuiteSkipped">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_markTestSuiteSkipped"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 851</div>
+        <code>                    
+    <strong>markTestSuiteSkipped</strong>(string $message = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Mark the test suite as skipped.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PHPUnit/Framework/SkippedTestSuiteError.html"><abbr title="PHPUnit\Framework\SkippedTestSuiteError">SkippedTestSuiteError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addTestMethod">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_addTestMethod"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 860</div>
+        <code>            protected        
+    <strong>addTestMethod</strong>(<a target="_blank" href="http://php.net/ReflectionClass">ReflectionClass</a> $class, <a target="_blank" href="http://php.net/ReflectionMethod">ReflectionMethod</a> $method)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/ReflectionClass">ReflectionClass</a></td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/ReflectionMethod">ReflectionMethod</a></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTestMethod">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_isTestMethod"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 901</div>
+        <code>        static            bool
+    <strong>isTestMethod</strong>(<a target="_blank" href="http://php.net/ReflectionMethod">ReflectionMethod</a> $method)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/ReflectionMethod">ReflectionMethod</a></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_warning">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_warning"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 920</div>
+        <code>        static    protected        <a href="../../PHPUnit/Framework/WarningTestCase.html"><abbr title="PHPUnit\Framework\WarningTestCase">WarningTestCase</abbr></a>
+    <strong>warning</strong>(string $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PHPUnit/Framework/WarningTestCase.html"><abbr title="PHPUnit\Framework\WarningTestCase">WarningTestCase</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_skipTest">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_skipTest"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 932</div>
+        <code>        static    protected        <a href="../../PHPUnit/Framework/SkippedTestCase.html"><abbr title="PHPUnit\Framework\SkippedTestCase">SkippedTestCase</abbr></a>
+    <strong>skipTest</strong>(string $class, string $methodName, string $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$methodName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PHPUnit/Framework/SkippedTestCase.html"><abbr title="PHPUnit\Framework\SkippedTestCase">SkippedTestCase</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_incompleteTest">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_incompleteTest"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 944</div>
+        <code>        static    protected        <a href="../../PHPUnit/Framework/IncompleteTestCase.html"><abbr title="PHPUnit\Framework\IncompleteTestCase">IncompleteTestCase</abbr></a>
+    <strong>incompleteTest</strong>(string $class, string $methodName, string $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$methodName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PHPUnit/Framework/IncompleteTestCase.html"><abbr title="PHPUnit\Framework\IncompleteTestCase">IncompleteTestCase</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBeStrictAboutChangesToGlobalState">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_setBeStrictAboutChangesToGlobalState"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 952</div>
+        <code>                    
+    <strong>setBeStrictAboutChangesToGlobalState</strong>(bool $beStrictAboutChangesToGlobalState)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$beStrictAboutChangesToGlobalState</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBackupGlobals">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_setBackupGlobals"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 962</div>
+        <code>                    
+    <strong>setBackupGlobals</strong>(bool $backupGlobals)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$backupGlobals</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBackupStaticAttributes">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_setBackupStaticAttributes"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 972</div>
+        <code>                    
+    <strong>setBackupStaticAttributes</strong>(bool $backupStaticAttributes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$backupStaticAttributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIterator">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_getIterator"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 984</div>
+        <code>                    <a href="../../PHPUnit/Framework/TestSuiteIterator.html"><abbr title="PHPUnit\Framework\TestSuiteIterator">TestSuiteIterator</abbr></a>
+    <strong>getIterator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns an iterator for this test suite.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PHPUnit/Framework/TestSuiteIterator.html"><abbr title="PHPUnit\Framework\TestSuiteIterator">TestSuiteIterator</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_injectFilter">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_injectFilter"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 995</div>
+        <code>                    
+    <strong>injectFilter</strong>(<a href="../../PHPUnit/Runner/Filter/Factory.html"><abbr title="PHPUnit\Runner\Filter\Factory">Factory</abbr></a> $filter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PHPUnit/Runner/Filter/Factory.html"><abbr title="PHPUnit\Runner\Filter\Factory">Factory</abbr></a></td>
+                <td>$filter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUp">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_setUp"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 1009</div>
+        <code>            protected        
+    <strong>setUp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Template Method that is called before the tests
+of this test suite are run.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tearDown">
+        <div class="location">in <a href="../../PHPUnit/Framework/TestSuite.html#method_tearDown"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> at         line 1017</div>
+        <code>            protected        
+    <strong>tearDown</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Template Method that is called after the tests
+of this test suite have finished running.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDependencies">
+        <div class="location">at         line 19</div>
+        <code>                    
+    <strong>setDependencies</strong>(array $dependencies)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the dependencies of a TestCase.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$dependencies</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

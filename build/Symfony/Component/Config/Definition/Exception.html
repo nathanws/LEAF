@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Symfony\Component\Config\Definition\Exception | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="namespace" data-name="namespace:Symfony_Component_Config_Definition_Exception" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                <div class="namespace-breadcrumbs">
+        <ol class="breadcrumb">
+            <li><span class="label label-default">Namespace</span></li>
+                    <li><a href="../../../../Symfony.html">Symfony</a></li><li class="backslash">\</li><li><a href="../../../../Symfony/Component.html">Component</a></li><li class="backslash">\</li><li><a href="../../../../Symfony/Component/Config.html">Config</a></li><li class="backslash">\</li><li><a href="../../../../Symfony/Component/Config/Definition.html">Definition</a></li><li class="backslash">\</li><li><a href="../../../../Symfony/Component/Config/Definition/Exception.html">Exception</a></li><li class="backslash">\</li>
+        </ol>
+    </div>
+            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Symfony\Component\Config\Definition\Exception</h1>
+    </div>
+
+    
+            <h2>Classes</h2>
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../Symfony/Component/Config/Definition/Exception/DuplicateKeyException.html"><abbr title="Symfony\Component\Config\Definition\Exception\DuplicateKeyException">DuplicateKeyException</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    This exception is thrown whenever the key of an array is not unique. This can
+only be the case if the configuration is coming from an XML file.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../Symfony/Component/Config/Definition/Exception/Exception.html"><abbr title="Symfony\Component\Config\Definition\Exception\Exception">Exception</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Base exception for all configuration exceptions.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../Symfony/Component/Config/Definition/Exception/ForbiddenOverwriteException.html"><abbr title="Symfony\Component\Config\Definition\Exception\ForbiddenOverwriteException">ForbiddenOverwriteException</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    This exception is thrown when a configuration path is overwritten from a
+subsequent configuration file, but the entry node specifically forbids this.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../Symfony/Component/Config/Definition/Exception/InvalidConfigurationException.html"><abbr title="Symfony\Component\Config\Definition\Exception\InvalidConfigurationException">InvalidConfigurationException</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    A very general exception which can be thrown whenever non of the more specific
+exceptions is suitable.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../Symfony/Component/Config/Definition/Exception/InvalidDefinitionException.html"><abbr title="Symfony\Component\Config\Definition\Exception\InvalidDefinitionException">InvalidDefinitionException</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Thrown when an error is detected in a node Definition.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../Symfony/Component/Config/Definition/Exception/InvalidTypeException.html"><abbr title="Symfony\Component\Config\Definition\Exception\InvalidTypeException">InvalidTypeException</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    This exception is thrown if an invalid type is encountered.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../Symfony/Component/Config/Definition/Exception/UnsetKeyException.html"><abbr title="Symfony\Component\Config\Definition\Exception\UnsetKeyException">UnsetKeyException</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    This exception is usually not encountered by the end-user, but only used
+internally to signal the parent scope to unset a key.
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

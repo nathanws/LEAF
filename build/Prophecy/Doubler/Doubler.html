@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Prophecy\Doubler\Doubler | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Prophecy_Doubler_Doubler" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Prophecy.html">Prophecy</a></li><li class="backslash">\</li><li><a href="../../Prophecy/Doubler.html">Doubler</a></li><li class="backslash">\</li><li>Doubler</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Doubler
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Doubler</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Cached class doubler.</p>            <p>Prevents mirroring/creation of the same structure twice.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../Prophecy/Doubler/Generator/ClassMirror.html"><abbr title="Prophecy\Doubler\Generator\ClassMirror">ClassMirror</abbr></a> $mirror = null, <a href="../../Prophecy/Doubler/Generator/ClassCreator.html"><abbr title="Prophecy\Doubler\Generator\ClassCreator">ClassCreator</abbr></a> $creator = null, <a href="../../Prophecy/Doubler/NameGenerator.html"><abbr title="Prophecy\Doubler\NameGenerator">NameGenerator</abbr></a> $namer = null)
+        
+                                            <p>Initializes doubler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Prophecy/Doubler/ClassPatch/ClassPatchInterface.html"><abbr title="Prophecy\Doubler\ClassPatch\ClassPatchInterface">ClassPatchInterface</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getClassPatches">getClassPatches</a>()
+        
+                                            <p>Returns list of registered class patches.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerClassPatch">registerClassPatch</a>(<a href="../../Prophecy/Doubler/ClassPatch/ClassPatchInterface.html"><abbr title="Prophecy\Doubler\ClassPatch\ClassPatchInterface">ClassPatchInterface</abbr></a> $patch)
+        
+                                            <p>Registers new class patch.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Prophecy/Doubler/DoubleInterface.html"><abbr title="Prophecy\Doubler\DoubleInterface">DoubleInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_double">double</a>(<a target="_blank" href="http://php.net/ReflectionClass">ReflectionClass</a> $class = null, array $interfaces, array $args = null)
+        
+                                            <p>Creates double from specific class or/and list of interfaces.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createDoubleClass">createDoubleClass</a>(<a target="_blank" href="http://php.net/ReflectionClass">ReflectionClass</a> $class = null, array $interfaces)
+        
+                                            <p>Creates double class and returns its FQN.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 50</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Prophecy/Doubler/Generator/ClassMirror.html"><abbr title="Prophecy\Doubler\Generator\ClassMirror">ClassMirror</abbr></a> $mirror = null, <a href="../../Prophecy/Doubler/Generator/ClassCreator.html"><abbr title="Prophecy\Doubler\Generator\ClassCreator">ClassCreator</abbr></a> $creator = null, <a href="../../Prophecy/Doubler/NameGenerator.html"><abbr title="Prophecy\Doubler\NameGenerator">NameGenerator</abbr></a> $namer = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initializes doubler.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Prophecy/Doubler/Generator/ClassMirror.html"><abbr title="Prophecy\Doubler\Generator\ClassMirror">ClassMirror</abbr></a></td>
+                <td>$mirror</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Prophecy/Doubler/Generator/ClassCreator.html"><abbr title="Prophecy\Doubler\Generator\ClassCreator">ClassCreator</abbr></a></td>
+                <td>$creator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Prophecy/Doubler/NameGenerator.html"><abbr title="Prophecy\Doubler\NameGenerator">NameGenerator</abbr></a></td>
+                <td>$namer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClassPatches">
+        <div class="location">at         line 63</div>
+        <code>                    <a href="../../Prophecy/Doubler/ClassPatch/ClassPatchInterface.html"><abbr title="Prophecy\Doubler\ClassPatch\ClassPatchInterface">ClassPatchInterface</abbr></a>[]
+    <strong>getClassPatches</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns list of registered class patches.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Prophecy/Doubler/ClassPatch/ClassPatchInterface.html"><abbr title="Prophecy\Doubler\ClassPatch\ClassPatchInterface">ClassPatchInterface</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerClassPatch">
+        <div class="location">at         line 73</div>
+        <code>                    
+    <strong>registerClassPatch</strong>(<a href="../../Prophecy/Doubler/ClassPatch/ClassPatchInterface.html"><abbr title="Prophecy\Doubler\ClassPatch\ClassPatchInterface">ClassPatchInterface</abbr></a> $patch)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Registers new class patch.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Prophecy/Doubler/ClassPatch/ClassPatchInterface.html"><abbr title="Prophecy\Doubler\ClassPatch\ClassPatchInterface">ClassPatchInterface</abbr></a></td>
+                <td>$patch</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_double">
+        <div class="location">at         line 93</div>
+        <code>                    <a href="../../Prophecy/Doubler/DoubleInterface.html"><abbr title="Prophecy\Doubler\DoubleInterface">DoubleInterface</abbr></a>
+    <strong>double</strong>(<a target="_blank" href="http://php.net/ReflectionClass">ReflectionClass</a> $class = null, array $interfaces, array $args = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates double from specific class or/and list of interfaces.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/ReflectionClass">ReflectionClass</a></td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$interfaces</td>
+                <td>Array of ReflectionClass instances</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td>Constructor arguments</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Prophecy/Doubler/DoubleInterface.html"><abbr title="Prophecy\Doubler\DoubleInterface">DoubleInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Prophecy/Exception/InvalidArgumentException.html"><abbr title="Prophecy\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createDoubleClass">
+        <div class="location">at         line 131</div>
+        <code>            protected        string
+    <strong>createDoubleClass</strong>(<a target="_blank" href="http://php.net/ReflectionClass">ReflectionClass</a> $class = null, array $interfaces)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates double class and returns its FQN.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/ReflectionClass">ReflectionClass</a></td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$interfaces</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

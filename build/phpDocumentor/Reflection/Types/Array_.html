@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>phpDocumentor\Reflection\Types\Array_ | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:phpDocumentor_Reflection_Types_Array_" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../phpDocumentor.html">phpDocumentor</a></li><li class="backslash">\</li><li><a href="../../../phpDocumentor/Reflection.html">Reflection</a></li><li class="backslash">\</li><li><a href="../../../phpDocumentor/Reflection/Types.html">Types</a></li><li class="backslash">\</li><li>Array_</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Array_
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Array_</strong>        implements
+        <a href="../../../phpDocumentor/Reflection/Type.html"><abbr title="phpDocumentor\Reflection\Type">Type</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Represents an array type as described in the PSR-5, the PHPDoc Standard.</p>            <p>An array can be represented in two forms:</p>
+
+<ol>
+<li>Untyped (<code>array</code>), where the key and value type is unknown and hence classified as 'Mixed_'.</li>
+<li>Types (<code>string[]</code>), where the value type is provided by preceding an opening and closing square bracket with a
+type name.</li>
+</ol>
+</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../phpDocumentor/Reflection/Type.html"><abbr title="phpDocumentor\Reflection\Type">Type</abbr></a> $valueType = null, <a href="../../../phpDocumentor/Reflection/Type.html"><abbr title="phpDocumentor\Reflection\Type">Type</abbr></a> $keyType = null)
+        
+                                            <p>Initializes this representation of an array with the given Type or Fqsen.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../phpDocumentor/Reflection/Type.html"><abbr title="phpDocumentor\Reflection\Type">Type</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKeyType">getKeyType</a>()
+        
+                                            <p>Returns the type for the keys of this array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../phpDocumentor/Reflection/Type.html"><abbr title="phpDocumentor\Reflection\Type">Type</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValueType">getValueType</a>()
+        
+                                            <p>Returns the value for the keys of this array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p>Returns a rendered output of the Type as it would be used in a DocBlock.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 40</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../phpDocumentor/Reflection/Type.html"><abbr title="phpDocumentor\Reflection\Type">Type</abbr></a> $valueType = null, <a href="../../../phpDocumentor/Reflection/Type.html"><abbr title="phpDocumentor\Reflection\Type">Type</abbr></a> $keyType = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initializes this representation of an array with the given Type or Fqsen.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../phpDocumentor/Reflection/Type.html"><abbr title="phpDocumentor\Reflection\Type">Type</abbr></a></td>
+                <td>$valueType</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../phpDocumentor/Reflection/Type.html"><abbr title="phpDocumentor\Reflection\Type">Type</abbr></a></td>
+                <td>$keyType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKeyType">
+        <div class="location">at         line 58</div>
+        <code>                    <a href="../../../phpDocumentor/Reflection/Type.html"><abbr title="phpDocumentor\Reflection\Type">Type</abbr></a>
+    <strong>getKeyType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the type for the keys of this array.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpDocumentor/Reflection/Type.html"><abbr title="phpDocumentor\Reflection\Type">Type</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValueType">
+        <div class="location">at         line 68</div>
+        <code>                    <a href="../../../phpDocumentor/Reflection/Type.html"><abbr title="phpDocumentor\Reflection\Type">Type</abbr></a>
+    <strong>getValueType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the value for the keys of this array.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpDocumentor/Reflection/Type.html"><abbr title="phpDocumentor\Reflection\Type">Type</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">at         line 78</div>
+        <code>                    
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a rendered output of the Type as it would be used in a DocBlock.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

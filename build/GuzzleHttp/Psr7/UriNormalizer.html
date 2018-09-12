@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>GuzzleHttp\Psr7\UriNormalizer | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:GuzzleHttp_Psr7_UriNormalizer" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../GuzzleHttp.html">GuzzleHttp</a></li><li class="backslash">\</li><li><a href="../../GuzzleHttp/Psr7.html">Psr7</a></li><li class="backslash">\</li><li>UriNormalizer</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            UriNormalizer
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>UriNormalizer</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Provides methods to normalize and compare URIs.</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>PRESERVING_NORMALIZATIONS</td>
+                <td class="last">
+                    <p><em>Default normalizations which only include the ones that preserve semantics.</em></p>
+                    <p>self::CAPITALIZE_PERCENT_ENCODING | self::DECODE_UNRESERVED_CHARACTERS | self::CONVERT_EMPTY_PATH |
+self::REMOVE_DEFAULT_HOST | self::REMOVE_DEFAULT_PORT | self::REMOVE_DOT_SEGMENTS</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CAPITALIZE_PERCENT_ENCODING</td>
+                <td class="last">
+                    <p><em>All letters within a percent-encoding triplet (e.g., "%3A") are case-insensitive, and should be capitalized.</em></p>
+                    <p>Example: http://example.org/a%c2%b1b → http://example.org/a%C2%B1b</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DECODE_UNRESERVED_CHARACTERS</td>
+                <td class="last">
+                    <p><em>Decodes percent-encoded octets of unreserved characters.</em></p>
+                    <p>For consistency, percent-encoded octets in the ranges of ALPHA (%41–%5A and %61–%7A), DIGIT (%30–%39),
+hyphen (%2D), period (%2E), underscore (%5F), or tilde (%7E) should not be created by URI producers and,
+when found in a URI, should be decoded to their corresponding unreserved characters by URI normalizers.</p>
+
+<p>Example: http://example.org/%7Eusern%61me/ → http://example.org/~username/</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CONVERT_EMPTY_PATH</td>
+                <td class="last">
+                    <p><em>Converts the empty path to "/" for http and https URIs.</em></p>
+                    <p>Example: http://example.org → http://example.org/</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>REMOVE_DEFAULT_HOST</td>
+                <td class="last">
+                    <p><em>Removes the default host of the given URI scheme from the URI.</em></p>
+                    <p>Only the "file" scheme defines the default host "localhost".
+All of <code>file:/myfile</code>, <code>file:///myfile</code>, and <code>file://localhost/myfile</code>
+are equivalent according to RFC 3986. The first format is not accepted
+by PHPs stream functions and thus already normalized implicitly to the
+second format in the Uri class. See <code>GuzzleHttp\Psr7\Uri::composeComponents</code>.</p>
+
+<p>Example: file://localhost/myfile → file:///myfile</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>REMOVE_DEFAULT_PORT</td>
+                <td class="last">
+                    <p><em>Removes the default port of the given URI scheme from the URI.</em></p>
+                    <p>Example: http://example.org:80/ → http://example.org/</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>REMOVE_DOT_SEGMENTS</td>
+                <td class="last">
+                    <p><em>Removes unnecessary dot-segments.</em></p>
+                    <p>Dot-segments in relative-path references are not removed as it would
+change the semantics of the URI reference.</p>
+
+<p>Example: http://example.org/../a/b/../c/./d.html → http://example.org/a/c/d.html</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>REMOVE_DUPLICATE_SLASHES</td>
+                <td class="last">
+                    <p><em>Paths which include two or more adjacent slashes are converted to one.</em></p>
+                    <p>Webservers usually ignore duplicate slashes and treat those URIs equivalent.
+But in theory those URIs do not need to be equivalent. So this normalization
+may change the semantics. Encoded slashes (%2F) are not removed.</p>
+
+<p>Example: http://example.org//foo///bar.html → http://example.org/foo/bar.html</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SORT_QUERY_PARAMETERS</td>
+                <td class="last">
+                    <p><em>Sort query parameters with their values in alphabetical order.</em></p>
+                    <p>However, the order of parameters in a URI may be significant (this is not defined by the standard).
+So this normalization is not safe and may change the semantics of the URI.</p>
+
+<p>Example: ?lang=en&amp;article=fred → ?article=fred&amp;lang=en</p>
+
+<p>Note: The sorting is neither locale nor Unicode aware (the URI query does not get decoded at all) as the
+purpose is to be able to compare URIs in a reproducible way, not to have the params sorted perfectly.</p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalize">normalize</a>(<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri, int $flags = self::PRESERVING_NORMALIZATIONS)
+        
+                                            <p>Returns a normalized URI.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isEquivalent">isEquivalent</a>(<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri1, <a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri2, int $normalizations = self::PRESERVING_NORMALIZATIONS)
+        
+                                            <p>Whether two URIs can be considered equivalent.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_normalize">
+        <div class="location">at         line 119</div>
+        <code>        static            <a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a>
+    <strong>normalize</strong>(<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri, int $flags = self::PRESERVING_NORMALIZATIONS)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a normalized URI.</p>                    <p>The scheme and host component are already normalized to lowercase per PSR-7 UriInterface.
+This methods adds additional normalizations that can be configured with the $flags parameter.</p>
+
+<p>PSR-7 UriInterface cannot distinguish between an empty component and a missing component as
+getQuery(), getFragment() etc. always return a string. This means the URIs "/?#" and "/" are
+treated equivalent which is not necessarily true according to RFC 3986. But that difference
+is highly uncommon in reality. So this potential normalization is implied in PSR-7 as well.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+                <td>$uri</td>
+                <td>The URI to normalize</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$flags</td>
+                <td>A bitmask of normalizations to apply, see constants</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+            <td>The normalized URI</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isEquivalent">
+        <div class="location">at         line 175</div>
+        <code>        static            bool
+    <strong>isEquivalent</strong>(<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri1, <a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri2, int $normalizations = self::PRESERVING_NORMALIZATIONS)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Whether two URIs can be considered equivalent.</p>                    <p>Both URIs are normalized automatically before comparison with the given $normalizations bitmask. The method also
+accepts relative URI references and returns true when they are equivalent. This of course assumes they will be
+resolved against the same base URI. If this is not the case, determination of equivalence or difference of
+relative references does not mean anything.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+                <td>$uri1</td>
+                <td>An URI to compare</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+                <td>$uri2</td>
+                <td>An URI to compare</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$normalizations</td>
+                <td>A bitmask of normalizations to apply, see constants</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

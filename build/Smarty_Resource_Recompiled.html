@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Smarty_Resource_Recompiled | API</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Smarty_Resource_Recompiled" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                            <li><a href="namespaces.html">Namespaces</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Smarty_Resource_Recompiled
+                
+        </h1>
+    </div>
+
+    <p>abstract     class
+    <strong>Smarty_Resource_Recompiled</strong>        extends <a href="Smarty_Resource.html">Smarty_Resource</a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Smarty Resource Plugin
+Base implementation for resource plugins that don't compile cache</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_uncompiled">
+                                                                                boolean
+                </td>
+                <td>$uncompiled</td>
+                <td class="last">Source is bypassing compiler</td>
+                <td><small>from&nbsp;<a href="Smarty_Resource.html#property_uncompiled">Smarty_Resource</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_recompiled">
+                                                                                bool
+                </td>
+                <td>$recompiled</td>
+                <td class="last">Flag that it's an recompiled resource</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sysplugins">
+                    static                                                            array
+                </td>
+                <td>$sysplugins</td>
+                <td class="last">resource types provided by the core</td>
+                <td><small>from&nbsp;<a href="Smarty_Resource.html#property_sysplugins">Smarty_Resource</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_hasCompiledHandler">
+                                                                                bool
+                </td>
+                <td>$hasCompiledHandler</td>
+                <td class="last">Resource does implement populateCompiledFilepath() method</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getContent">getContent</a>(<a href="Smarty_Template_Source.html">Smarty_Template_Source</a> $source)
+        
+                                            <p>Load template's source into current template object</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Smarty_Resource.html#method_getContent">Smarty_Resource</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_populate">populate</a>(<a href="Smarty_Template_Source.html">Smarty_Template_Source</a> $source, <a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $_template = null)
+        
+                                            <p>populate Source Object with meta data from Resource</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Smarty_Resource.html#method_populate">Smarty_Resource</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_populateTimestamp">populateTimestamp</a>(<a href="Smarty_Template_Source.html">Smarty_Template_Source</a> $source)
+        
+                                            <p>populate Source Object with timestamp and exists from Resource</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Smarty_Resource.html#method_populateTimestamp">Smarty_Resource</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_buildUniqueResourceName">buildUniqueResourceName</a>(<a href="Smarty.html">Smarty</a> $smarty, string $resource_name, boolean $isConfig = false)
+        
+                                            <p>modify resource_name according to resource handlers specifications</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Smarty_Resource.html#method_buildUniqueResourceName">Smarty_Resource</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBasename">getBasename</a>(<a href="Smarty_Template_Source.html">Smarty_Template_Source</a> $source)
+        
+                                            <p>Determine basename for compiled filename</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Smarty_Resource.html#method_getBasename">Smarty_Resource</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="Smarty_Resource.html">Smarty_Resource</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_load">load</a>(<a href="Smarty.html">Smarty</a> $smarty, string $type)
+        
+                                            <p>Load Resource Handler</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Smarty_Resource.html#method_load">Smarty_Resource</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseResourceName">parseResourceName</a>(string $resource_name, string $default_resource)
+        
+                                            <p>extract resource_type and resource_name from template_resource and config_resource</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Smarty_Resource.html#method_parseResourceName">Smarty_Resource</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUniqueTemplateName">getUniqueTemplateName</a>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a>|<a href="Smarty.html">Smarty</a> $obj, string $template_resource)
+        
+                                            <p>modify template_resource according to resource handlers specifications</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Smarty_Resource.html#method_getUniqueTemplateName">Smarty_Resource</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkTimestamps">checkTimestamps</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="Smarty_Template_Source.html">Smarty_Template_Source</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_source">source</a>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $_template = null, <a href="Smarty.html">Smarty</a> $smarty = null, string $template_resource = null)
+        
+                                            <p>initialize Source Object for given resource
+wrapper for backward compatibility to versions &lt; 3.1.22
+Either [$_template] or [$smarty, $template_resource] must be specified</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Smarty_Resource.html#method_source">Smarty_Resource</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renderUncompiled">renderUncompiled</a>(Smarty_Template_Source  $source, Smarty_Internal_Template  $_template)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Smarty_Resource.html#method_renderUncompiled">Smarty_Resource</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_populateCompiledFilepath">populateCompiledFilepath</a>(Smarty_Template_Compiled  $compiled, Smarty_Internal_Template  $_template)
+        
+                                            <p>populate Compiled Object with compiled filepath</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_process">process</a>(Smarty_Internal_Template  $_smarty_tpl)
+        
+                                            <p>compile template from source</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getContent">
+        <div class="location">in <a href="Smarty_Resource.html#method_getContent">Smarty_Resource</a> at         line 64</div>
+        <code>    abstract                string
+    <strong>getContent</strong>(<a href="Smarty_Template_Source.html">Smarty_Template_Source</a> $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Load template's source into current template object</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Template_Source.html">Smarty_Template_Source</a></td>
+                <td>$source</td>
+                <td>source object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>template source</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyException.html">SmartyException</a></td>
+                <td>if source cannot be loaded</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_populate">
+        <div class="location">in <a href="Smarty_Resource.html#method_populate">Smarty_Resource</a> at         line 72</div>
+        <code>    abstract                
+    <strong>populate</strong>(<a href="Smarty_Template_Source.html">Smarty_Template_Source</a> $source, <a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $_template = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>populate Source Object with meta data from Resource</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Template_Source.html">Smarty_Template_Source</a></td>
+                <td>$source</td>
+                <td>source object</td>
+            </tr>
+                    <tr>
+                <td><a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a></td>
+                <td>$_template</td>
+                <td>template object</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_populateTimestamp">
+        <div class="location">in <a href="Smarty_Resource.html#method_populateTimestamp">Smarty_Resource</a> at         line 79</div>
+        <code>                    
+    <strong>populateTimestamp</strong>(<a href="Smarty_Template_Source.html">Smarty_Template_Source</a> $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>populate Source Object with timestamp and exists from Resource</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Template_Source.html">Smarty_Template_Source</a></td>
+                <td>$source</td>
+                <td>source object</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildUniqueResourceName">
+        <div class="location">in <a href="Smarty_Resource.html#method_buildUniqueResourceName">Smarty_Resource</a> at         line 93</div>
+        <code>                    string
+    <strong>buildUniqueResourceName</strong>(<a href="Smarty.html">Smarty</a> $smarty, string $resource_name, boolean $isConfig = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>modify resource_name according to resource handlers specifications</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty.html">Smarty</a></td>
+                <td>$smarty</td>
+                <td>Smarty instance</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$resource_name</td>
+                <td>resource_name to make unique</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$isConfig</td>
+                <td>flag for config resource</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>unique resource name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBasename">
+        <div class="location">in <a href="Smarty_Resource.html#method_getBasename">Smarty_Resource</a> at         line 115</div>
+        <code>                    string
+    <strong>getBasename</strong>(<a href="Smarty_Template_Source.html">Smarty_Template_Source</a> $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determine basename for compiled filename</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Template_Source.html">Smarty_Template_Source</a></td>
+                <td>$source</td>
+                <td>source object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>resource's basename</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_load">
+        <div class="location">in <a href="Smarty_Resource.html#method_load">Smarty_Resource</a> at         line 129</div>
+        <code>        static            <a href="Smarty_Resource.html">Smarty_Resource</a>
+    <strong>load</strong>(<a href="Smarty.html">Smarty</a> $smarty, string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Load Resource Handler</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty.html">Smarty</a></td>
+                <td>$smarty</td>
+                <td>smarty object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>name of the resource</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="Smarty_Resource.html">Smarty_Resource</a></td>
+            <td>Resource Handler</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyException.html">SmartyException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseResourceName">
+        <div class="location">in <a href="Smarty_Resource.html#method_parseResourceName">Smarty_Resource</a> at         line 188</div>
+        <code>        static            array
+    <strong>parseResourceName</strong>(string $resource_name, string $default_resource)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>extract resource_type and resource_name from template_resource and config_resource</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource_name</td>
+                <td>template_resource or config_resource to parse</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$default_resource</td>
+                <td>the default resource_type defined in $smarty</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>with parsed resource name and type</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUniqueTemplateName">
+        <div class="location">in <a href="Smarty_Resource.html#method_getUniqueTemplateName">Smarty_Resource</a> at         line 210</div>
+        <code>        static            string
+    <strong>getUniqueTemplateName</strong>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a>|<a href="Smarty.html">Smarty</a> $obj, string $template_resource)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>modify template_resource according to resource handlers specifications</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a>|<a href="Smarty.html">Smarty</a></td>
+                <td>$obj</td>
+                <td>Smarty instance</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$template_resource</td>
+                <td>template_resource to extract resource handler and name of</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>unique resource name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkTimestamps">
+        <div class="location">at         line 88</div>
+        <code>                    
+    <strong>checkTimestamps</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_source">
+        <div class="location">in <a href="Smarty_Resource.html#method_source">Smarty_Resource</a> at         line 248</div>
+        <code>        static            <a href="Smarty_Template_Source.html">Smarty_Template_Source</a>
+    <strong>source</strong>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $_template = null, <a href="Smarty.html">Smarty</a> $smarty = null, string $template_resource = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>initialize Source Object for given resource
+wrapper for backward compatibility to versions &lt; 3.1.22
+Either [$_template] or [$smarty, $template_resource] must be specified</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a></td>
+                <td>$_template</td>
+                <td>template object</td>
+            </tr>
+                    <tr>
+                <td><a href="Smarty.html">Smarty</a></td>
+                <td>$smarty</td>
+                <td>smarty object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$template_resource</td>
+                <td>resource identifier</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="Smarty_Template_Source.html">Smarty_Template_Source</a></td>
+            <td>Source Object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderUncompiled">
+        <div class="location">in <a href="Smarty_Resource.html#method_renderUncompiled">Smarty_Resource</a> at         line 21</div>
+        <code>                    
+    <strong>renderUncompiled</strong>(Smarty_Template_Source  $source, Smarty_Internal_Template  $_template)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Smarty_Template_Source </td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>Smarty_Internal_Template </td>
+                <td>$_template</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_populateCompiledFilepath">
+        <div class="location">at         line 76</div>
+        <code>                    
+    <strong>populateCompiledFilepath</strong>(Smarty_Template_Compiled  $compiled, Smarty_Internal_Template  $_template)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>populate Compiled Object with compiled filepath</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Smarty_Template_Compiled </td>
+                <td>$compiled</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>Smarty_Internal_Template </td>
+                <td>$_template</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_process">
+        <div class="location">at         line 40</div>
+        <code>                    
+    <strong>process</strong>(Smarty_Internal_Template  $_smarty_tpl)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>compile template from source</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Smarty_Internal_Template </td>
+                <td>$_smarty_tpl</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

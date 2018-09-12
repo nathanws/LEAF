@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Phinx\Migration\Manager | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Phinx_Migration_Manager" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Phinx.html">Phinx</a></li><li class="backslash">\</li><li><a href="../../Phinx/Migration.html">Migration</a></li><li class="backslash">\</li><li>Manager</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Manager
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Manager</strong>
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>EXIT_STATUS_DOWN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>EXIT_STATUS_MISSING</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_config">
+                                        protected                                        <a href="../../Phinx/Config/ConfigInterface.html"><abbr title="Phinx\Config\ConfigInterface">ConfigInterface</abbr></a>
+                </td>
+                <td>$config</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_input">
+                                        protected                                        <a href="../../Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a>
+                </td>
+                <td>$input</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_output">
+                                        protected                                        <a href="../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a>
+                </td>
+                <td>$output</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_environments">
+                                        protected                                        array
+                </td>
+                <td>$environments</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_migrations">
+                                        protected                                        array
+                </td>
+                <td>$migrations</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_seeds">
+                                        protected                                        array
+                </td>
+                <td>$seeds</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../Phinx/Config/ConfigInterface.html"><abbr title="Phinx\Config\ConfigInterface">ConfigInterface</abbr></a> $config, <a href="../../Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input, <a href="../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output)
+        
+                                            <p>Class Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printStatus">printStatus</a>(string $environment, null $format = null)
+        
+                                            <p>Prints the specified environment's migration status.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_migrateToDateTime">migrateToDateTime</a>(string $environment, <a target="_blank" href="http://php.net/DateTime">DateTime</a> $dateTime)
+        
+                                            <p>Migrate to the version of the database on a given date.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_migrate">migrate</a>(string $environment, int $version = null)
+        
+                                            <p>Migrate an environment to the specified version.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_executeMigration">executeMigration</a>(string $name, <a href="../../Phinx/Migration/MigrationInterface.html"><abbr title="Phinx\Migration\MigrationInterface">MigrationInterface</abbr></a> $migration, string $direction = MigrationInterface::UP)
+        
+                                            <p>Execute a migration against the specified environment.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_executeSeed">executeSeed</a>(string $name, <a href="../../Phinx/Seed/SeedInterface.html"><abbr title="Phinx\Seed\SeedInterface">SeedInterface</abbr></a> $seed)
+        
+                                            <p>Execute a seeder against the specified environment.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rollback">rollback</a>(string $environment, int|string $target = null, bool $force = false, bool $targetMustMatchVersion = true)
+        
+                                            <p>Rollback an environment to the specified version.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_seed">seed</a>(string $environment, string $seed = null)
+        
+                                            <p>Run database seeders against an environment.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEnvironments">setEnvironments</a>(array $environments = [])
+        
+                                            <p>Sets the environments.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Migration/Manager/Environment.html"><abbr title="Phinx\Migration\Manager\Environment">Environment</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEnvironment">getEnvironment</a>(string $name)
+        
+                                            <p>Gets the manager class for the given environment.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setInput">setInput</a>(<a href="../../Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input)
+        
+                                            <p>Sets the console input.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInput">getInput</a>()
+        
+                                            <p>Gets the console input.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOutput">setOutput</a>(<a href="../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output)
+        
+                                            <p>Sets the console output.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOutput">getOutput</a>()
+        
+                                            <p>Gets the console output.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMigrations">setMigrations</a>(array $migrations)
+        
+                                            <p>Sets the database migrations.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Migration/AbstractMigration.html"><abbr title="Phinx\Migration\AbstractMigration">AbstractMigration</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMigrations">getMigrations</a>()
+        
+                                            <p>Gets an array of the database migrations, indexed by migration name (aka creation time) and sorted in ascending
+order</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMigrationFiles">getMigrationFiles</a>()
+        
+                                            <p>Returns a list of migration files found in the provided migration paths.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSeeds">setSeeds</a>(array $seeds)
+        
+                                            <p>Sets the database seeders.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Seed/AbstractSeed.html"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSeeds">getSeeds</a>()
+        
+                                            <p>Gets an array of database seeders.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSeedFiles">getSeedFiles</a>()
+        
+                                            <p>Returns a list of seed files found in the provided seed paths.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setConfig">setConfig</a>(<a href="../../Phinx/Config/ConfigInterface.html"><abbr title="Phinx\Config\ConfigInterface">ConfigInterface</abbr></a> $config)
+        
+                                            <p>Sets the config.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Phinx/Config/ConfigInterface.html"><abbr title="Phinx\Config\ConfigInterface">ConfigInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConfig">getConfig</a>()
+        
+                                            <p>Gets the config.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toggleBreakpoint">toggleBreakpoint</a>(string $environment, int $version)
+        
+                                            <p>Toggles the breakpoint for a specific version.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeBreakpoints">removeBreakpoints</a>(string $environment)
+        
+                                            <p>Remove all breakpoints</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 89</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Phinx/Config/ConfigInterface.html"><abbr title="Phinx\Config\ConfigInterface">ConfigInterface</abbr></a> $config, <a href="../../Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input, <a href="../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class Constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Phinx/Config/ConfigInterface.html"><abbr title="Phinx\Config\ConfigInterface">ConfigInterface</abbr></a></td>
+                <td>$config</td>
+                <td>Configuration Object</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a></td>
+                <td>$input</td>
+                <td>Console Input</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a></td>
+                <td>$output</td>
+                <td>Console Output</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printStatus">
+        <div class="location">at         line 103</div>
+        <code>                    int
+    <strong>printStatus</strong>(string $environment, null $format = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prints the specified environment's migration status.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$environment</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null</td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>0 if all migrations are up, or an error code</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_migrateToDateTime">
+        <div class="location">at         line 280</div>
+        <code>                    void
+    <strong>migrateToDateTime</strong>(string $environment, <a target="_blank" href="http://php.net/DateTime">DateTime</a> $dateTime)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Migrate to the version of the database on a given date.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$environment</td>
+                <td>Environment</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
+                <td>$dateTime</td>
+                <td>Date to migrate to</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_migrate">
+        <div class="location">at         line 303</div>
+        <code>                    void
+    <strong>migrate</strong>(string $environment, int $version = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Migrate an environment to the specified version.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$environment</td>
+                <td>Environment</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$version</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeMigration">
+        <div class="location">at         line 364</div>
+        <code>                    void
+    <strong>executeMigration</strong>(string $name, <a href="../../Phinx/Migration/MigrationInterface.html"><abbr title="Phinx\Migration\MigrationInterface">MigrationInterface</abbr></a> $migration, string $direction = MigrationInterface::UP)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Execute a migration against the specified environment.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Environment Name</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Phinx/Migration/MigrationInterface.html"><abbr title="Phinx\Migration\MigrationInterface">MigrationInterface</abbr></a></td>
+                <td>$migration</td>
+                <td>Migration</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$direction</td>
+                <td>Direction</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeSeed">
+        <div class="location">at         line 393</div>
+        <code>                    void
+    <strong>executeSeed</strong>(string $name, <a href="../../Phinx/Seed/SeedInterface.html"><abbr title="Phinx\Seed\SeedInterface">SeedInterface</abbr></a> $seed)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Execute a seeder against the specified environment.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Environment Name</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Phinx/Seed/SeedInterface.html"><abbr title="Phinx\Seed\SeedInterface">SeedInterface</abbr></a></td>
+                <td>$seed</td>
+                <td>Seed</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rollback">
+        <div class="location">at         line 424</div>
+        <code>                    void
+    <strong>rollback</strong>(string $environment, int|string $target = null, bool $force = false, bool $targetMustMatchVersion = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Rollback an environment to the specified version.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$environment</td>
+                <td>Environment</td>
+            </tr>
+                    <tr>
+                <td>int|string</td>
+                <td>$target</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$force</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$targetMustMatchVersion</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_seed">
+        <div class="location">at         line 532</div>
+        <code>                    void
+    <strong>seed</strong>(string $environment, string $seed = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run database seeders against an environment.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$environment</td>
+                <td>Environment</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$seed</td>
+                <td>Seeder</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEnvironments">
+        <div class="location">at         line 559</div>
+        <code>                    <a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a>
+    <strong>setEnvironments</strong>(array $environments = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the environments.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$environments</td>
+                <td>Environments</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEnvironment">
+        <div class="location">at         line 573</div>
+        <code>                    <a href="../../Phinx/Migration/Manager/Environment.html"><abbr title="Phinx\Migration\Manager\Environment">Environment</abbr></a>
+    <strong>getEnvironment</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the manager class for the given environment.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Environment Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Migration/Manager/Environment.html"><abbr title="Phinx\Migration\Manager\Environment">Environment</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInput">
+        <div class="location">at         line 605</div>
+        <code>                    <a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a>
+    <strong>setInput</strong>(<a href="../../Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the console input.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a></td>
+                <td>$input</td>
+                <td>Input</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInput">
+        <div class="location">at         line 617</div>
+        <code>                    <a href="../../Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a>
+    <strong>getInput</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the console input.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOutput">
+        <div class="location">at         line 628</div>
+        <code>                    <a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a>
+    <strong>setOutput</strong>(<a href="../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the console output.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a></td>
+                <td>$output</td>
+                <td>Output</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOutput">
+        <div class="location">at         line 640</div>
+        <code>                    <a href="../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a>
+    <strong>getOutput</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the console output.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMigrations">
+        <div class="location">at         line 651</div>
+        <code>                    <a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a>
+    <strong>setMigrations</strong>(array $migrations)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the database migrations.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$migrations</td>
+                <td>Migrations</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMigrations">
+        <div class="location">at         line 665</div>
+        <code>                    <a href="../../Phinx/Migration/AbstractMigration.html"><abbr title="Phinx\Migration\AbstractMigration">AbstractMigration</abbr></a>[]
+    <strong>getMigrations</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets an array of the database migrations, indexed by migration name (aka creation time) and sorted in ascending
+order</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Migration/AbstractMigration.html"><abbr title="Phinx\Migration\AbstractMigration">AbstractMigration</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMigrationFiles">
+        <div class="location">at         line 737</div>
+        <code>            protected        string[]
+    <strong>getMigrationFiles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a list of migration files found in the provided migration paths.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSeeds">
+        <div class="location">at         line 764</div>
+        <code>                    <a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a>
+    <strong>setSeeds</strong>(array $seeds)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the database seeders.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$seeds</td>
+                <td>Seeders</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSeeds">
+        <div class="location">at         line 825</div>
+        <code>                    <a href="../../Phinx/Seed/AbstractSeed.html"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a>[]
+    <strong>getSeeds</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets an array of database seeders.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Seed/AbstractSeed.html"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSeedFiles">
+        <div class="location">at         line 883</div>
+        <code>            protected        string[]
+    <strong>getSeedFiles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a list of seed files found in the provided seed paths.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConfig">
+        <div class="location">at         line 910</div>
+        <code>                    <a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a>
+    <strong>setConfig</strong>(<a href="../../Phinx/Config/ConfigInterface.html"><abbr title="Phinx\Config\ConfigInterface">ConfigInterface</abbr></a> $config)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the config.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Phinx/Config/ConfigInterface.html"><abbr title="Phinx\Config\ConfigInterface">ConfigInterface</abbr></a></td>
+                <td>$config</td>
+                <td>Configuration Object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Migration/Manager.html"><abbr title="Phinx\Migration\Manager">Manager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConfig">
+        <div class="location">at         line 922</div>
+        <code>                    <a href="../../Phinx/Config/ConfigInterface.html"><abbr title="Phinx\Config\ConfigInterface">ConfigInterface</abbr></a>
+    <strong>getConfig</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the config.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Phinx/Config/ConfigInterface.html"><abbr title="Phinx\Config\ConfigInterface">ConfigInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toggleBreakpoint">
+        <div class="location">at         line 934</div>
+        <code>                    void
+    <strong>toggleBreakpoint</strong>(string $environment, int $version)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Toggles the breakpoint for a specific version.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$environment</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$version</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeBreakpoints">
+        <div class="location">at         line 976</div>
+        <code>                    void
+    <strong>removeBreakpoints</strong>(string $environment)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove all breakpoints</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$environment</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

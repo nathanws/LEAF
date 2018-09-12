@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Phinx\Db\Table\ForeignKey | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Phinx_Db_Table_ForeignKey" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Phinx.html">Phinx</a></li><li class="backslash">\</li><li><a href="../../../Phinx/Db.html">Db</a></li><li class="backslash">\</li><li><a href="../../../Phinx/Db/Table.html">Table</a></li><li class="backslash">\</li><li>ForeignKey</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ForeignKey
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ForeignKey</strong>
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>CASCADE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>RESTRICT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SET_NULL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>NO_ACTION</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_columns">
+                                        protected                                        array
+                </td>
+                <td>$columns</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_referencedTable">
+                                        protected                                        <a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </td>
+                <td>$referencedTable</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_referencedColumns">
+                                        protected                                        array
+                </td>
+                <td>$referencedColumns</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_onDelete">
+                                        protected                                        string
+                </td>
+                <td>$onDelete</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_onUpdate">
+                                        protected                                        string
+                </td>
+                <td>$onUpdate</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_constraint">
+                                        protected                                        string|boolean
+                </td>
+                <td>$constraint</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setColumns">setColumns</a>(array|string $columns)
+        
+                                            <p>Sets the foreign key columns.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getColumns">getColumns</a>()
+        
+                                            <p>Gets the foreign key columns.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setReferencedTable">setReferencedTable</a>(<a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a> $table)
+        
+                                            <p>Sets the foreign key referenced table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReferencedTable">getReferencedTable</a>()
+        
+                                            <p>Gets the foreign key referenced table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setReferencedColumns">setReferencedColumns</a>(array $referencedColumns)
+        
+                                            <p>Sets the foreign key referenced columns.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReferencedColumns">getReferencedColumns</a>()
+        
+                                            <p>Gets the foreign key referenced columns.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOnDelete">setOnDelete</a>(string $onDelete)
+        
+                                            <p>Sets ON DELETE action for the foreign key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOnDelete">getOnDelete</a>()
+        
+                                            <p>Gets ON DELETE action for the foreign key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOnUpdate">getOnUpdate</a>()
+        
+                                            <p>Gets ON UPDATE action for the foreign key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOnUpdate">setOnUpdate</a>(string $onUpdate)
+        
+                                            <p>Sets ON UPDATE action for the foreign key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setConstraint">setConstraint</a>(string $constraint)
+        
+                                            <p>Sets constraint for the foreign key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConstraint">getConstraint</a>()
+        
+                                            <p>Gets constraint name for the foreign key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOptions">setOptions</a>(array $options)
+        
+                                            <p>Utility method that maps an array of index options to this objects methods.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeAction">normalizeAction</a>(string $action)
+        
+                                            <p>From passed value checks if it's correct and fixes if needed</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setColumns">
+        <div class="location">at         line 77</div>
+        <code>                    <a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>
+    <strong>setColumns</strong>(array|string $columns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the foreign key columns.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getColumns">
+        <div class="location">at         line 89</div>
+        <code>                    array
+    <strong>getColumns</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the foreign key columns.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setReferencedTable">
+        <div class="location">at         line 100</div>
+        <code>                    <a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>
+    <strong>setReferencedTable</strong>(<a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a> $table)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the foreign key referenced table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReferencedTable">
+        <div class="location">at         line 112</div>
+        <code>                    <a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>getReferencedTable</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the foreign key referenced table.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setReferencedColumns">
+        <div class="location">at         line 123</div>
+        <code>                    <a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>
+    <strong>setReferencedColumns</strong>(array $referencedColumns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the foreign key referenced columns.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$referencedColumns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReferencedColumns">
+        <div class="location">at         line 135</div>
+        <code>                    array
+    <strong>getReferencedColumns</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the foreign key referenced columns.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOnDelete">
+        <div class="location">at         line 146</div>
+        <code>                    <a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>
+    <strong>setOnDelete</strong>(string $onDelete)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets ON DELETE action for the foreign key.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$onDelete</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOnDelete">
+        <div class="location">at         line 158</div>
+        <code>                    string
+    <strong>getOnDelete</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets ON DELETE action for the foreign key.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOnUpdate">
+        <div class="location">at         line 168</div>
+        <code>                    string
+    <strong>getOnUpdate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets ON UPDATE action for the foreign key.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOnUpdate">
+        <div class="location">at         line 179</div>
+        <code>                    <a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>
+    <strong>setOnUpdate</strong>(string $onUpdate)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets ON UPDATE action for the foreign key.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$onUpdate</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConstraint">
+        <div class="location">at         line 192</div>
+        <code>                    <a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>
+    <strong>setConstraint</strong>(string $constraint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets constraint for the foreign key.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$constraint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConstraint">
+        <div class="location">at         line 204</div>
+        <code>                    string|bool
+    <strong>getConstraint</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets constraint name for the foreign key.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOptions">
+        <div class="location">at         line 217</div>
+        <code>                    <a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a>
+    <strong>setOptions</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Utility method that maps an array of index options to this objects methods.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Options</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeAction">
+        <div class="location">at         line 247</div>
+        <code>            protected        string
+    <strong>normalizeAction</strong>(string $action)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>From passed value checks if it's correct and fixes if needed</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$action</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

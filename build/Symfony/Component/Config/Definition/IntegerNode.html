@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Symfony\Component\Config\Definition\IntegerNode | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Symfony_Component_Config_Definition_IntegerNode" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Symfony.html">Symfony</a></li><li class="backslash">\</li><li><a href="../../../../Symfony/Component.html">Component</a></li><li class="backslash">\</li><li><a href="../../../../Symfony/Component/Config.html">Config</a></li><li class="backslash">\</li><li><a href="../../../../Symfony/Component/Config/Definition.html">Definition</a></li><li class="backslash">\</li><li>IntegerNode</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            IntegerNode
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>IntegerNode</strong>        extends <a href="../../../../Symfony/Component/Config/Definition/NumericNode.html"><abbr title="Symfony\Component\Config\Definition\NumericNode">NumericNode</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This node represents an integer value in the config tree.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_name">
+                                        protected                                        
+                </td>
+                <td>$name</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#property_name"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parent">
+                                        protected                                        
+                </td>
+                <td>$parent</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#property_parent"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_normalizationClosures">
+                                        protected                                        
+                </td>
+                <td>$normalizationClosures</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#property_normalizationClosures"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_finalValidationClosures">
+                                        protected                                        
+                </td>
+                <td>$finalValidationClosures</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#property_finalValidationClosures"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_allowOverwrite">
+                                        protected                                        
+                </td>
+                <td>$allowOverwrite</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#property_allowOverwrite"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_required">
+                                        protected                                        
+                </td>
+                <td>$required</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#property_required"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_deprecationMessage">
+                                        protected                                        
+                </td>
+                <td>$deprecationMessage</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#property_deprecationMessage"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_equivalentValues">
+                                        protected                                        
+                </td>
+                <td>$equivalentValues</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#property_equivalentValues"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_attributes">
+                                        protected                                        
+                </td>
+                <td>$attributes</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#property_attributes"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_defaultValueSet">
+                                        protected                                        
+                </td>
+                <td>$defaultValueSet</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#property_defaultValueSet"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_defaultValue">
+                                        protected                                        
+                </td>
+                <td>$defaultValue</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#property_defaultValue"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_allowEmptyValue">
+                                        protected                                        
+                </td>
+                <td>$allowEmptyValue</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#property_allowEmptyValue"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_min">
+                                        protected                                        
+                </td>
+                <td>$min</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/NumericNode.html#property_min"><abbr title="Symfony\Component\Config\Definition\NumericNode">NumericNode</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_max">
+                                        protected                                        
+                </td>
+                <td>$max</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/NumericNode.html#property_max"><abbr title="Symfony\Component\Config\Definition\NumericNode">NumericNode</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string|null $name, <a href="../../../../Symfony/Component/Config/Definition/NodeInterface.html"><abbr title="Symfony\Component\Config\Definition\NodeInterface">NodeInterface</abbr></a> $parent = null, $min = null, $max = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/NumericNode.html#method___construct"><abbr title="Symfony\Component\Config\Definition\NumericNode">NumericNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAttribute">setAttribute</a>($key, $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setAttribute"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAttribute">getAttribute</a>($key, $default = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_getAttribute"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasAttribute">hasAttribute</a>($key)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_hasAttribute"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAttributes">getAttributes</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_getAttributes"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAttributes">setAttributes</a>(array $attributes)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setAttributes"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeAttribute">removeAttribute</a>($key)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_removeAttribute"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setInfo">setInfo</a>(string $info)
+        
+                                            <p>Sets an info message.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setInfo"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInfo">getInfo</a>()
+        
+                                            <p>Returns info message.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_getInfo"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setExample">setExample</a>(string|array $example)
+        
+                                            <p>Sets the example configuration for this node.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setExample"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExample">getExample</a>()
+        
+                                            <p>Retrieves the example configuration for this node.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_getExample"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addEquivalentValue">addEquivalentValue</a>(mixed $originalValue, mixed $equivalentValue)
+        
+                                            <p>Adds an equivalent value.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_addEquivalentValue"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRequired">setRequired</a>(bool $boolean)
+        
+                                            <p>Set this node as required.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setRequired"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDeprecated">setDeprecated</a>(string|null $message)
+        
+                                            <p>Sets this node as deprecated.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setDeprecated"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAllowOverwrite">setAllowOverwrite</a>(bool $allow)
+        
+                                            <p>Sets if this node can be overridden.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setAllowOverwrite"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNormalizationClosures">setNormalizationClosures</a>(array $closures)
+        
+                                            <p>Sets the closures used for normalization.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setNormalizationClosures"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFinalValidationClosures">setFinalValidationClosures</a>(array $closures)
+        
+                                            <p>Sets the closures used for final validation.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setFinalValidationClosures"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isRequired">isRequired</a>()
+        
+                                            <p>Checks if this node is required.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_isRequired"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isDeprecated">isDeprecated</a>()
+        
+                                            <p>Checks if this node is deprecated.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_isDeprecated"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDeprecationMessage">getDeprecationMessage</a>(string $node, string $path)
+        
+                                            <p>Returns the deprecated message.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_getDeprecationMessage"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Returns the name of this node.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_getName"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPath">getPath</a>()
+        
+                                            <p>Retrieves the path of this node.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_getPath"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_merge">merge</a>(mixed $leftSide, mixed $rightSide)
+        
+                                            <p>Merges two values together.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_merge"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalize">normalize</a>(mixed $value)
+        
+                                            <p>Normalizes a value, applying all normalization closures.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_normalize"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Config\Definition\$value">$value</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_preNormalize">preNormalize</a>($value)
+        
+                                            <p>Normalizes the value before any other normalization is applied.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_preNormalize"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Symfony/Component/Config/Definition/NodeInterface.html"><abbr title="Symfony\Component\Config\Definition\NodeInterface">NodeInterface</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParent">getParent</a>()
+        
+                                            <p>Returns parent node for this node.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_getParent"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_finalize">finalize</a>(mixed $value)
+        
+                                            <p>Finalizes a value, applying all finalization closures.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_finalize"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateType">validateType</a>(mixed $value)
+        
+                                            <p>Validates the type of a Node.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeValue">normalizeValue</a>(mixed $value)
+        
+                                            <p>Normalizes the value.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#method_normalizeValue"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mergeValues">mergeValues</a>(mixed $leftSide, mixed $rightSide)
+        
+                                            <p>Merges two values together.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#method_mergeValues"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_finalizeValue">finalizeValue</a>(mixed $value)
+        
+                                            <p>Finalizes a value.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/NumericNode.html#method_finalizeValue"><abbr title="Symfony\Component\Config\Definition\NumericNode">NumericNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaultValue">setDefaultValue</a>($value)
+        
+                                            <p>{@inheritdoc}</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#method_setDefaultValue"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasDefaultValue">hasDefaultValue</a>()
+        
+                                            <p>Returns true when the node has a default value.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#method_hasDefaultValue"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultValue">getDefaultValue</a>()
+        
+                                            <p>Returns the default value of the node.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#method_getDefaultValue"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAllowEmptyValue">setAllowEmptyValue</a>(bool $boolean)
+        
+                                            <p>Sets if this node is allowed to have an empty value.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#method_setAllowEmptyValue"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setName">setName</a>(string $name)
+        
+                                            <p>Sets the name of the node.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#method_setName"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isValueEmpty">isValueEmpty</a>(mixed $value)
+        
+                                            <p>Evaluates if the given value is to be treated as empty.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Config/Definition/NumericNode.html#method_isValueEmpty"><abbr title="Symfony\Component\Config\Definition\NumericNode">NumericNode</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/NumericNode.html#method___construct"><abbr title="Symfony\Component\Config\Definition\NumericNode">NumericNode</abbr></a> at         line 26</div>
+        <code>                    
+    <strong>__construct</strong>(string|null $name, <a href="../../../../Symfony/Component/Config/Definition/NodeInterface.html"><abbr title="Symfony\Component\Config\Definition\NodeInterface">NodeInterface</abbr></a> $parent = null, $min = null, $max = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Symfony/Component/Config/Definition/NodeInterface.html"><abbr title="Symfony\Component\Config\Definition\NodeInterface">NodeInterface</abbr></a></td>
+                <td>$parent</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$min</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$max</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>if the name contains a period</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAttribute">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setAttribute"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 49</div>
+        <code>                    
+    <strong>setAttribute</strong>($key, $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttribute">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_getAttribute"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 54</div>
+        <code>                    
+    <strong>getAttribute</strong>($key, $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasAttribute">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_hasAttribute"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 59</div>
+        <code>                    
+    <strong>hasAttribute</strong>($key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttributes">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_getAttributes"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 64</div>
+        <code>                    
+    <strong>getAttributes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAttributes">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setAttributes"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 69</div>
+        <code>                    
+    <strong>setAttributes</strong>(array $attributes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeAttribute">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_removeAttribute"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 74</div>
+        <code>                    
+    <strong>removeAttribute</strong>($key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInfo">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setInfo"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 84</div>
+        <code>                    
+    <strong>setInfo</strong>(string $info)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets an info message.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$info</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInfo">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_getInfo"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 94</div>
+        <code>                    string
+    <strong>getInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns info message.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The info text</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setExample">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setExample"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 104</div>
+        <code>                    
+    <strong>setExample</strong>(string|array $example)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the example configuration for this node.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$example</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExample">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_getExample"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 114</div>
+        <code>                    string|array
+    <strong>getExample</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the example configuration for this node.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|array</td>
+            <td>The example</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addEquivalentValue">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_addEquivalentValue"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 125</div>
+        <code>                    
+    <strong>addEquivalentValue</strong>(mixed $originalValue, mixed $equivalentValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds an equivalent value.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$originalValue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$equivalentValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRequired">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setRequired"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 135</div>
+        <code>                    
+    <strong>setRequired</strong>(bool $boolean)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set this node as required.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$boolean</td>
+                <td>Required node</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDeprecated">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setDeprecated"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 148</div>
+        <code>                    
+    <strong>setDeprecated</strong>(string|null $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets this node as deprecated.</p>                    <p>You can use %node% and %path% placeholders in your message to display,
+respectively, the node name and its complete path.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$message</td>
+                <td>Deprecated message</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAllowOverwrite">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setAllowOverwrite"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 158</div>
+        <code>                    
+    <strong>setAllowOverwrite</strong>(bool $allow)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets if this node can be overridden.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$allow</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNormalizationClosures">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setNormalizationClosures"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 168</div>
+        <code>                    
+    <strong>setNormalizationClosures</strong>(array $closures)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the closures used for normalization.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$closures</td>
+                <td>An array of Closures used for normalization</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFinalValidationClosures">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_setFinalValidationClosures"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 178</div>
+        <code>                    
+    <strong>setFinalValidationClosures</strong>(array $closures)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the closures used for final validation.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$closures</td>
+                <td>An array of Closures used for final validation</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isRequired">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_isRequired"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 188</div>
+        <code>                    bool
+    <strong>isRequired</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if this node is required.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>If the node is required</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDeprecated">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_isDeprecated"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 198</div>
+        <code>                    bool
+    <strong>isDeprecated</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if this node is deprecated.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDeprecationMessage">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_getDeprecationMessage"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 211</div>
+        <code>                    string
+    <strong>getDeprecationMessage</strong>(string $node, string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the deprecated message.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$node</td>
+                <td>the configuration node name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>the path of the node</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_getName"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 221</div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the name of this node.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The name of the node</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPath">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_getPath"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 231</div>
+        <code>                    string
+    <strong>getPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the path of this node.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The node path</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_merge">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_merge"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 252</div>
+        <code>final                    mixed
+    <strong>merge</strong>(mixed $leftSide, mixed $rightSide)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Merges two values together.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$leftSide</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$rightSide</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The merged values</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Symfony/Component/Config/Definition/Exception/ForbiddenOverwriteException.html"><abbr title="Symfony\Component\Config\Definition\Exception\ForbiddenOverwriteException">ForbiddenOverwriteException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalize">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_normalize"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 276</div>
+        <code>final                    mixed
+    <strong>normalize</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Normalizes a value, applying all normalization closures.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to normalize</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The normalized value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_preNormalize">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_preNormalize"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 306</div>
+        <code>            protected        <abbr title="Symfony\Component\Config\Definition\$value">$value</abbr>
+    <strong>preNormalize</strong>($value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Normalizes the value before any other normalization is applied.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Config\Definition\$value">$value</abbr></td>
+            <td>The normalized array value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParent">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_getParent"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 316</div>
+        <code>                    <a href="../../../../Symfony/Component/Config/Definition/NodeInterface.html"><abbr title="Symfony\Component\Config\Definition\NodeInterface">NodeInterface</abbr></a>|null
+    <strong>getParent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns parent node for this node.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Symfony/Component/Config/Definition/NodeInterface.html"><abbr title="Symfony\Component\Config\Definition\NodeInterface">NodeInterface</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_finalize">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/BaseNode.html#method_finalize"><abbr title="Symfony\Component\Config\Definition\BaseNode">BaseNode</abbr></a> at         line 331</div>
+        <code>final                    mixed
+    <strong>finalize</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finalizes a value, applying all finalization closures.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to finalize</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The finalized value</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Symfony/Component/Config/Definition/Exception/Exception.html"><abbr title="Symfony\Component\Config\Definition\Exception\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Symfony/Component/Config/Definition/Exception/InvalidConfigurationException.html"><abbr title="Symfony\Component\Config\Definition\Exception\InvalidConfigurationException">InvalidConfigurationException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateType">
+        <div class="location">at         line 26</div>
+        <code>            protected        
+    <strong>validateType</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Validates the type of a Node.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to validate</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Symfony/Component/Config/Definition/Exception/InvalidTypeException.html"><abbr title="Symfony\Component\Config\Definition\Exception\InvalidTypeException">InvalidTypeException</abbr></a></td>
+                <td>when the value is invalid</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeValue">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#method_normalizeValue"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a> at         line 107</div>
+        <code>            protected        mixed
+    <strong>normalizeValue</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Normalizes the value.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to normalize</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The normalized value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mergeValues">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#method_mergeValues"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a> at         line 115</div>
+        <code>            protected        mixed
+    <strong>mergeValues</strong>(mixed $leftSide, mixed $rightSide)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Merges two values together.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$leftSide</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$rightSide</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The merged value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_finalizeValue">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/NumericNode.html#method_finalizeValue"><abbr title="Symfony\Component\Config\Definition\NumericNode">NumericNode</abbr></a> at         line 36</div>
+        <code>            protected        mixed
+    <strong>finalizeValue</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finalizes a value.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to finalize</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The finalized value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultValue">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#method_setDefaultValue"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a> at         line 33</div>
+        <code>                    
+    <strong>setDefaultValue</strong>($value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>{@inheritdoc}</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasDefaultValue">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#method_hasDefaultValue"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a> at         line 42</div>
+        <code>                    bool
+    <strong>hasDefaultValue</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns true when the node has a default value.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>If the node has a default value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultValue">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#method_getDefaultValue"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a> at         line 50</div>
+        <code>                    mixed
+    <strong>getDefaultValue</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the default value of the node.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The default value</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td>if the node has no default value</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAllowEmptyValue">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#method_setAllowEmptyValue"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a> at         line 62</div>
+        <code>                    
+    <strong>setAllowEmptyValue</strong>(bool $boolean)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets if this node is allowed to have an empty value.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$boolean</td>
+                <td>True if this entity will accept empty values</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/VariableNode.html#method_setName"><abbr title="Symfony\Component\Config\Definition\VariableNode">VariableNode</abbr></a> at         line 70</div>
+        <code>                    
+    <strong>setName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the name of the node.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name of the node</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isValueEmpty">
+        <div class="location">in <a href="../../../../Symfony/Component/Config/Definition/NumericNode.html#method_isValueEmpty"><abbr title="Symfony\Component\Config\Definition\NumericNode">NumericNode</abbr></a> at         line 59</div>
+        <code>            protected        bool
+    <strong>isValueEmpty</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Evaluates if the given value is to be treated as empty.</p>                    <p>By default, PHP's empty() function is used to test for emptiness. This
+method may be overridden by subtypes to better match their understanding
+of empty data.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

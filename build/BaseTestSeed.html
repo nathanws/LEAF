@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>BaseTestSeed | API</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:BaseTestSeed" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                            <li><a href="namespaces.html">Namespaces</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            BaseTestSeed
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>BaseTestSeed</strong>        extends <a href="Phinx/Seed/AbstractSeed.html"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>A base set of data to test against.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_adapter">
+                                        protected                                        <a href="Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+                </td>
+                <td>$adapter</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#property_adapter"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_input">
+                                        protected                                        <a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a>
+                </td>
+                <td>$input</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#property_input"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_output">
+                                        protected                                        <a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a>
+                </td>
+                <td>$output</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#property_output"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input = null, <a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output = null)
+        
+                                            <p>Class Constructor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method___construct"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_init">init</a>()
+        
+                                            <p>Initialize method.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method_init"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_run">run</a>()
+        
+                                            <p>Run the seeder.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDependencies">getDependencies</a>()
+        
+                                            <p>Return seeds dependencies.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method_getDependencies"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="Phinx/Seed/SeedInterface.html"><abbr title="Phinx\Seed\SeedInterface">SeedInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAdapter">setAdapter</a>(<a href="Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a> $adapter)
+        
+                                            <p>Sets the database adapter.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method_setAdapter"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAdapter">getAdapter</a>()
+        
+                                            <p>Gets the database adapter.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method_getAdapter"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="Phinx/Seed/SeedInterface.html"><abbr title="Phinx\Seed\SeedInterface">SeedInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setInput">setInput</a>(<a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input)
+        
+                                            <p>Sets the input object to be used in migration object</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method_setInput"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInput">getInput</a>()
+        
+                                            <p>Gets the input object to be used in migration object</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method_getInput"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="Phinx/Seed/SeedInterface.html"><abbr title="Phinx\Seed\SeedInterface">SeedInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOutput">setOutput</a>(<a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output)
+        
+                                            <p>Sets the output object to be used in migration object</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method_setOutput"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOutput">getOutput</a>()
+        
+                                            <p>Gets the output object to be used in migration object</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method_getOutput"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Gets the name.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method_getName"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>(string $sql)
+        
+                                            <p>Executes a SQL statement and returns the number of affected rows.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method_execute"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_query">query</a>(string $sql)
+        
+                                            <p>Executes a SQL statement and returns the result as an array.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method_query"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetchRow">fetchRow</a>(string $sql)
+        
+                                            <p>Executes a query and returns only one row as an array.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method_fetchRow"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetchAll">fetchAll</a>(string $sql)
+        
+                                            <p>Executes a query and returns an array of rows.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method_fetchAll"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insert">insert</a>($table, array $data)
+        
+                                            <p>Insert data into a table.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method_insert"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasTable">hasTable</a>(string $tableName)
+        
+                                            <p>Checks to see if a table exists.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method_hasTable"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_table">table</a>(string $tableName, array $options = [])
+        
+                                            <p>Returns an instance of the <code>\Table</code> class.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Phinx/Seed/AbstractSeed.html#method_table"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method___construct"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 69</div>
+        <code>final                    
+    <strong>__construct</strong>(<a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input = null, <a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class Constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_init">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method_init"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 86</div>
+        <code>            protected        void
+    <strong>init</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initialize method.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_run">
+        <div class="location">at         line 13</div>
+        <code>                    void
+    <strong>run</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run the seeder.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDependencies">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method_getDependencies"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 102</div>
+        <code>                    array
+    <strong>getDependencies</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return seeds dependencies.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAdapter">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method_setAdapter"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 110</div>
+        <code>                    <a href="Phinx/Seed/SeedInterface.html"><abbr title="Phinx\Seed\SeedInterface">SeedInterface</abbr></a>
+    <strong>setAdapter</strong>(<a href="Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a> $adapter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the database adapter.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a></td>
+                <td>$adapter</td>
+                <td>Database Adapter</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="Phinx/Seed/SeedInterface.html"><abbr title="Phinx\Seed\SeedInterface">SeedInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAdapter">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method_getAdapter"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 120</div>
+        <code>                    <a href="Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+    <strong>getAdapter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the database adapter.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInput">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method_setInput"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 128</div>
+        <code>                    <a href="Phinx/Seed/SeedInterface.html"><abbr title="Phinx\Seed\SeedInterface">SeedInterface</abbr></a>
+    <strong>setInput</strong>(<a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the input object to be used in migration object</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="Phinx/Seed/SeedInterface.html"><abbr title="Phinx\Seed\SeedInterface">SeedInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInput">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method_getInput"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 138</div>
+        <code>                    <a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a>
+    <strong>getInput</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the input object to be used in migration object</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOutput">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method_setOutput"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 146</div>
+        <code>                    <a href="Phinx/Seed/SeedInterface.html"><abbr title="Phinx\Seed\SeedInterface">SeedInterface</abbr></a>
+    <strong>setOutput</strong>(<a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the output object to be used in migration object</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="Phinx/Seed/SeedInterface.html"><abbr title="Phinx\Seed\SeedInterface">SeedInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOutput">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method_getOutput"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 156</div>
+        <code>                    <a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a>
+    <strong>getOutput</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the output object to be used in migration object</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method_getName"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 164</div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the name.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method_execute"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 172</div>
+        <code>                    int
+    <strong>execute</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a SQL statement and returns the number of affected rows.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>SQL</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_query">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method_query"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 180</div>
+        <code>                    array
+    <strong>query</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a SQL statement and returns the result as an array.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>SQL</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetchRow">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method_fetchRow"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 188</div>
+        <code>                    array
+    <strong>fetchRow</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a query and returns only one row as an array.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>SQL</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetchAll">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method_fetchAll"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 196</div>
+        <code>                    array
+    <strong>fetchAll</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a query and returns an array of rows.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>SQL</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method_insert"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 204</div>
+        <code>                    void
+    <strong>insert</strong>($table, array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Insert data into a table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasTable">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method_hasTable"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 216</div>
+        <code>                    bool
+    <strong>hasTable</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks to see if a table exists.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>Table Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_table">
+        <div class="location">in <a href="Phinx/Seed/AbstractSeed.html#method_table"><abbr title="Phinx\Seed\AbstractSeed">AbstractSeed</abbr></a> at         line 224</div>
+        <code>                    <a href="Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>table</strong>(string $tableName, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns an instance of the <code>\Table</code> class.</p>                    <p>You can use this class to create and manipulate tables.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>Table Name</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Options</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

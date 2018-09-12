@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>GuzzleHttp\Psr7\ServerRequest | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:GuzzleHttp_Psr7_ServerRequest" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../GuzzleHttp.html">GuzzleHttp</a></li><li class="backslash">\</li><li><a href="../../GuzzleHttp/Psr7.html">Psr7</a></li><li class="backslash">\</li><li>ServerRequest</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ServerRequest
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ServerRequest</strong>        extends <a href="../../GuzzleHttp/Psr7/Request.html"><abbr title="GuzzleHttp\Psr7\Request">Request</abbr></a>        implements
+        <a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Server-side HTTP request</p>            <p>Extends the Request definition to add methods for accessing incoming data,
+specifically server parameters, cookies, matched path parameters, query
+string arguments, body parameters, and upload file information.</p>
+
+<p>"Attributes" are discovered via decomposing the request (and usually
+specifically the URI path), and typically will be injected by the application.</p>
+
+<p>Requests are considered immutable; all methods that might change state are
+implemented such that they retain the internal state of the current
+message and return a new instance that contains the changed state.</p>                    </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../GuzzleHttp/Psr7/MessageTrait.html"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Trait implementing functionality common to requests and responses.
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProtocolVersion">getProtocolVersion</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getProtocolVersion"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withProtocolVersion">withProtocolVersion</a>($version)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withProtocolVersion"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHeaders">getHeaders</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getHeaders"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasHeader">hasHeader</a>($header)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_hasHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHeader">getHeader</a>($header)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHeaderLine">getHeaderLine</a>($header)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getHeaderLine"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withHeader">withHeader</a>($header, $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withAddedHeader">withAddedHeader</a>($header, $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withAddedHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withoutHeader">withoutHeader</a>($header)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withoutHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBody">getBody</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getBody"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withBody">withBody</a>(<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $body)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withBody"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $method, string|<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri, array $headers = [], string|null|resource|<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $body = null, string $version = &#039;1.1&#039;, array $serverParams = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestTarget">getRequestTarget</a>()
+        
+                                            <p>Retrieves the message's request target.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/Request.html#method_getRequestTarget"><abbr title="GuzzleHttp\Psr7\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withRequestTarget">withRequestTarget</a>(mixed $requestTarget)
+        
+                                            <p>Return an instance with the specific request-target.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/Request.html#method_withRequestTarget"><abbr title="GuzzleHttp\Psr7\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMethod">getMethod</a>()
+        
+                                            <p>Retrieves the HTTP method of the request.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/Request.html#method_getMethod"><abbr title="GuzzleHttp\Psr7\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withMethod">withMethod</a>(string $method)
+        
+                                            <p>Return an instance with the provided HTTP method.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/Request.html#method_withMethod"><abbr title="GuzzleHttp\Psr7\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUri">getUri</a>()
+        
+                                            <p>Retrieves the URI instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/Request.html#method_getUri"><abbr title="GuzzleHttp\Psr7\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withUri">withUri</a>(<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri, bool $preserveHost = false)
+        
+                                            <p>Returns an instance with the provided URI.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../GuzzleHttp/Psr7/Request.html#method_withUri"><abbr title="GuzzleHttp\Psr7\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeFiles">normalizeFiles</a>(array $files)
+        
+                                            <p>Return an UploadedFile instance array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fromGlobals">fromGlobals</a>()
+        
+                                            <p>Return a ServerRequest populated with superglobals:
+$_GET
+$_POST
+$_COOKIE
+$_FILES
+$_SERVER</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUriFromGlobals">getUriFromGlobals</a>()
+        
+                                            <p>Get a Uri populated with values from $_SERVER.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getServerParams">getServerParams</a>()
+        
+                                            <p>Retrieve server parameters.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUploadedFiles">getUploadedFiles</a>()
+        
+                                            <p>Retrieve normalized file upload data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withUploadedFiles">withUploadedFiles</a>(array $uploadedFiles)
+        
+                                            <p>Create a new instance with the specified uploaded files.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCookieParams">getCookieParams</a>()
+        
+                                            <p>Retrieve cookies.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withCookieParams">withCookieParams</a>(array $cookies)
+        
+                                            <p>Return an instance with the specified cookies.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getQueryParams">getQueryParams</a>()
+        
+                                            <p>Retrieve query string arguments.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withQueryParams">withQueryParams</a>(array $query)
+        
+                                            <p>Return an instance with the specified query string arguments.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|array|object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParsedBody">getParsedBody</a>()
+        
+                                            <p>Retrieve any parameters provided in the request body.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withParsedBody">withParsedBody</a>(null|array|object $data)
+        
+                                            <p>Return an instance with the specified body parameters.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAttributes">getAttributes</a>()
+        
+                                            <p>Retrieve attributes derived from the request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAttribute">getAttribute</a>($attribute, mixed $default = null)
+        
+                                            <p>Retrieve a single derived request attribute.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withAttribute">withAttribute</a>($attribute, mixed $value)
+        
+                                            <p>Return an instance with the specified derived request attribute.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withoutAttribute">withoutAttribute</a>($attribute)
+        
+                                            <p>Return an instance that removes the specified derived request attribute.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getProtocolVersion">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getProtocolVersion"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 23</div>
+        <code>                    
+    <strong>getProtocolVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withProtocolVersion">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withProtocolVersion"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 28</div>
+        <code>                    
+    <strong>withProtocolVersion</strong>($version)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$version</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeaders">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getHeaders"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 39</div>
+        <code>                    
+    <strong>getHeaders</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasHeader">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_hasHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 44</div>
+        <code>                    
+    <strong>hasHeader</strong>($header)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$header</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeader">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 49</div>
+        <code>                    
+    <strong>getHeader</strong>($header)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$header</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeaderLine">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getHeaderLine"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 62</div>
+        <code>                    
+    <strong>getHeaderLine</strong>($header)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$header</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withHeader">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 67</div>
+        <code>                    
+    <strong>withHeader</strong>($header, $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$header</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withAddedHeader">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withAddedHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 86</div>
+        <code>                    
+    <strong>withAddedHeader</strong>($header, $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$header</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withoutHeader">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withoutHeader"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 107</div>
+        <code>                    
+    <strong>withoutHeader</strong>($header)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$header</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBody">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_getBody"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 123</div>
+        <code>                    
+    <strong>getBody</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withBody">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/MessageTrait.html#method_withBody"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a> at         line 132</div>
+        <code>                    
+    <strong>withBody</strong>(<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $body)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a></td>
+                <td>$body</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 65</div>
+        <code>                    
+    <strong>__construct</strong>(string $method, string|<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri, array $headers = [], string|null|resource|<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $body = null, string $version = &#039;1.1&#039;, array $serverParams = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>HTTP method</td>
+            </tr>
+                    <tr>
+                <td>string|<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+                <td>$uri</td>
+                <td>URI</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td>Request headers</td>
+            </tr>
+                    <tr>
+                <td>string|null|resource|<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a></td>
+                <td>$body</td>
+                <td>Request body</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$version</td>
+                <td>Protocol version</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$serverParams</td>
+                <td>Typically the $_SERVER superglobal</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestTarget">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/Request.html#method_getRequestTarget"><abbr title="GuzzleHttp\Psr7\Request">Request</abbr></a> at         line 57</div>
+        <code>                    string
+    <strong>getRequestTarget</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the message's request target.</p>                    <p>Retrieves the message's request-target either as it will appear (for
+clients), as it appeared at request (for servers), or as it was
+specified for the instance (see withRequestTarget()).</p>
+
+<p>In most cases, this will be the origin-form of the composed URI,
+unless a value was provided to the concrete implementation (see
+withRequestTarget() below).</p>
+
+<p>If no URI is available, and no request-target has been specifically
+provided, this method MUST return the string "/".</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withRequestTarget">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/Request.html#method_withRequestTarget"><abbr title="GuzzleHttp\Psr7\Request">Request</abbr></a> at         line 74</div>
+        <code>                    <a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a>
+    <strong>withRequestTarget</strong>(mixed $requestTarget)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an instance with the specific request-target.</p>                    <p>If the request needs a non-origin-form request-target — e.g., for
+specifying an absolute-form, authority-form, or asterisk-form —
+this method may be used to create an instance with the specified
+request-target, verbatim.</p>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return an instance that has the
+changed request target.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$requestTarget</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMethod">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/Request.html#method_getMethod"><abbr title="GuzzleHttp\Psr7\Request">Request</abbr></a> at         line 87</div>
+        <code>                    string
+    <strong>getMethod</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the HTTP method of the request.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Returns the request method.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withMethod">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/Request.html#method_withMethod"><abbr title="GuzzleHttp\Psr7\Request">Request</abbr></a> at         line 92</div>
+        <code>                    <a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a>
+    <strong>withMethod</strong>(string $method)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an instance with the provided HTTP method.</p>                    <p>While HTTP method names are typically all uppercase characters, HTTP
+method names are case-sensitive and thus implementations SHOULD NOT
+modify the given string.</p>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return an instance that has the
+changed request method.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>Case-sensitive method.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>for invalid HTTP methods.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUri">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/Request.html#method_getUri"><abbr title="GuzzleHttp\Psr7\Request">Request</abbr></a> at         line 99</div>
+        <code>                    <a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a>
+    <strong>getUri</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the URI instance.</p>                    <p>This method MUST return a UriInterface instance.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+            <td>Returns a UriInterface instance
+    representing the URI of the request.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withUri">
+        <div class="location">in <a href="../../GuzzleHttp/Psr7/Request.html#method_withUri"><abbr title="GuzzleHttp\Psr7\Request">Request</abbr></a> at         line 104</div>
+        <code>                    <a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a>
+    <strong>withUri</strong>(<a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri, bool $preserveHost = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns an instance with the provided URI.</p>                    <p>This method MUST update the Host header of the returned request by
+default if the URI contains a host component. If the URI does not
+contain a host component, any pre-existing Host header MUST be carried
+over to the returned request.</p>
+
+<p>You can opt-in to preserving the original state of the Host header by
+setting <code>$preserveHost</code> to <code>true</code>. When <code>$preserveHost</code> is set to
+<code>true</code>, this method interacts with the Host header in the following ways:</p>
+
+<ul>
+<li>If the Host header is missing or empty, and the new URI contains
+a host component, this method MUST update the Host header in the returned
+request.</li>
+<li>If the Host header is missing or empty, and the new URI does not contain a
+host component, this method MUST NOT update the Host header in the returned
+request.</li>
+<li>If a Host header is present and non-empty, this method MUST NOT update
+the Host header in the returned request.</li>
+</ul>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return an instance that has the
+new UriInterface instance.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+                <td>$uri</td>
+                <td>New request URI to use.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$preserveHost</td>
+                <td>Preserve the original state of the Host header.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeFiles">
+        <div class="location">at         line 85</div>
+        <code>        static            array
+    <strong>normalizeFiles</strong>(array $files)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an UploadedFile instance array.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$files</td>
+                <td>A array which respect $_FILES structure</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>for unrecognized values</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fromGlobals">
+        <div class="location">at         line 166</div>
+        <code>        static            <a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a>
+    <strong>fromGlobals</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return a ServerRequest populated with superglobals:
+$_GET
+$_POST
+$_COOKIE
+$_FILES
+$_SERVER</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUriFromGlobals">
+        <div class="location">at         line 188</div>
+        <code>        static            <a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a>
+    <strong>getUriFromGlobals</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a Uri populated with values from $_SERVER.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getServerParams">
+        <div class="location">at         line 232</div>
+        <code>                    array
+    <strong>getServerParams</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve server parameters.</p>                    <p>Retrieves data related to the incoming request environment,
+typically derived from PHP's $_SERVER superglobal. The data IS NOT
+REQUIRED to originate from $_SERVER.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUploadedFiles">
+        <div class="location">at         line 240</div>
+        <code>                    array
+    <strong>getUploadedFiles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve normalized file upload data.</p>                    <p>This method returns upload metadata in a normalized tree, with each leaf
+an instance of Psr\Http\Message\UploadedFileInterface.</p>
+
+<p>These values MAY be prepared from $_FILES or the message body during
+instantiation, or MAY be injected via withUploadedFiles().</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>An array tree of UploadedFileInterface instances; an empty
+    array MUST be returned if no data is present.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withUploadedFiles">
+        <div class="location">at         line 248</div>
+        <code>                    <a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a>
+    <strong>withUploadedFiles</strong>(array $uploadedFiles)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new instance with the specified uploaded files.</p>                    <p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return an instance that has the
+updated body parameters.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$uploadedFiles</td>
+                <td>An array tree of UploadedFileInterface instances.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>if an invalid structure is provided.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCookieParams">
+        <div class="location">at         line 259</div>
+        <code>                    array
+    <strong>getCookieParams</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve cookies.</p>                    <p>Retrieves cookies sent by the client to the server.</p>
+
+<p>The data MUST be compatible with the structure of the $_COOKIE
+superglobal.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withCookieParams">
+        <div class="location">at         line 267</div>
+        <code>                    <a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a>
+    <strong>withCookieParams</strong>(array $cookies)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an instance with the specified cookies.</p>                    <p>The data IS NOT REQUIRED to come from the $_COOKIE superglobal, but MUST
+be compatible with the structure of $_COOKIE. Typically, this data will
+be injected at instantiation.</p>
+
+<p>This method MUST NOT update the related Cookie header of the request
+instance, nor related values in the server params.</p>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return an instance that has the
+updated cookie values.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$cookies</td>
+                <td>Array of key/value pairs representing cookies.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getQueryParams">
+        <div class="location">at         line 278</div>
+        <code>                    array
+    <strong>getQueryParams</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve query string arguments.</p>                    <p>Retrieves the deserialized query string arguments, if any.</p>
+
+<p>Note: the query params might not be in sync with the URI or server
+params. If you need to ensure you are only getting the original
+values, you may need to parse the query string from <code>getUri()-&gt;getQuery()</code>
+or from the <code>QUERY_STRING</code> server param.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withQueryParams">
+        <div class="location">at         line 286</div>
+        <code>                    <a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a>
+    <strong>withQueryParams</strong>(array $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an instance with the specified query string arguments.</p>                    <p>These values SHOULD remain immutable over the course of the incoming
+request. They MAY be injected during instantiation, such as from PHP's
+$_GET superglobal, or MAY be derived from some other value such as the
+URI. In cases where the arguments are parsed from the URI, the data
+MUST be compatible with what PHP's parse_str() would return for
+purposes of how duplicate query parameters are handled, and how nested
+sets are handled.</p>
+
+<p>Setting query string arguments MUST NOT change the URI stored by the
+request, nor the values in the server params.</p>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return an instance that has the
+updated query string arguments.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$query</td>
+                <td>Array of query string arguments, typically from
+    $_GET.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParsedBody">
+        <div class="location">at         line 297</div>
+        <code>                    null|array|object
+    <strong>getParsedBody</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve any parameters provided in the request body.</p>                    <p>If the request Content-Type is either application/x-www-form-urlencoded
+or multipart/form-data, and the request method is POST, this method MUST
+return the contents of $_POST.</p>
+
+<p>Otherwise, this method may return any results of deserializing
+the request body content; as parsing returns structured content, the
+potential types MUST be arrays or objects only. A null value indicates
+the absence of body content.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|array|object</td>
+            <td>The deserialized body parameters, if any.
+    These will typically be an array or object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withParsedBody">
+        <div class="location">at         line 305</div>
+        <code>                    <a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a>
+    <strong>withParsedBody</strong>(null|array|object $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an instance with the specified body parameters.</p>                    <p>These MAY be injected during instantiation.</p>
+
+<p>If the request Content-Type is either application/x-www-form-urlencoded
+or multipart/form-data, and the request method is POST, use this method
+ONLY to inject the contents of $_POST.</p>
+
+<p>The data IS NOT REQUIRED to come from $_POST, but MUST be the results of
+deserializing the request body content. Deserialization/parsing returns
+structured data, and, as such, this method ONLY accepts arrays or objects,
+or a null value if nothing was available to parse.</p>
+
+<p>As an example, if content negotiation determines that the request data
+is a JSON payload, this method could be used to create a request
+instance with the deserialized parameters.</p>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return an instance that has the
+updated body parameters.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>null|array|object</td>
+                <td>$data</td>
+                <td>The deserialized body data. This will
+    typically be in an array or object.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>if an unsupported argument type is
+    provided.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttributes">
+        <div class="location">at         line 316</div>
+        <code>                    array
+    <strong>getAttributes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve attributes derived from the request.</p>                    <p>The request "attributes" may be used to allow injection of any
+parameters derived from the request: e.g., the results of path
+match operations; the results of decrypting cookies; the results of
+deserializing non-form-encoded message bodies; etc. Attributes
+will be application and request specific, and CAN be mutable.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Attributes derived from the request.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttribute">
+        <div class="location">at         line 324</div>
+        <code>                    mixed
+    <strong>getAttribute</strong>($attribute, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve a single derived request attribute.</p>                    <p>Retrieves a single derived request attribute as described in
+getAttributes(). If the attribute has not been previously set, returns
+the default value as provided.</p>
+
+<p>This method obviates the need for a hasAttribute() method, as it allows
+specifying a default value to return if the attribute is not found.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$attribute</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td>Default value to return if the attribute does not exist.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withAttribute">
+        <div class="location">at         line 336</div>
+        <code>                    <a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a>
+    <strong>withAttribute</strong>($attribute, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an instance with the specified derived request attribute.</p>                    <p>This method allows setting a single derived request attribute as
+described in getAttributes().</p>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return an instance that has the
+updated attribute.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$attribute</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value of the attribute.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withoutAttribute">
+        <div class="location">at         line 347</div>
+        <code>                    <a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a>
+    <strong>withoutAttribute</strong>($attribute)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an instance that removes the specified derived request attribute.</p>                    <p>This method allows removing a single derived request attribute as
+described in getAttributes().</p>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return an instance that removes
+the attribute.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$attribute</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Psr/Http/Message/ServerRequestInterface.html"><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

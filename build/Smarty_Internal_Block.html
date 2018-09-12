@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Smarty_Internal_Block | API</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Smarty_Internal_Block" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                            <li><a href="namespaces.html">Namespaces</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Smarty_Internal_Block
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Smarty_Internal_Block</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Smarty {block} tag class</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_name">
+                                                                                string
+                </td>
+                <td>$name</td>
+                <td class="last">Block name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_hide">
+                                                                                bool
+                </td>
+                <td>$hide</td>
+                <td class="last">Hide attribute</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_append">
+                                                                                bool
+                </td>
+                <td>$append</td>
+                <td class="last">Append attribute</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_prepend">
+                                                                                bool
+                </td>
+                <td>$prepend</td>
+                <td class="last">prepend attribute</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_callsChild">
+                                                                                bool
+                </td>
+                <td>$callsChild</td>
+                <td class="last">Block calls {$smarty.block.child}</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_child">
+                                                                                <a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a>|null
+                </td>
+                <td>$child</td>
+                <td class="last">Inheritance child block</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parent">
+                                                                                <a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a>|null
+                </td>
+                <td>$parent</td>
+                <td class="last">Inheritance calling parent block</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tplIndex">
+                                                                                int
+                </td>
+                <td>$tplIndex</td>
+                <td class="last">Inheritance Template index</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $name, int|null $tplIndex)
+        
+                                            <p>Smarty_Internal_Block constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_callBlock">callBlock</a>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $tpl)
+        
+                                            <p>Compiled block code overloaded by {block} class</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 76</div>
+        <code>                    
+    <strong>__construct</strong>(string $name, int|null $tplIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Smarty_Internal_Block constructor.</p>                    <p><ul>
+<li>if outer level {block} of child template ($state == 1) save it as child root block</li>
+<li>otherwise process inheritance and render</li>
+</ul>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>block name</td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$tplIndex</td>
+                <td>index of outer level {block} if nested</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_callBlock">
+        <div class="location">at         line 87</div>
+        <code>                    
+    <strong>callBlock</strong>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $tpl)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Compiled block code overloaded by {block} class</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a></td>
+                <td>$tpl</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>GuzzleHttp\Client | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/sami.css">
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:GuzzleHttp_Client" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                                            <li><a href="../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../GuzzleHttp.html">GuzzleHttp</a></li><li class="backslash">\</li><li>Client</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Client
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Client</strong>        implements
+        <a href="../GuzzleHttp/ClientInterface.html"><abbr title="GuzzleHttp\ClientInterface">ClientInterface</abbr></a>
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $config = [])
+        
+                                            <p>Clients accept an array of constructor parameters.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>($method, $args)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../GuzzleHttp/Promise/PromiseInterface.html"><abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sendAsync">sendAsync</a>(<a href="../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a> $request, array $options = [])
+        
+                                            <p>Asynchronously send an HTTP request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../Psr/Http/Message/ResponseInterface.html"><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_send">send</a>(<a href="../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a> $request, array $options = [])
+        
+                                            <p>Send an HTTP request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../GuzzleHttp/Promise/PromiseInterface.html"><abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_requestAsync">requestAsync</a>(string $method, string|<a href="../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri = &#039;&#039;, array $options = [])
+        
+                                            <p>Create and send an asynchronous HTTP request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../Psr/Http/Message/ResponseInterface.html"><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_request">request</a>(string $method, string|<a href="../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri = &#039;&#039;, array $options = [])
+        
+                                            <p>Create and send an HTTP request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConfig">getConfig</a>(string|null $option = null)
+        
+                                            <p>Get a client configuration option.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    ResponseInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(string|UriInterface  $uri, array  $options = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    ResponseInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_head">head</a>(string|UriInterface  $uri, array  $options = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    ResponseInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_put">put</a>(string|UriInterface  $uri, array  $options = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    ResponseInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_post">post</a>(string|UriInterface  $uri, array  $options = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    ResponseInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_patch">patch</a>(string|UriInterface  $uri, array  $options = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    ResponseInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(string|UriInterface  $uri, array  $options = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Promise\PromiseInterface">PromiseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAsync">getAsync</a>(string|UriInterface  $uri, array  $options = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Promise\PromiseInterface">PromiseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_headAsync">headAsync</a>(string|UriInterface  $uri, array  $options = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Promise\PromiseInterface">PromiseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_putAsync">putAsync</a>(string|UriInterface  $uri, array  $options = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Promise\PromiseInterface">PromiseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_postAsync">postAsync</a>(string|UriInterface  $uri, array  $options = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Promise\PromiseInterface">PromiseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_patchAsync">patchAsync</a>(string|UriInterface  $uri, array  $options = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Promise\PromiseInterface">PromiseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteAsync">deleteAsync</a>(string|UriInterface  $uri, array  $options = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 62</div>
+        <code>                    
+    <strong>__construct</strong>(array $config = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clients accept an array of constructor parameters.</p>                    <p>Here's an example of creating a client using a base_uri and an array of
+default request options to apply to each request:</p>
+
+<pre><code>$client = new Client([
+    'base_uri'        =&gt; 'http://www.foo.com/1.0/',
+    'timeout'         =&gt; 0,
+    'allow_redirects' =&gt; false,
+    'proxy'           =&gt; '192.168.16.1:10'
+]);
+</code></pre>
+
+<p>Client configuration settings include the following options:</p>
+
+<ul>
+<li>handler: (callable) Function that transfers HTTP requests over the
+wire. The function is called with a Psr7\Http\Message\RequestInterface
+and array of transfer options, and must return a
+GuzzleHttp\Promise\PromiseInterface that is fulfilled with a
+Psr7\Http\Message\ResponseInterface on success. "handler" is a
+constructor only option that cannot be overridden in per/request
+options. If no handler is provided, a default handler will be created
+that enables all of the request options below by attaching all of the
+default middleware to the handler.</li>
+<li>base_uri: (string|UriInterface) Base URI of the client that is merged
+into relative URIs. Can be a string or instance of UriInterface.</li>
+<li>**: any request option</li>
+</ul>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$config</td>
+                <td>Client configuration settings.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="../GuzzleHttp/RequestOptions.html"><abbr title="GuzzleHttp\RequestOptions">RequestOptions</abbr></a>
+                                    </td>
+                <td>for a list of available request options.</td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">at         line 78</div>
+        <code>                    
+    <strong>__call</strong>($method, $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendAsync">
+        <div class="location">at         line 92</div>
+        <code>                    <a href="../GuzzleHttp/Promise/PromiseInterface.html"><abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></a>
+    <strong>sendAsync</strong>(<a href="../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a> $request, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Asynchronously send an HTTP request.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a></td>
+                <td>$request</td>
+                <td>Request to send</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Request options to apply to the given
+                                 request and to the transfer.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../GuzzleHttp/Promise/PromiseInterface.html"><abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_send">
+        <div class="location">at         line 103</div>
+        <code>                    <a href="../Psr/Http/Message/ResponseInterface.html"><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></a>
+    <strong>send</strong>(<a href="../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a> $request, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send an HTTP request.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a></td>
+                <td>$request</td>
+                <td>Request to send</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Request options to apply to the given
+                                 request and to the transfer.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Psr/Http/Message/ResponseInterface.html"><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../GuzzleHttp/Exception/GuzzleException.html"><abbr title="GuzzleHttp\Exception\GuzzleException">GuzzleException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_requestAsync">
+        <div class="location">at         line 109</div>
+        <code>                    <a href="../GuzzleHttp/Promise/PromiseInterface.html"><abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></a>
+    <strong>requestAsync</strong>(string $method, string|<a href="../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri = &#039;&#039;, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create and send an asynchronous HTTP request.</p>                    <p>Use an absolute path to override the base path of the client, or a
+relative path to append to the base path of the client. The URL can
+contain the query string as well. Use an array to provide a URL
+template and additional variables to use in the URL template expansion.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>HTTP method</td>
+            </tr>
+                    <tr>
+                <td>string|<a href="../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+                <td>$uri</td>
+                <td>URI object or string.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Request options to apply.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../GuzzleHttp/Promise/PromiseInterface.html"><abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_request">
+        <div class="location">at         line 128</div>
+        <code>                    <a href="../Psr/Http/Message/ResponseInterface.html"><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></a>
+    <strong>request</strong>(string $method, string|<a href="../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a> $uri = &#039;&#039;, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create and send an HTTP request.</p>                    <p>Use an absolute path to override the base path of the client, or a
+relative path to append to the base path of the client. The URL can
+contain the query string as well.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>HTTP method.</td>
+            </tr>
+                    <tr>
+                <td>string|<a href="../Psr/Http/Message/UriInterface.html"><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr></a></td>
+                <td>$uri</td>
+                <td>URI object or string.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Request options to apply.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Psr/Http/Message/ResponseInterface.html"><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../GuzzleHttp/Exception/GuzzleException.html"><abbr title="GuzzleHttp\Exception\GuzzleException">GuzzleException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConfig">
+        <div class="location">at         line 134</div>
+        <code>                    mixed
+    <strong>getConfig</strong>(string|null $option = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a client configuration option.</p>                    <p>These options include default request options of the client, a "handler"
+(if utilized by the concrete client), and a "base_uri" if utilized by
+the concrete client.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$option</td>
+                <td>The config option to retrieve.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at         line 25</div>
+        <code>                    ResponseInterface
+    <strong>get</strong>(string|UriInterface  $uri, array  $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|UriInterface </td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>ResponseInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_head">
+        <div class="location">at         line 25</div>
+        <code>                    ResponseInterface
+    <strong>head</strong>(string|UriInterface  $uri, array  $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|UriInterface </td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>ResponseInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_put">
+        <div class="location">at         line 25</div>
+        <code>                    ResponseInterface
+    <strong>put</strong>(string|UriInterface  $uri, array  $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|UriInterface </td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>ResponseInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_post">
+        <div class="location">at         line 25</div>
+        <code>                    ResponseInterface
+    <strong>post</strong>(string|UriInterface  $uri, array  $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|UriInterface </td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>ResponseInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location">at         line 25</div>
+        <code>                    ResponseInterface
+    <strong>patch</strong>(string|UriInterface  $uri, array  $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|UriInterface </td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>ResponseInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at         line 25</div>
+        <code>                    ResponseInterface
+    <strong>delete</strong>(string|UriInterface  $uri, array  $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|UriInterface </td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>ResponseInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAsync">
+        <div class="location">at         line 25</div>
+        <code>                    <abbr title="Promise\PromiseInterface">PromiseInterface</abbr>
+    <strong>getAsync</strong>(string|UriInterface  $uri, array  $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|UriInterface </td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Promise\PromiseInterface">PromiseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_headAsync">
+        <div class="location">at         line 25</div>
+        <code>                    <abbr title="Promise\PromiseInterface">PromiseInterface</abbr>
+    <strong>headAsync</strong>(string|UriInterface  $uri, array  $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|UriInterface </td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Promise\PromiseInterface">PromiseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_putAsync">
+        <div class="location">at         line 25</div>
+        <code>                    <abbr title="Promise\PromiseInterface">PromiseInterface</abbr>
+    <strong>putAsync</strong>(string|UriInterface  $uri, array  $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|UriInterface </td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Promise\PromiseInterface">PromiseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_postAsync">
+        <div class="location">at         line 25</div>
+        <code>                    <abbr title="Promise\PromiseInterface">PromiseInterface</abbr>
+    <strong>postAsync</strong>(string|UriInterface  $uri, array  $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|UriInterface </td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Promise\PromiseInterface">PromiseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patchAsync">
+        <div class="location">at         line 25</div>
+        <code>                    <abbr title="Promise\PromiseInterface">PromiseInterface</abbr>
+    <strong>patchAsync</strong>(string|UriInterface  $uri, array  $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|UriInterface </td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Promise\PromiseInterface">PromiseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteAsync">
+        <div class="location">at         line 25</div>
+        <code>                    <abbr title="Promise\PromiseInterface">PromiseInterface</abbr>
+    <strong>deleteAsync</strong>(string|UriInterface  $uri, array  $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|UriInterface </td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Promise\PromiseInterface">PromiseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

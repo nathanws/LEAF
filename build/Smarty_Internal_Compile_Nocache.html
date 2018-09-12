@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Smarty_Internal_Compile_Nocache | API</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Smarty_Internal_Compile_Nocache" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                            <li><a href="namespaces.html">Namespaces</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Smarty_Internal_Compile_Nocache
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Smarty_Internal_Compile_Nocache</strong>        extends <a href="Smarty_Internal_CompileBase.html">Smarty_Internal_CompileBase</a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Smarty Internal Plugin Compile Nocache Class</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_required_attributes">
+                                                                                array
+                </td>
+                <td>$required_attributes</td>
+                <td class="last">Array of names of required attribute required by tag</td>
+                <td><small>from&nbsp;<a href="Smarty_Internal_CompileBase.html#property_required_attributes">Smarty_Internal_CompileBase</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_optional_attributes">
+                                                                                array
+                </td>
+                <td>$optional_attributes</td>
+                <td class="last">Array of names of optional attribute required by tag
+use array('_any') if there is no restriction of attributes names</td>
+                <td><small>from&nbsp;<a href="Smarty_Internal_CompileBase.html#property_optional_attributes">Smarty_Internal_CompileBase</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_shorttag_order">
+                                                                                array
+                </td>
+                <td>$shorttag_order</td>
+                <td class="last">Shorttag attribute order defined by its names</td>
+                <td><small>from&nbsp;<a href="Smarty_Internal_CompileBase.html#property_shorttag_order">Smarty_Internal_CompileBase</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_option_flags">
+                                                                                array
+                </td>
+                <td>$option_flags</td>
+                <td class="last">Array of names of valid option flags</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_optionMap">
+                                                                                array
+                </td>
+                <td>$optionMap</td>
+                <td class="last">Mapping array for boolqn option value</td>
+                <td><small>from&nbsp;<a href="Smarty_Internal_CompileBase.html#property_optionMap">Smarty_Internal_CompileBase</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mapCache">
+                                                                                array
+                </td>
+                <td>$mapCache</td>
+                <td class="last">Mapping array with attributes as key</td>
+                <td><small>from&nbsp;<a href="Smarty_Internal_CompileBase.html#property_mapCache">Smarty_Internal_CompileBase</a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAttributes">getAttributes</a>(object $compiler, array $attributes)
+        
+                                            <p>This function checks if the attributes passed are valid
+The attributes passed for the tag to compile are checked against the list of required and
+optional attributes. Required attributes must be present. Optional attributes are check against
+the corresponding list. The keyword '_any' specifies that any attribute will be accepted
+as valid</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Smarty_Internal_CompileBase.html#method_getAttributes">Smarty_Internal_CompileBase</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_openTag">openTag</a>(object $compiler, string $openTag, mixed $data = null)
+        
+                                            <p>Push opening tag name on stack
+Optionally additional data can be saved on stack</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Smarty_Internal_CompileBase.html#method_openTag">Smarty_Internal_CompileBase</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_closeTag">closeTag</a>(object $compiler, array|string $expectedTag)
+        
+                                            <p>Pop closing tag
+Raise an error if this stack-top doesn't match with expected opening tags</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Smarty_Internal_CompileBase.html#method_closeTag">Smarty_Internal_CompileBase</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compile">compile</a>(array $args, <a href="Smarty_Internal_TemplateCompilerBase.html">Smarty_Internal_TemplateCompilerBase</a> $compiler)
+        
+                                            <p>Compiles code for the {nocache} tag
+This tag does not generate compiled output. It only sets a compiler flag.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getAttributes">
+        <div class="location">in <a href="Smarty_Internal_CompileBase.html#method_getAttributes">Smarty_Internal_CompileBase</a> at         line 73</div>
+        <code>                    array
+    <strong>getAttributes</strong>(object $compiler, array $attributes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>This function checks if the attributes passed are valid
+The attributes passed for the tag to compile are checked against the list of required and
+optional attributes. Required attributes must be present. Optional attributes are check against
+the corresponding list. The keyword '_any' specifies that any attribute will be accepted
+as valid</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$compiler</td>
+                <td>compiler object</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td>attributes applied to the tag</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>of mapped attributes for further processing</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_openTag">
+        <div class="location">in <a href="Smarty_Internal_CompileBase.html#method_openTag">Smarty_Internal_CompileBase</a> at         line 156</div>
+        <code>                    
+    <strong>openTag</strong>(object $compiler, string $openTag, mixed $data = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Push opening tag name on stack
+Optionally additional data can be saved on stack</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$compiler</td>
+                <td>compiler object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$openTag</td>
+                <td>the opening tag's name</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>optional data saved</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_closeTag">
+        <div class="location">in <a href="Smarty_Internal_CompileBase.html#method_closeTag">Smarty_Internal_CompileBase</a> at         line 170</div>
+        <code>                    mixed
+    <strong>closeTag</strong>(object $compiler, array|string $expectedTag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pop closing tag
+Raise an error if this stack-top doesn't match with expected opening tags</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$compiler</td>
+                <td>compiler object</td>
+            </tr>
+                    <tr>
+                <td>array|string</td>
+                <td>$expectedTag</td>
+                <td>the expected opening tag names</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>any type the opening tag's name or saved data</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compile">
+        <div class="location">at         line 35</div>
+        <code>                    bool
+    <strong>compile</strong>(array $args, <a href="Smarty_Internal_TemplateCompilerBase.html">Smarty_Internal_TemplateCompilerBase</a> $compiler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Compiles code for the {nocache} tag
+This tag does not generate compiled output. It only sets a compiler flag.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td>array with attributes from parser</td>
+            </tr>
+                    <tr>
+                <td><a href="Smarty_Internal_TemplateCompilerBase.html">Smarty_Internal_TemplateCompilerBase</a></td>
+                <td>$compiler</td>
+                <td>compiler object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

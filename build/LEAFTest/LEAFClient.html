@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>LEAFTest\LEAFClient | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/sami.css">
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:LEAFTest_LEAFClient" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                                            <li><a href="../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../LEAFTest.html">LEAFTest</a></li><li class="backslash">\</li><li>LEAFClient</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            LEAFClient
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>LEAFClient</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Simple HTTP client that wraps GuzzleHttp\Client.</p>            <p>Configures the Guzzle client to work with LEAF.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../LEAFTest/LEAFClient.html"><abbr title="LEAFTest\LEAFClient">LEAFClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createNexusClient">createNexusClient</a>($baseURI = &#039;http://localhost/LEAF_Nexus/api/&#039;, $authURL = &#039;../auth_domain/&#039;)
+        
+                                            <p>Get a HTTP Client configured for LEAF and authenticated to make
+API calls against the Nexus.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../LEAFTest/LEAFClient.html"><abbr title="LEAFTest\LEAFClient">LEAFClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createRequestPortalClient">createRequestPortalClient</a>($baseURI = &#039;http://localhost/LEAF_Request_Portal/api/&#039;, $authURL = &#039;../auth_domain/&#039;)
+        
+                                            <p>Get a HTTP Client configured for LEAF and authenticated to make
+API calls against the Request Portal.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(array $queryParams = array(), array $formParams = array(), string $url = &#039;&#039;, <a href="../LEAFTest/LEAFResponseType.html"><abbr title="LEAFTest\LEAFResponseType">LEAFResponseType</abbr></a> $returnType = LEAFResponseType::JSON)
+        
+                                            <p>GET request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_post">post</a>(array $queryParams = array(), array $formParams = array(), string $url = &#039;&#039;, <a href="../LEAFTest/LEAFResponseType.html"><abbr title="LEAFTest\LEAFResponseType">LEAFResponseType</abbr></a> $returnType = LEAFResponseType::JSON)
+        
+                                            <p>POST request. Handles <code>application/x-www-form-urlencoded</code> requests.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(array $queryParams = array(), array $formParams = array(), string $url = &#039;&#039;, <a href="../LEAFTest/LEAFResponseType.html"><abbr title="LEAFTest\LEAFResponseType">LEAFResponseType</abbr></a> $returnType = LEAFResponseType::JSON)
+        
+                                            <p>DELETE request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCSRFToken">getCSRFToken</a>()
+        
+                                            <p>Return CSRFToken associated with this client</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_createNexusClient">
+        <div class="location">at         line 39</div>
+        <code>        static            <a href="../LEAFTest/LEAFClient.html"><abbr title="LEAFTest\LEAFClient">LEAFClient</abbr></a>
+    <strong>createNexusClient</strong>($baseURI = &#039;http://localhost/LEAF_Nexus/api/&#039;, $authURL = &#039;../auth_domain/&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a HTTP Client configured for LEAF and authenticated to make
+API calls against the Nexus.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$baseURI</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$authURL</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../LEAFTest/LEAFClient.html"><abbr title="LEAFTest\LEAFClient">LEAFClient</abbr></a></td>
+            <td>a HTTP Client configured for LEAF</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createRequestPortalClient">
+        <div class="location">at         line 53</div>
+        <code>        static            <a href="../LEAFTest/LEAFClient.html"><abbr title="LEAFTest\LEAFClient">LEAFClient</abbr></a>
+    <strong>createRequestPortalClient</strong>($baseURI = &#039;http://localhost/LEAF_Request_Portal/api/&#039;, $authURL = &#039;../auth_domain/&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a HTTP Client configured for LEAF and authenticated to make
+API calls against the Request Portal.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$baseURI</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$authURL</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../LEAFTest/LEAFClient.html"><abbr title="LEAFTest\LEAFClient">LEAFClient</abbr></a></td>
+            <td>a HTTP Client configured for LEAF</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at         line 71</div>
+        <code>                    object
+    <strong>get</strong>(array $queryParams = array(), array $formParams = array(), string $url = &#039;&#039;, <a href="../LEAFTest/LEAFResponseType.html"><abbr title="LEAFTest\LEAFResponseType">LEAFResponseType</abbr></a> $returnType = LEAFResponseType::JSON)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>GET request.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$queryParams</td>
+                <td>an array that contains key=>values of the query data.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$formParams</td>
+                <td>an array that contains key=>values of the form data.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>the URL to request with trailing slash, relative to the $baseURI passed to getBaseClient</td>
+            </tr>
+                    <tr>
+                <td><a href="../LEAFTest/LEAFResponseType.html"><abbr title="LEAFTest\LEAFResponseType">LEAFResponseType</abbr></a></td>
+                <td>$returnType</td>
+                <td>the LEAFTest&#92;LEAFResponseType to format the response as (default: JSON)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>the formatted response</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_post">
+        <div class="location">at         line 91</div>
+        <code>                    object
+    <strong>post</strong>(array $queryParams = array(), array $formParams = array(), string $url = &#039;&#039;, <a href="../LEAFTest/LEAFResponseType.html"><abbr title="LEAFTest\LEAFResponseType">LEAFResponseType</abbr></a> $returnType = LEAFResponseType::JSON)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>POST request. Handles <code>application/x-www-form-urlencoded</code> requests.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$queryParams</td>
+                <td>an array that contains key=>values of the query data.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$formParams</td>
+                <td>an array that contains key=>values of the form data.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>the URL to request with trailing slash, relative to the $baseURI passed to getBaseClient</td>
+            </tr>
+                    <tr>
+                <td><a href="../LEAFTest/LEAFResponseType.html"><abbr title="LEAFTest\LEAFResponseType">LEAFResponseType</abbr></a></td>
+                <td>$returnType</td>
+                <td>the LEAFTest&#92;LEAFResponseType to format the response as (default: JSON)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>the formatted response</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at         line 114</div>
+        <code>                    object
+    <strong>delete</strong>(array $queryParams = array(), array $formParams = array(), string $url = &#039;&#039;, <a href="../LEAFTest/LEAFResponseType.html"><abbr title="LEAFTest\LEAFResponseType">LEAFResponseType</abbr></a> $returnType = LEAFResponseType::JSON)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DELETE request.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$queryParams</td>
+                <td>an array that contains key=>values of the query data.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$formParams</td>
+                <td>an array that contains key=>values of the form data.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>the URL to request with trailing slash, relative to the $baseURI passed to getBaseClient</td>
+            </tr>
+                    <tr>
+                <td><a href="../LEAFTest/LEAFResponseType.html"><abbr title="LEAFTest\LEAFResponseType">LEAFResponseType</abbr></a></td>
+                <td>$returnType</td>
+                <td>the LEAFTest&#92;LEAFResponseType to format the response as (default: JSON)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>the formatted response</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCSRFToken">
+        <div class="location">at         line 132</div>
+        <code>                    string
+    <strong>getCSRFToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return CSRFToken associated with this client</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the CSRFToken string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

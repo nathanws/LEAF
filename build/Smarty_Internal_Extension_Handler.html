@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Smarty_Internal_Extension_Handler | API</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Smarty_Internal_Extension_Handler" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                            <li><a href="namespaces.html">Namespaces</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Smarty_Internal_Extension_Handler
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Smarty_Internal_Extension_Handler</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Smarty Extension handler</p>            <p>Load extensions dynamically</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_objType">
+                                                                                
+                </td>
+                <td>$objType</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__tplFunction">
+                                                                                <a href="Smarty_Internal_Runtime_TplFunction.html">Smarty_Internal_Runtime_TplFunction</a>
+                </td>
+                <td>$_tplFunction</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__foreach">
+                                                                                <a href="Smarty_Internal_Runtime_Foreach.html">Smarty_Internal_Runtime_Foreach</a>
+                </td>
+                <td>$_foreach</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__writeFile">
+                                                                                <a href="Smarty_Internal_Runtime_WriteFile.html">Smarty_Internal_Runtime_WriteFile</a>
+                </td>
+                <td>$_writeFile</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__codeFrame">
+                                                                                <a href="Smarty_Internal_Runtime_CodeFrame.html">Smarty_Internal_Runtime_CodeFrame</a>
+                </td>
+                <td>$_codeFrame</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__filterHandler">
+                                                                                <a href="Smarty_Internal_Runtime_FilterHandler.html">Smarty_Internal_Runtime_FilterHandler</a>
+                </td>
+                <td>$_filterHandler</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__getIncludePath">
+                                                                                <a href="Smarty_Internal_Runtime_GetIncludePath.html">Smarty_Internal_Runtime_GetIncludePath</a>
+                </td>
+                <td>$_getIncludePath</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__updateScope">
+                                                                                <a href="Smarty_Internal_Runtime_UpdateScope.html">Smarty_Internal_Runtime_UpdateScope</a>
+                </td>
+                <td>$_updateScope</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__cacheModify">
+                                                                                <a href="Smarty_Internal_Runtime_CacheModify.html">Smarty_Internal_Runtime_CacheModify</a>
+                </td>
+                <td>$_cacheModify</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__updateCache">
+                                                                                <a href="Smarty_Internal_Runtime_UpdateCache.html">Smarty_Internal_Runtime_UpdateCache</a>
+                </td>
+                <td>$_updateCache</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_getTemplateVars">
+                                                                                <a href="Smarty_Internal_Method_GetTemplateVars.html">Smarty_Internal_Method_GetTemplateVars</a>
+                </td>
+                <td>$getTemplateVars</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_append">
+                                                                                <a href="Smarty_Internal_Method_Append.html">Smarty_Internal_Method_Append</a>
+                </td>
+                <td>$append</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_appendByRef">
+                                                                                <a href="Smarty_Internal_Method_AppendByRef.html">Smarty_Internal_Method_AppendByRef</a>
+                </td>
+                <td>$appendByRef</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_assignGlobal">
+                                                                                <a href="Smarty_Internal_Method_AssignGlobal.html">Smarty_Internal_Method_AssignGlobal</a>
+                </td>
+                <td>$assignGlobal</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_assignByRef">
+                                                                                <a href="Smarty_Internal_Method_AssignByRef.html">Smarty_Internal_Method_AssignByRef</a>
+                </td>
+                <td>$assignByRef</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_loadFilter">
+                                                                                <a href="Smarty_Internal_Method_LoadFilter.html">Smarty_Internal_Method_LoadFilter</a>
+                </td>
+                <td>$loadFilter</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_loadPlugin">
+                                                                                <a href="Smarty_Internal_Method_LoadPlugin.html">Smarty_Internal_Method_LoadPlugin</a>
+                </td>
+                <td>$loadPlugin</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_registerFilter">
+                                                                                <a href="Smarty_Internal_Method_RegisterFilter.html">Smarty_Internal_Method_RegisterFilter</a>
+                </td>
+                <td>$registerFilter</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_registerObject">
+                                                                                <a href="Smarty_Internal_Method_RegisterObject.html">Smarty_Internal_Method_RegisterObject</a>
+                </td>
+                <td>$registerObject</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_registerPlugin">
+                                                                                <a href="Smarty_Internal_Method_RegisterPlugin.html">Smarty_Internal_Method_RegisterPlugin</a>
+                </td>
+                <td>$registerPlugin</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method__callExternalMethod">_callExternalMethod</a>(<a href="Smarty_Internal_Data.html">Smarty_Internal_Data</a> $data, string $name, array $args)
+        
+                                            <p>Call external Method</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___set">__set</a>(string $property_name, mixed $value)
+        
+                                            <p>set extension property</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|<a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>(string $property_name)
+        
+                                            <p>get extension object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $name, array $args)
+        
+                                            <p>Call error handler for undefined method</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method__callExternalMethod">
+        <div class="location">at         line 60</div>
+        <code>                    mixed
+    <strong>_callExternalMethod</strong>(<a href="Smarty_Internal_Data.html">Smarty_Internal_Data</a> $data, string $name, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Call external Method</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Internal_Data.html">Smarty_Internal_Data</a></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>external method names</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td>argument array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyException.html">SmartyException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___set">
+        <div class="location">at         line 109</div>
+        <code>                    
+    <strong>__set</strong>(string $property_name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set extension property</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property_name</td>
+                <td>property name</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>value</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyException.html">SmartyException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">at         line 122</div>
+        <code>                    mixed|<a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a>
+    <strong>__get</strong>(string $property_name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get extension object</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property_name</td>
+                <td>property name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|<a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyException.html">SmartyException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">at         line 142</div>
+        <code>                    mixed
+    <strong>__call</strong>(string $name, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Call error handler for undefined method</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>unknown method-name</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td>argument array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyException.html">SmartyException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

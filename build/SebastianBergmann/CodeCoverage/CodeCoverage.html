@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>SebastianBergmann\CodeCoverage\CodeCoverage | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:SebastianBergmann_CodeCoverage_CodeCoverage" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../SebastianBergmann.html">SebastianBergmann</a></li><li class="backslash">\</li><li><a href="../../SebastianBergmann/CodeCoverage.html">CodeCoverage</a></li><li class="backslash">\</li><li>CodeCoverage</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            CodeCoverage
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>CodeCoverage</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Provides collection functionality for PHP code coverage information.</p>                                </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../SebastianBergmann/CodeCoverage/Driver/Driver.html"><abbr title="SebastianBergmann\CodeCoverage\Driver\Driver">Driver</abbr></a> $driver = null, <a href="../../SebastianBergmann/CodeCoverage/Filter.html"><abbr title="SebastianBergmann\CodeCoverage\Filter">Filter</abbr></a> $filter = null)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../SebastianBergmann/CodeCoverage/Node/Directory.html"><abbr title="SebastianBergmann\CodeCoverage\Node\Directory">Directory</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReport">getReport</a>()
+        
+                                            <p>Returns the code coverage information as a graph of node objects.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clear">clear</a>()
+        
+                                            <p>Clears collected code coverage data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../SebastianBergmann/CodeCoverage/Filter.html"><abbr title="SebastianBergmann\CodeCoverage\Filter">Filter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filter">filter</a>()
+        
+                                            <p>Returns the filter object used.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getData">getData</a>(bool $raw = false)
+        
+                                            <p>Returns the collected code coverage data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setData">setData</a>(array $data)
+        
+                                            <p>Sets the coverage data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTests">getTests</a>()
+        
+                                            <p>Returns the test data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTests">setTests</a>(array $tests)
+        
+                                            <p>Sets the test data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_start">start</a>(mixed $id, bool $clear = false)
+        
+                                            <p>Start collection of code coverage information.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stop">stop</a>(bool $append = true, mixed $linesToBeCovered = [], array $linesToBeUsed = [], bool $ignoreForceCoversAnnotation = false)
+        
+                                            <p>Stop collection of code coverage information.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_append">append</a>(array $data, mixed $id = null, bool $append = true, mixed $linesToBeCovered = [], array $linesToBeUsed = [], bool $ignoreForceCoversAnnotation = false)
+        
+                                            <p>Appends code coverage data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_merge">merge</a>(<a href="../../SebastianBergmann/CodeCoverage/CodeCoverage.html"><abbr title="SebastianBergmann\CodeCoverage\CodeCoverage">CodeCoverage</abbr></a> $that)
+        
+                                            <p>Merges the data from another instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCacheTokens">setCacheTokens</a>(bool $flag)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCacheTokens">getCacheTokens</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCheckForUnintentionallyCoveredCode">setCheckForUnintentionallyCoveredCode</a>(bool $flag)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setForceCoversAnnotation">setForceCoversAnnotation</a>(bool $flag)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCheckForMissingCoversAnnotation">setCheckForMissingCoversAnnotation</a>(bool $flag)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCheckForUnexecutedCoveredCode">setCheckForUnexecutedCoveredCode</a>(bool $flag)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMapTestClassNameToCoveredClassName">setMapTestClassNameToCoveredClassName</a>(bool $flag)
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAddUncoveredFilesFromWhitelist">setAddUncoveredFilesFromWhitelist</a>(bool $flag)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setProcessUncoveredFilesFromWhitelist">setProcessUncoveredFilesFromWhitelist</a>(bool $flag)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDisableIgnoredLines">setDisableIgnoredLines</a>(bool $flag)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIgnoreDeprecatedCode">setIgnoreDeprecatedCode</a>(bool $flag)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUnintentionallyCoveredSubclassesWhitelist">setUnintentionallyCoveredSubclassesWhitelist</a>(array $whitelist)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initializeData">initializeData</a>()
+        
+                                            <p>If we are processing uncovered files from whitelist,
+we can initialize the data before we start to speed up the tests</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 145</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../SebastianBergmann/CodeCoverage/Driver/Driver.html"><abbr title="SebastianBergmann\CodeCoverage\Driver\Driver">Driver</abbr></a> $driver = null, <a href="../../SebastianBergmann/CodeCoverage/Filter.html"><abbr title="SebastianBergmann\CodeCoverage\Filter">Filter</abbr></a> $filter = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/Driver/Driver.html"><abbr title="SebastianBergmann\CodeCoverage\Driver\Driver">Driver</abbr></a></td>
+                <td>$driver</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/Filter.html"><abbr title="SebastianBergmann\CodeCoverage\Filter">Filter</abbr></a></td>
+                <td>$filter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/RuntimeException.html"><abbr title="SebastianBergmann\CodeCoverage\RuntimeException">RuntimeException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReport">
+        <div class="location">at         line 166</div>
+        <code>                    <a href="../../SebastianBergmann/CodeCoverage/Node/Directory.html"><abbr title="SebastianBergmann\CodeCoverage\Node\Directory">Directory</abbr></a>
+    <strong>getReport</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the code coverage information as a graph of node objects.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../SebastianBergmann/CodeCoverage/Node/Directory.html"><abbr title="SebastianBergmann\CodeCoverage\Node\Directory">Directory</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clear">
+        <div class="location">at         line 180</div>
+        <code>                    
+    <strong>clear</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clears collected code coverage data.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filter">
+        <div class="location">at         line 194</div>
+        <code>                    <a href="../../SebastianBergmann/CodeCoverage/Filter.html"><abbr title="SebastianBergmann\CodeCoverage\Filter">Filter</abbr></a>
+    <strong>filter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the filter object used.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../SebastianBergmann/CodeCoverage/Filter.html"><abbr title="SebastianBergmann\CodeCoverage\Filter">Filter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getData">
+        <div class="location">at         line 207</div>
+        <code>                    array
+    <strong>getData</strong>(bool $raw = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the collected code coverage data.</p>                    <p>Set $raw = true to bypass all filters.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$raw</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setData">
+        <div class="location">at         line 221</div>
+        <code>                    
+    <strong>setData</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the coverage data.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTests">
+        <div class="location">at         line 232</div>
+        <code>                    array
+    <strong>getTests</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the test data.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTests">
+        <div class="location">at         line 242</div>
+        <code>                    
+    <strong>setTests</strong>(array $tests)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the test data.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$tests</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_start">
+        <div class="location">at         line 255</div>
+        <code>                    
+    <strong>start</strong>(mixed $id, bool $clear = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Start collection of code coverage information.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$clear</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/InvalidArgumentException.html"><abbr title="SebastianBergmann\CodeCoverage\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stop">
+        <div class="location">at         line 290</div>
+        <code>                    array
+    <strong>stop</strong>(bool $append = true, mixed $linesToBeCovered = [], array $linesToBeUsed = [], bool $ignoreForceCoversAnnotation = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Stop collection of code coverage information.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$append</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$linesToBeCovered</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$linesToBeUsed</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$ignoreForceCoversAnnotation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/RuntimeException.html"><abbr title="SebastianBergmann\CodeCoverage\RuntimeException">RuntimeException</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/InvalidArgumentException.html"><abbr title="SebastianBergmann\CodeCoverage\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_append">
+        <div class="location">at         line 331</div>
+        <code>                    
+    <strong>append</strong>(array $data, mixed $id = null, bool $append = true, mixed $linesToBeCovered = [], array $linesToBeUsed = [], bool $ignoreForceCoversAnnotation = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Appends code coverage data.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$append</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$linesToBeCovered</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$linesToBeUsed</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$ignoreForceCoversAnnotation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/UnintentionallyCoveredCodeException.html"><abbr title="SebastianBergmann\CodeCoverage\UnintentionallyCoveredCodeException">UnintentionallyCoveredCodeException</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/MissingCoversAnnotationException.html"><abbr title="SebastianBergmann\CodeCoverage\MissingCoversAnnotationException">MissingCoversAnnotationException</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/CoveredCodeNotExecutedException.html"><abbr title="SebastianBergmann\CodeCoverage\CoveredCodeNotExecutedException">CoveredCodeNotExecutedException</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/ReflectionException">ReflectionException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/InvalidArgumentException.html"><abbr title="SebastianBergmann\CodeCoverage\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/RuntimeException.html"><abbr title="SebastianBergmann\CodeCoverage\RuntimeException">RuntimeException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_merge">
+        <div class="location">at         line 407</div>
+        <code>                    
+    <strong>merge</strong>(<a href="../../SebastianBergmann/CodeCoverage/CodeCoverage.html"><abbr title="SebastianBergmann\CodeCoverage\CodeCoverage">CodeCoverage</abbr></a> $that)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Merges the data from another instance.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/CodeCoverage.html"><abbr title="SebastianBergmann\CodeCoverage\CodeCoverage">CodeCoverage</abbr></a></td>
+                <td>$that</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCacheTokens">
+        <div class="location">at         line 444</div>
+        <code>                    
+    <strong>setCacheTokens</strong>(bool $flag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$flag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/InvalidArgumentException.html"><abbr title="SebastianBergmann\CodeCoverage\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCacheTokens">
+        <div class="location">at         line 459</div>
+        <code>                    bool
+    <strong>getCacheTokens</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCheckForUnintentionallyCoveredCode">
+        <div class="location">at         line 469</div>
+        <code>                    
+    <strong>setCheckForUnintentionallyCoveredCode</strong>(bool $flag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$flag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/InvalidArgumentException.html"><abbr title="SebastianBergmann\CodeCoverage\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setForceCoversAnnotation">
+        <div class="location">at         line 486</div>
+        <code>                    
+    <strong>setForceCoversAnnotation</strong>(bool $flag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$flag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/InvalidArgumentException.html"><abbr title="SebastianBergmann\CodeCoverage\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCheckForMissingCoversAnnotation">
+        <div class="location">at         line 503</div>
+        <code>                    
+    <strong>setCheckForMissingCoversAnnotation</strong>(bool $flag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$flag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/InvalidArgumentException.html"><abbr title="SebastianBergmann\CodeCoverage\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCheckForUnexecutedCoveredCode">
+        <div class="location">at         line 520</div>
+        <code>                    
+    <strong>setCheckForUnexecutedCoveredCode</strong>(bool $flag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$flag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/InvalidArgumentException.html"><abbr title="SebastianBergmann\CodeCoverage\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMapTestClassNameToCoveredClassName">
+        <div class="location">at         line 539</div>
+        <code>                    
+    <strong>setMapTestClassNameToCoveredClassName</strong>(bool $flag)
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
+    </h3>
+    <div class="details">
+            
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </p>
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$flag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/InvalidArgumentException.html"><abbr title="SebastianBergmann\CodeCoverage\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAddUncoveredFilesFromWhitelist">
+        <div class="location">at         line 548</div>
+        <code>                    
+    <strong>setAddUncoveredFilesFromWhitelist</strong>(bool $flag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$flag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/InvalidArgumentException.html"><abbr title="SebastianBergmann\CodeCoverage\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setProcessUncoveredFilesFromWhitelist">
+        <div class="location">at         line 565</div>
+        <code>                    
+    <strong>setProcessUncoveredFilesFromWhitelist</strong>(bool $flag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$flag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/InvalidArgumentException.html"><abbr title="SebastianBergmann\CodeCoverage\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDisableIgnoredLines">
+        <div class="location">at         line 582</div>
+        <code>                    
+    <strong>setDisableIgnoredLines</strong>(bool $flag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$flag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/InvalidArgumentException.html"><abbr title="SebastianBergmann\CodeCoverage\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIgnoreDeprecatedCode">
+        <div class="location">at         line 599</div>
+        <code>                    
+    <strong>setIgnoreDeprecatedCode</strong>(bool $flag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$flag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/InvalidArgumentException.html"><abbr title="SebastianBergmann\CodeCoverage\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUnintentionallyCoveredSubclassesWhitelist">
+        <div class="location">at         line 614</div>
+        <code>                    
+    <strong>setUnintentionallyCoveredSubclassesWhitelist</strong>(array $whitelist)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$whitelist</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initializeData">
+        <div class="location">at         line 1111</div>
+        <code>            protected        
+    <strong>initializeData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>If we are processing uncovered files from whitelist,
+we can initialize the data before we start to speed up the tests</p>                                                </div>
+                <div class="tags">
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/RuntimeException.html"><abbr title="SebastianBergmann\CodeCoverage\RuntimeException">RuntimeException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

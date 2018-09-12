@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Prophecy\Prophecy\MethodProphecy | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Prophecy_Prophecy_MethodProphecy" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Prophecy.html">Prophecy</a></li><li class="backslash">\</li><li><a href="../../Prophecy/Prophecy.html">Prophecy</a></li><li class="backslash">\</li><li>MethodProphecy</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            MethodProphecy
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>MethodProphecy</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Method prophecy.</p>                                </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../Prophecy/Prophecy/ObjectProphecy.html"><abbr title="Prophecy\Prophecy\ObjectProphecy">ObjectProphecy</abbr></a> $objectProphecy, string $methodName, null|<a href="../../Prophecy/Argument/ArgumentsWildcard.html"><abbr title="Prophecy\Argument\ArgumentsWildcard">ArgumentsWildcard</abbr></a>|array $arguments = null)
+        
+                                            <p>Initializes method prophecy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withArguments">withArguments</a>(array|<a href="../../Prophecy/Argument/ArgumentsWildcard.html"><abbr title="Prophecy\Argument\ArgumentsWildcard">ArgumentsWildcard</abbr></a> $arguments)
+        
+                                            <p>Sets argument wildcard.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_will">will</a>(callable|<a href="../../Prophecy/Promise/PromiseInterface.html"><abbr title="Prophecy\Promise\PromiseInterface">PromiseInterface</abbr></a> $promise)
+        
+                                            <p>Sets custom promise to the prophecy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_willReturn">willReturn</a>()
+        
+                                            <p>Sets return promise to the prophecy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_willReturnArgument">willReturnArgument</a>(int $index = 0)
+        
+                                            <p>Sets return argument promise to the prophecy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_willThrow">willThrow</a>(string|<a target="_blank" href="http://php.net/Exception">Exception</a> $exception)
+        
+                                            <p>Sets throw promise to the prophecy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_should">should</a>(callable|<a href="../../Prophecy/Prediction/PredictionInterface.html"><abbr title="Prophecy\Prediction\PredictionInterface">PredictionInterface</abbr></a> $prediction)
+        
+                                            <p>Sets custom prediction to the prophecy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shouldBeCalled">shouldBeCalled</a>()
+        
+                                            <p>Sets call prediction to the prophecy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shouldNotBeCalled">shouldNotBeCalled</a>()
+        
+                                            <p>Sets no calls prediction to the prophecy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shouldBeCalledTimes">shouldBeCalledTimes</a>($count)
+        
+                                            <p>Sets call times prediction to the prophecy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shouldHave">shouldHave</a>(callable|<a href="../../Prophecy/Prediction/PredictionInterface.html"><abbr title="Prophecy\Prediction\PredictionInterface">PredictionInterface</abbr></a> $prediction)
+        
+                                            <p>Checks provided prediction immediately.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shouldHaveBeenCalled">shouldHaveBeenCalled</a>()
+        
+                                            <p>Checks call prediction.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shouldNotHaveBeenCalled">shouldNotHaveBeenCalled</a>()
+        
+                                            <p>Checks no calls prediction.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shouldNotBeenCalled">shouldNotBeenCalled</a>()
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                                            <p>Checks no calls prediction.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shouldHaveBeenCalledTimes">shouldHaveBeenCalledTimes</a>(int $count)
+        
+                                            <p>Checks call times prediction.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkPrediction">checkPrediction</a>()
+        
+                                            <p>Checks currently registered [with should(.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|<a href="../../Prophecy/Promise/PromiseInterface.html"><abbr title="Prophecy\Promise\PromiseInterface">PromiseInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPromise">getPromise</a>()
+        
+                                            <p>Returns currently registered promise.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|<a href="../../Prophecy/Prediction/PredictionInterface.html"><abbr title="Prophecy\Prediction\PredictionInterface">PredictionInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPrediction">getPrediction</a>()
+        
+                                            <p>Returns currently registered prediction.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Prophecy/Prediction/PredictionInterface.html"><abbr title="Prophecy\Prediction\PredictionInterface">PredictionInterface</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCheckedPredictions">getCheckedPredictions</a>()
+        
+                                            <p>Returns predictions that were checked on this object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Prophecy/Prophecy/ObjectProphecy.html"><abbr title="Prophecy\Prophecy\ObjectProphecy">ObjectProphecy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getObjectProphecy">getObjectProphecy</a>()
+        
+                                            <p>Returns object prophecy this method prophecy is tied to.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMethodName">getMethodName</a>()
+        
+                                            <p>Returns method name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Prophecy/Argument/ArgumentsWildcard.html"><abbr title="Prophecy\Argument\ArgumentsWildcard">ArgumentsWildcard</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getArgumentsWildcard">getArgumentsWildcard</a>()
+        
+                                            <p>Returns arguments wildcard.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasReturnVoid">hasReturnVoid</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 47</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Prophecy/Prophecy/ObjectProphecy.html"><abbr title="Prophecy\Prophecy\ObjectProphecy">ObjectProphecy</abbr></a> $objectProphecy, string $methodName, null|<a href="../../Prophecy/Argument/ArgumentsWildcard.html"><abbr title="Prophecy\Argument\ArgumentsWildcard">ArgumentsWildcard</abbr></a>|array $arguments = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initializes method prophecy.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Prophecy/Prophecy/ObjectProphecy.html"><abbr title="Prophecy\Prophecy\ObjectProphecy">ObjectProphecy</abbr></a></td>
+                <td>$objectProphecy</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$methodName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|<a href="../../Prophecy/Argument/ArgumentsWildcard.html"><abbr title="Prophecy\Argument\ArgumentsWildcard">ArgumentsWildcard</abbr></a>|array</td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Prophecy/Exception/Doubler/MethodNotFoundException.html"><abbr title="Prophecy\Exception\Doubler\MethodNotFoundException">MethodNotFoundException</abbr></a></td>
+                <td>If method not found</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withArguments">
+        <div class="location">at         line 117</div>
+        <code>                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+    <strong>withArguments</strong>(array|<a href="../../Prophecy/Argument/ArgumentsWildcard.html"><abbr title="Prophecy\Argument\ArgumentsWildcard">ArgumentsWildcard</abbr></a> $arguments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets argument wildcard.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|<a href="../../Prophecy/Argument/ArgumentsWildcard.html"><abbr title="Prophecy\Argument\ArgumentsWildcard">ArgumentsWildcard</abbr></a></td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Prophecy\Prophecy\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Prophecy/Exception/InvalidArgumentException.html"><abbr title="Prophecy\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_will">
+        <div class="location">at         line 145</div>
+        <code>                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+    <strong>will</strong>(callable|<a href="../../Prophecy/Promise/PromiseInterface.html"><abbr title="Prophecy\Promise\PromiseInterface">PromiseInterface</abbr></a> $promise)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets custom promise to the prophecy.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|<a href="../../Prophecy/Promise/PromiseInterface.html"><abbr title="Prophecy\Promise\PromiseInterface">PromiseInterface</abbr></a></td>
+                <td>$promise</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Prophecy\Prophecy\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Prophecy/Exception/InvalidArgumentException.html"><abbr title="Prophecy\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_willReturn">
+        <div class="location">at         line 171</div>
+        <code>                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+    <strong>willReturn</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets return promise to the prophecy.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Prophecy\Prophecy\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="../../Prophecy/Promise/ReturnPromise.html"><abbr title="Prophecy\Promise\ReturnPromise">ReturnPromise</abbr></a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_willReturnArgument">
+        <div class="location">at         line 192</div>
+        <code>                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+    <strong>willReturnArgument</strong>(int $index = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets return argument promise to the prophecy.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>The zero-indexed number of the argument to return</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Prophecy\Prophecy\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="../../Prophecy/Promise/ReturnArgumentPromise.html"><abbr title="Prophecy\Promise\ReturnArgumentPromise">ReturnArgumentPromise</abbr></a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_willThrow">
+        <div class="location">at         line 210</div>
+        <code>                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+    <strong>willThrow</strong>(string|<a target="_blank" href="http://php.net/Exception">Exception</a> $exception)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets throw promise to the prophecy.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>$exception</td>
+                <td>Exception class or instance</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Prophecy\Prophecy\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="../../Prophecy/Promise/ThrowPromise.html"><abbr title="Prophecy\Promise\ThrowPromise">ThrowPromise</abbr></a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_should">
+        <div class="location">at         line 224</div>
+        <code>                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+    <strong>should</strong>(callable|<a href="../../Prophecy/Prediction/PredictionInterface.html"><abbr title="Prophecy\Prediction\PredictionInterface">PredictionInterface</abbr></a> $prediction)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets custom prediction to the prophecy.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|<a href="../../Prophecy/Prediction/PredictionInterface.html"><abbr title="Prophecy\Prediction\PredictionInterface">PredictionInterface</abbr></a></td>
+                <td>$prediction</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Prophecy\Prophecy\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Prophecy/Exception/InvalidArgumentException.html"><abbr title="Prophecy\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldBeCalled">
+        <div class="location">at         line 250</div>
+        <code>                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+    <strong>shouldBeCalled</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets call prediction to the prophecy.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Prophecy\Prophecy\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="../../Prophecy/Prediction/CallPrediction.html"><abbr title="Prophecy\Prediction\CallPrediction">CallPrediction</abbr></a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldNotBeCalled">
+        <div class="location">at         line 262</div>
+        <code>                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+    <strong>shouldNotBeCalled</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets no calls prediction to the prophecy.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Prophecy\Prophecy\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="../../Prophecy/Prediction/NoCallsPrediction.html"><abbr title="Prophecy\Prediction\NoCallsPrediction">NoCallsPrediction</abbr></a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldBeCalledTimes">
+        <div class="location">at         line 276</div>
+        <code>                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+    <strong>shouldBeCalledTimes</strong>($count)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets call times prediction to the prophecy.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Prophecy\Prophecy\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="../../Prophecy/Prediction/CallTimesPrediction.html"><abbr title="Prophecy\Prediction\CallTimesPrediction">CallTimesPrediction</abbr></a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldHave">
+        <div class="location">at         line 290</div>
+        <code>                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+    <strong>shouldHave</strong>(callable|<a href="../../Prophecy/Prediction/PredictionInterface.html"><abbr title="Prophecy\Prediction\PredictionInterface">PredictionInterface</abbr></a> $prediction)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks provided prediction immediately.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|<a href="../../Prophecy/Prediction/PredictionInterface.html"><abbr title="Prophecy\Prediction\PredictionInterface">PredictionInterface</abbr></a></td>
+                <td>$prediction</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Prophecy\Prophecy\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Prophecy/Exception/InvalidArgumentException.html"><abbr title="Prophecy\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldHaveBeenCalled">
+        <div class="location">at         line 331</div>
+        <code>                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+    <strong>shouldHaveBeenCalled</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks call prediction.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Prophecy\Prophecy\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="../../Prophecy/Prediction/CallPrediction.html"><abbr title="Prophecy\Prediction\CallPrediction">CallPrediction</abbr></a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldNotHaveBeenCalled">
+        <div class="location">at         line 343</div>
+        <code>                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+    <strong>shouldNotHaveBeenCalled</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks no calls prediction.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Prophecy\Prophecy\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="../../Prophecy/Prediction/NoCallsPrediction.html"><abbr title="Prophecy\Prediction\NoCallsPrediction">NoCallsPrediction</abbr></a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldNotBeenCalled">
+        <div class="location">at         line 356</div>
+        <code>                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+    <strong>shouldNotBeenCalled</strong>()
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
+    </h3>
+    <div class="details">
+            
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </p>
+    
+
+                    <div class="method-description">
+                                    <p>Checks no calls prediction.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Prophecy\Prophecy\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="../../Prophecy/Prediction/NoCallsPrediction.html"><abbr title="Prophecy\Prediction\NoCallsPrediction">NoCallsPrediction</abbr></a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldHaveBeenCalledTimes">
+        <div class="location">at         line 370</div>
+        <code>                    <abbr title="Prophecy\Prophecy\$this">$this</abbr>
+    <strong>shouldHaveBeenCalledTimes</strong>(int $count)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks call times prediction.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Prophecy\Prophecy\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="../../Prophecy/Prediction/CallTimesPrediction.html"><abbr title="Prophecy\Prediction\CallTimesPrediction">CallTimesPrediction</abbr></a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkPrediction">
+        <div class="location">at         line 378</div>
+        <code>                    
+    <strong>checkPrediction</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks currently registered [with should(.</p>                    <p>..)] prediction.</p>                            </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPromise">
+        <div class="location">at         line 392</div>
+        <code>                    null|<a href="../../Prophecy/Promise/PromiseInterface.html"><abbr title="Prophecy\Promise\PromiseInterface">PromiseInterface</abbr></a>
+    <strong>getPromise</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns currently registered promise.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|<a href="../../Prophecy/Promise/PromiseInterface.html"><abbr title="Prophecy\Promise\PromiseInterface">PromiseInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrediction">
+        <div class="location">at         line 402</div>
+        <code>                    null|<a href="../../Prophecy/Prediction/PredictionInterface.html"><abbr title="Prophecy\Prediction\PredictionInterface">PredictionInterface</abbr></a>
+    <strong>getPrediction</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns currently registered prediction.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|<a href="../../Prophecy/Prediction/PredictionInterface.html"><abbr title="Prophecy\Prediction\PredictionInterface">PredictionInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCheckedPredictions">
+        <div class="location">at         line 412</div>
+        <code>                    <a href="../../Prophecy/Prediction/PredictionInterface.html"><abbr title="Prophecy\Prediction\PredictionInterface">PredictionInterface</abbr></a>[]
+    <strong>getCheckedPredictions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns predictions that were checked on this object.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Prophecy/Prediction/PredictionInterface.html"><abbr title="Prophecy\Prediction\PredictionInterface">PredictionInterface</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getObjectProphecy">
+        <div class="location">at         line 422</div>
+        <code>                    <a href="../../Prophecy/Prophecy/ObjectProphecy.html"><abbr title="Prophecy\Prophecy\ObjectProphecy">ObjectProphecy</abbr></a>
+    <strong>getObjectProphecy</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns object prophecy this method prophecy is tied to.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Prophecy/Prophecy/ObjectProphecy.html"><abbr title="Prophecy\Prophecy\ObjectProphecy">ObjectProphecy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMethodName">
+        <div class="location">at         line 432</div>
+        <code>                    string
+    <strong>getMethodName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns method name.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getArgumentsWildcard">
+        <div class="location">at         line 442</div>
+        <code>                    <a href="../../Prophecy/Argument/ArgumentsWildcard.html"><abbr title="Prophecy\Argument\ArgumentsWildcard">ArgumentsWildcard</abbr></a>
+    <strong>getArgumentsWildcard</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns arguments wildcard.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Prophecy/Argument/ArgumentsWildcard.html"><abbr title="Prophecy\Argument\ArgumentsWildcard">ArgumentsWildcard</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasReturnVoid">
+        <div class="location">at         line 450</div>
+        <code>                    bool
+    <strong>hasReturnVoid</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

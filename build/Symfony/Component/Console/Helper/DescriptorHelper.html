@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Symfony\Component\Console\Helper\DescriptorHelper | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Symfony_Component_Console_Helper_DescriptorHelper" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Symfony.html">Symfony</a></li><li class="backslash">\</li><li><a href="../../../../Symfony/Component.html">Component</a></li><li class="backslash">\</li><li><a href="../../../../Symfony/Component/Console.html">Console</a></li><li class="backslash">\</li><li><a href="../../../../Symfony/Component/Console/Helper.html">Helper</a></li><li class="backslash">\</li><li>DescriptorHelper</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            DescriptorHelper
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>DescriptorHelper</strong>        extends <a href="../../../../Symfony/Component/Console/Helper/Helper.html"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class adds helper method to describe objects in various formats.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_helperSet">
+                                        protected                                        
+                </td>
+                <td>$helperSet</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../Symfony/Component/Console/Helper/Helper.html#property_helperSet"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHelperSet">setHelperSet</a>(<a href="../../../../Symfony/Component/Console/Helper/HelperSet.html"><abbr title="Symfony\Component\Console\Helper\HelperSet">HelperSet</abbr></a> $helperSet = null)
+        
+                                            <p>Sets the helper set associated with this helper.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Console/Helper/Helper.html#method_setHelperSet"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Symfony/Component/Console/Helper/HelperSet.html"><abbr title="Symfony\Component\Console\Helper\HelperSet">HelperSet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHelperSet">getHelperSet</a>()
+        
+                                            <p>Gets the helper set associated with this helper.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Console/Helper/Helper.html#method_getHelperSet"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_strlen">strlen</a>(string $string)
+        
+                                            <p>Returns the length of a string, using mb_strwidth if it is available.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Console/Helper/Helper.html#method_strlen"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_substr">substr</a>(string $string, int $from, int|null $length = null)
+        
+                                            <p>Returns the subset of a string, using mb_substr if it is available.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Console/Helper/Helper.html#method_substr"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatTime">formatTime</a>($secs)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Console/Helper/Helper.html#method_formatTime"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatMemory">formatMemory</a>($memory)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Console/Helper/Helper.html#method_formatMemory"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_strlenWithoutDecoration">strlenWithoutDecoration</a>(<a href="../../../../Symfony/Component/Console/Formatter/OutputFormatterInterface.html"><abbr title="Symfony\Component\Console\Formatter\OutputFormatterInterface">OutputFormatterInterface</abbr></a> $formatter, $string)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Console/Helper/Helper.html#method_strlenWithoutDecoration"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeDecoration">removeDecoration</a>(<a href="../../../../Symfony/Component/Console/Formatter/OutputFormatterInterface.html"><abbr title="Symfony\Component\Console\Formatter\OutputFormatterInterface">OutputFormatterInterface</abbr></a> $formatter, $string)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Symfony/Component/Console/Helper/Helper.html#method_removeDecoration"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_describe">describe</a>(<a href="../../../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output, object $object, array $options = array())
+        
+                                            <p>Describes an object if supported.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Console\Helper\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_register">register</a>(string $format, <a href="../../../../Symfony/Component/Console/Descriptor/DescriptorInterface.html"><abbr title="Symfony\Component\Console\Descriptor\DescriptorInterface">DescriptorInterface</abbr></a> $descriptor)
+        
+                                            <p>Registers a descriptor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Returns the canonical name of this helper.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setHelperSet">
+        <div class="location">in <a href="../../../../Symfony/Component/Console/Helper/Helper.html#method_setHelperSet"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a> at         line 28</div>
+        <code>                    
+    <strong>setHelperSet</strong>(<a href="../../../../Symfony/Component/Console/Helper/HelperSet.html"><abbr title="Symfony\Component\Console\Helper\HelperSet">HelperSet</abbr></a> $helperSet = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the helper set associated with this helper.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Symfony/Component/Console/Helper/HelperSet.html"><abbr title="Symfony\Component\Console\Helper\HelperSet">HelperSet</abbr></a></td>
+                <td>$helperSet</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHelperSet">
+        <div class="location">in <a href="../../../../Symfony/Component/Console/Helper/Helper.html#method_getHelperSet"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a> at         line 36</div>
+        <code>                    <a href="../../../../Symfony/Component/Console/Helper/HelperSet.html"><abbr title="Symfony\Component\Console\Helper\HelperSet">HelperSet</abbr></a>
+    <strong>getHelperSet</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the helper set associated with this helper.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Symfony/Component/Console/Helper/HelperSet.html"><abbr title="Symfony\Component\Console\Helper\HelperSet">HelperSet</abbr></a></td>
+            <td>A HelperSet instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_strlen">
+        <div class="location">in <a href="../../../../Symfony/Component/Console/Helper/Helper.html#method_strlen"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a> at         line 48</div>
+        <code>        static            int
+    <strong>strlen</strong>(string $string)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the length of a string, using mb_strwidth if it is available.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The string to check its length</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>The length of the string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_substr">
+        <div class="location">in <a href="../../../../Symfony/Component/Console/Helper/Helper.html#method_substr"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a> at         line 66</div>
+        <code>        static            string
+    <strong>substr</strong>(string $string, int $from, int|null $length = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the subset of a string, using mb_substr if it is available.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>String to subset</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$from</td>
+                <td>Start offset</td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$length</td>
+                <td>Length to read</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The string subset</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatTime">
+        <div class="location">in <a href="../../../../Symfony/Component/Console/Helper/Helper.html#method_formatTime"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a> at         line 75</div>
+        <code>        static            
+    <strong>formatTime</strong>($secs)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$secs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatMemory">
+        <div class="location">in <a href="../../../../Symfony/Component/Console/Helper/Helper.html#method_formatMemory"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a> at         line 104</div>
+        <code>        static            
+    <strong>formatMemory</strong>($memory)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$memory</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_strlenWithoutDecoration">
+        <div class="location">in <a href="../../../../Symfony/Component/Console/Helper/Helper.html#method_strlenWithoutDecoration"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a> at         line 121</div>
+        <code>        static            
+    <strong>strlenWithoutDecoration</strong>(<a href="../../../../Symfony/Component/Console/Formatter/OutputFormatterInterface.html"><abbr title="Symfony\Component\Console\Formatter\OutputFormatterInterface">OutputFormatterInterface</abbr></a> $formatter, $string)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Symfony/Component/Console/Formatter/OutputFormatterInterface.html"><abbr title="Symfony\Component\Console\Formatter\OutputFormatterInterface">OutputFormatterInterface</abbr></a></td>
+                <td>$formatter</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeDecoration">
+        <div class="location">in <a href="../../../../Symfony/Component/Console/Helper/Helper.html#method_removeDecoration"><abbr title="Symfony\Component\Console\Helper\Helper">Helper</abbr></a> at         line 126</div>
+        <code>        static            
+    <strong>removeDecoration</strong>(<a href="../../../../Symfony/Component/Console/Formatter/OutputFormatterInterface.html"><abbr title="Symfony\Component\Console\Formatter\OutputFormatterInterface">OutputFormatterInterface</abbr></a> $formatter, $string)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Symfony/Component/Console/Formatter/OutputFormatterInterface.html"><abbr title="Symfony\Component\Console\Formatter\OutputFormatterInterface">OutputFormatterInterface</abbr></a></td>
+                <td>$formatter</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 34</div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_describe">
+        <div class="location">at         line 57</div>
+        <code>                    
+    <strong>describe</strong>(<a href="../../../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output, object $object, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Describes an object if supported.</p>                    <p>Available options are:
+* format: string, the output format name
+* raw_text: boolean, sets output type as raw</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Symfony/Component/Console/Exception/InvalidArgumentException.html"><abbr title="Symfony\Component\Console\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>when the given format is not supported</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_register">
+        <div class="location">at         line 80</div>
+        <code>                    <abbr title="Symfony\Component\Console\Helper\$this">$this</abbr>
+    <strong>register</strong>(string $format, <a href="../../../../Symfony/Component/Console/Descriptor/DescriptorInterface.html"><abbr title="Symfony\Component\Console\Descriptor\DescriptorInterface">DescriptorInterface</abbr></a> $descriptor)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Registers a descriptor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Symfony/Component/Console/Descriptor/DescriptorInterface.html"><abbr title="Symfony\Component\Console\Descriptor\DescriptorInterface">DescriptorInterface</abbr></a></td>
+                <td>$descriptor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Console\Helper\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">at         line 90</div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the canonical name of this helper.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The canonical name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

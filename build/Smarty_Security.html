@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Smarty_Security | API</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Smarty_Security" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                            <li><a href="namespaces.html">Namespaces</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Smarty_Security
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Smarty_Security</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class does contain the security settings</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_php_handling">
+                                                                                integer
+                </td>
+                <td>$php_handling</td>
+                <td class="last">This determines how Smarty handles "&lt;?php .</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_secure_dir">
+                                                                                array
+                </td>
+                <td>$secure_dir</td>
+                <td class="last">This is the list of template directories that are considered secure.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_trusted_dir">
+                                                                                array
+                </td>
+                <td>$trusted_dir</td>
+                <td class="last">This is an array of directories where trusted php scripts reside.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_trusted_uri">
+                                                                                array
+                </td>
+                <td>$trusted_uri</td>
+                <td class="last">List of regular expressions (PCRE) that include trusted URIs</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_trusted_constants">
+                                                                                array
+                </td>
+                <td>$trusted_constants</td>
+                <td class="last">List of trusted constants names</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_static_classes">
+                                                                                array
+                </td>
+                <td>$static_classes</td>
+                <td class="last">This is an array of trusted static classes.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_trusted_static_methods">
+                                                                                array
+                </td>
+                <td>$trusted_static_methods</td>
+                <td class="last">This is an nested array of trusted classes and static methods.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_trusted_static_properties">
+                                                                                array
+                </td>
+                <td>$trusted_static_properties</td>
+                <td class="last">This is an array of trusted static properties.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_php_functions">
+                                                                                array
+                </td>
+                <td>$php_functions</td>
+                <td class="last">This is an array of trusted PHP functions.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_php_modifiers">
+                                                                                array
+                </td>
+                <td>$php_modifiers</td>
+                <td class="last">This is an array of trusted PHP modifiers.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_allowed_tags">
+                                                                                array
+                </td>
+                <td>$allowed_tags</td>
+                <td class="last">This is an array of allowed tags.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_disabled_tags">
+                                                                                array
+                </td>
+                <td>$disabled_tags</td>
+                <td class="last">This is an array of disabled tags.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_allowed_modifiers">
+                                                                                array
+                </td>
+                <td>$allowed_modifiers</td>
+                <td class="last">This is an array of allowed modifier plugins.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_disabled_modifiers">
+                                                                                array
+                </td>
+                <td>$disabled_modifiers</td>
+                <td class="last">This is an array of disabled modifier plugins.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_disabled_special_smarty_vars">
+                                                                                array
+                </td>
+                <td>$disabled_special_smarty_vars</td>
+                <td class="last">This is an array of disabled special $smarty variables.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_streams">
+                                                                                array
+                </td>
+                <td>$streams</td>
+                <td class="last">This is an array of trusted streams.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_allow_constants">
+                                                                                boolean
+                </td>
+                <td>$allow_constants</td>
+                <td class="last"><ul>
+<li>flag if constants can be accessed from template</li>
+</ul>
+</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_allow_super_globals">
+                                                                                boolean
+                </td>
+                <td>$allow_super_globals</td>
+                <td class="last"><ul>
+<li>flag if super globals can be accessed from template</li>
+</ul>
+</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_max_template_nesting">
+                                                                                int
+                </td>
+                <td>$max_template_nesting</td>
+                <td class="last">max template nesting level</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__resource_dir">
+                                        protected                                        array
+                </td>
+                <td>$_resource_dir</td>
+                <td class="last">Cache for $resource_dir lookup</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__template_dir">
+                                        protected                                        array
+                </td>
+                <td>$_template_dir</td>
+                <td class="last">Cache for $template_dir lookup</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__config_dir">
+                                        protected                                        array
+                </td>
+                <td>$_config_dir</td>
+                <td class="last">Cache for $config_dir lookup</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__secure_dir">
+                                        protected                                        array
+                </td>
+                <td>$_secure_dir</td>
+                <td class="last">Cache for $secure_dir lookup</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__php_resource_dir">
+                                        protected                                        array
+                </td>
+                <td>$_php_resource_dir</td>
+                <td class="last">Cache for $php_resource_dir lookup</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__trusted_dir">
+                                        protected                                        array
+                </td>
+                <td>$_trusted_dir</td>
+                <td class="last">Cache for $trusted_dir lookup</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__include_path_status">
+                                        protected                                        bool
+                </td>
+                <td>$_include_path_status</td>
+                <td class="last">Cache for include path status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__include_dir">
+                                        protected                                        array
+                </td>
+                <td>$_include_dir</td>
+                <td class="last">Cache for $_include_array lookup</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="Smarty.html">Smarty</a> $smarty)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTrustedPhpFunction">isTrustedPhpFunction</a>(string $function_name, object $compiler)
+        
+                                            <p>Check if PHP function is trusted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTrustedStaticClass">isTrustedStaticClass</a>(string $class_name, object $compiler)
+        
+                                            <p>Check if static class is trusted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTrustedStaticClassAccess">isTrustedStaticClassAccess</a>(string $class_name, string $params, object $compiler)
+        
+                                            <p>Check if static class method/property is trusted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTrustedPhpModifier">isTrustedPhpModifier</a>(string $modifier_name, object $compiler)
+        
+                                            <p>Check if PHP modifier is trusted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTrustedTag">isTrustedTag</a>(string $tag_name, object $compiler)
+        
+                                            <p>Check if tag is trusted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTrustedSpecialSmartyVar">isTrustedSpecialSmartyVar</a>(string $var_name, object $compiler)
+        
+                                            <p>Check if special $smarty variable is trusted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTrustedModifier">isTrustedModifier</a>(string $modifier_name, object $compiler)
+        
+                                            <p>Check if modifier plugin is trusted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTrustedConstant">isTrustedConstant</a>(string $const, object $compiler)
+        
+                                            <p>Check if constants are enabled or trusted</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTrustedStream">isTrustedStream</a>(string $stream_name)
+        
+                                            <p>Check if stream is trusted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTrustedResourceDir">isTrustedResourceDir</a>(string $filepath, null|bool $isConfig = null)
+        
+                                            <p>Check if directory of file resource is trusted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTrustedUri">isTrustedUri</a>(string $uri)
+        
+                                            <p>Check if URI (e.g. {fetch} or {html_image}) is trusted
+To simplify things, isTrustedUri() resolves all input to "{$PROTOCOL}://{$HOSTNAME}".</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTrustedPHPDir">isTrustedPHPDir</a>(string $filepath)
+        
+                                            <p>Check if directory of file resource is trusted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="Smarty.html">Smarty</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enableSecurity">enableSecurity</a>(<a href="Smarty.html">Smarty</a> $smarty, string|<a href="Smarty_Security.html">Smarty_Security</a> $security_class)
+        
+                                            <p>Loads security class and enables security</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startTemplate">startTemplate</a>($template)
+        
+                                            <p>Start template processing</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_endTemplate">endTemplate</a>()
+        
+                                            <p>Exit template processing</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerCallBacks">registerCallBacks</a>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $template)
+        
+                                            <p>Register callback functions call at start/end of template rendering</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 258</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="Smarty.html">Smarty</a> $smarty)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty.html">Smarty</a></td>
+                <td>$smarty</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTrustedPhpFunction">
+        <div class="location">at         line 274</div>
+        <code>                    boolean
+    <strong>isTrustedPhpFunction</strong>(string $function_name, object $compiler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if PHP function is trusted.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$function_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$compiler</td>
+                <td>compiler object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>true if function is trusted</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyCompilerException.html">SmartyCompilerException</a></td>
+                <td>if php function is not trusted</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTrustedStaticClass">
+        <div class="location">at         line 296</div>
+        <code>                    boolean
+    <strong>isTrustedStaticClass</strong>(string $class_name, object $compiler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if static class is trusted.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$compiler</td>
+                <td>compiler object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>true if class is trusted</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyCompilerException.html">SmartyCompilerException</a></td>
+                <td>if static class is not trusted</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTrustedStaticClassAccess">
+        <div class="location">at         line 319</div>
+        <code>                    boolean
+    <strong>isTrustedStaticClassAccess</strong>(string $class_name, string $params, object $compiler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if static class method/property is trusted.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$compiler</td>
+                <td>compiler object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>true if class method is trusted</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyCompilerException.html">SmartyCompilerException</a></td>
+                <td>if static class method is not trusted</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTrustedPhpModifier">
+        <div class="location">at         line 357</div>
+        <code>                    boolean
+    <strong>isTrustedPhpModifier</strong>(string $modifier_name, object $compiler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if PHP modifier is trusted.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$modifier_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$compiler</td>
+                <td>compiler object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>true if modifier is trusted</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyCompilerException.html">SmartyCompilerException</a></td>
+                <td>if modifier is not trusted</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTrustedTag">
+        <div class="location">at         line 379</div>
+        <code>                    boolean
+    <strong>isTrustedTag</strong>(string $tag_name, object $compiler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if tag is trusted.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tag_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$compiler</td>
+                <td>compiler object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>true if tag is trusted</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyCompilerException.html">SmartyCompilerException</a></td>
+                <td>if modifier is not trusted</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTrustedSpecialSmartyVar">
+        <div class="location">at         line 414</div>
+        <code>                    boolean
+    <strong>isTrustedSpecialSmartyVar</strong>(string $var_name, object $compiler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if special $smarty variable is trusted.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$var_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$compiler</td>
+                <td>compiler object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>true if tag is trusted</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyCompilerException.html">SmartyCompilerException</a></td>
+                <td>if modifier is not trusted</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTrustedModifier">
+        <div class="location">at         line 435</div>
+        <code>                    boolean
+    <strong>isTrustedModifier</strong>(string $modifier_name, object $compiler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if modifier plugin is trusted.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$modifier_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$compiler</td>
+                <td>compiler object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>true if tag is trusted</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyCompilerException.html">SmartyCompilerException</a></td>
+                <td>if modifier is not trusted</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTrustedConstant">
+        <div class="location">at         line 469</div>
+        <code>                    bool
+    <strong>isTrustedConstant</strong>(string $const, object $compiler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if constants are enabled or trusted</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$const</td>
+                <td>constant name</td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$compiler</td>
+                <td>compiler object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTrustedStream">
+        <div class="location">at         line 496</div>
+        <code>                    boolean
+    <strong>isTrustedStream</strong>(string $stream_name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if stream is trusted.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$stream_name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>true if stream is trusted</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyException.html">SmartyException</a></td>
+                <td>if stream is not trusted</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTrustedResourceDir">
+        <div class="location">at         line 514</div>
+        <code>                    bool
+    <strong>isTrustedResourceDir</strong>(string $filepath, null|bool $isConfig = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if directory of file resource is trusted.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$filepath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|bool</td>
+                <td>$isConfig</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if directory is trusted</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyException.html">SmartyException</a></td>
+                <td>if directory is not trusted</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTrustedUri">
+        <div class="location">at         line 586</div>
+        <code>                    boolean
+    <strong>isTrustedUri</strong>(string $uri)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if URI (e.g. {fetch} or {html_image}) is trusted
+To simplify things, isTrustedUri() resolves all input to "{$PROTOCOL}://{$HOSTNAME}".</p>                    <p>So "http://username:password@hello.world.example.org:8080/some-path?some=query-string"
+is reduced to "http://hello.world.example.org" prior to applying the patters from {@link $trusted_uri}.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>true if URI is trusted</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyException.html">SmartyException</a></td>
+                <td>if URI is not trusted</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTrustedPHPDir">
+        <div class="location">at         line 609</div>
+        <code>                    boolean
+    <strong>isTrustedPHPDir</strong>(string $filepath)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if directory of file resource is trusted.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$filepath</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>true if directory is trusted</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyException.html">SmartyException</a></td>
+                <td>if PHP directory is not trusted</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enableSecurity">
+        <div class="location">at         line 675</div>
+        <code>        static            <a href="Smarty.html">Smarty</a>
+    <strong>enableSecurity</strong>(<a href="Smarty.html">Smarty</a> $smarty, string|<a href="Smarty_Security.html">Smarty_Security</a> $security_class)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Loads security class and enables security</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty.html">Smarty</a></td>
+                <td>$smarty</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|<a href="Smarty_Security.html">Smarty_Security</a></td>
+                <td>$security_class</td>
+                <td>if a string is used, it must be class-name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="Smarty.html">Smarty</a></td>
+            <td>current Smarty instance for chaining</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyException.html">SmartyException</a></td>
+                <td>when an invalid class name is provided</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startTemplate">
+        <div class="location">at         line 702</div>
+        <code>                    
+    <strong>startTemplate</strong>($template)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Start template processing</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$template</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyException.html">SmartyException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_endTemplate">
+        <div class="location">at         line 713</div>
+        <code>                    
+    <strong>endTemplate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Exit template processing</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerCallBacks">
+        <div class="location">at         line 725</div>
+        <code>                    
+    <strong>registerCallBacks</strong>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $template)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Register callback functions call at start/end of template rendering</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a></td>
+                <td>$template</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

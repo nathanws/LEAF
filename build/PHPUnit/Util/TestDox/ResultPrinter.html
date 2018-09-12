@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PHPUnit\Util\TestDox\ResultPrinter | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PHPUnit_Util_TestDox_ResultPrinter" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PHPUnit.html">PHPUnit</a></li><li class="backslash">\</li><li><a href="../../../PHPUnit/Util.html">Util</a></li><li class="backslash">\</li><li><a href="../../../PHPUnit/Util/TestDox.html">TestDox</a></li><li class="backslash">\</li><li>ResultPrinter</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ResultPrinter
+                
+        </h1>
+    </div>
+
+    <p>abstract     class
+    <strong>ResultPrinter</strong>        extends <a href="../../../PHPUnit/Util/Printer.html"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a>        implements
+        <a href="../../../PHPUnit/Framework/TestListener.html"><abbr title="PHPUnit\Framework\TestListener">TestListener</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Base class for printers of TestDox documentation.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_autoFlush">
+                                        protected                                        bool
+                </td>
+                <td>$autoFlush</td>
+                <td class="last">If true, flush output after every write.</td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/Util/Printer.html#property_autoFlush"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_out">
+                                        protected                                        resource
+                </td>
+                <td>$out</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/Util/Printer.html#property_out"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_outTarget">
+                                        protected                                        string
+                </td>
+                <td>$outTarget</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PHPUnit/Util/Printer.html#property_outTarget"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_prettifier">
+                                        protected                                        <a href="../../../PHPUnit/Util/TestDox/NamePrettifier.html"><abbr title="PHPUnit\Util\TestDox\NamePrettifier">NamePrettifier</abbr></a>
+                </td>
+                <td>$prettifier</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_testClass">
+                                        protected                                        string
+                </td>
+                <td>$testClass</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_testStatus">
+                                        protected                                        int
+                </td>
+                <td>$testStatus</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tests">
+                                        protected                                        array
+                </td>
+                <td>$tests</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_successful">
+                                        protected                                        int
+                </td>
+                <td>$successful</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_warned">
+                                        protected                                        int
+                </td>
+                <td>$warned</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_failed">
+                                        protected                                        int
+                </td>
+                <td>$failed</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_risky">
+                                        protected                                        int
+                </td>
+                <td>$risky</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_skipped">
+                                        protected                                        int
+                </td>
+                <td>$skipped</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_incomplete">
+                                        protected                                        int
+                </td>
+                <td>$incomplete</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_currentTestClassPrettified">
+                                        protected                                        string|null
+                </td>
+                <td>$currentTestClassPrettified</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_currentTestMethodPrettified">
+                                        protected                                        string|null
+                </td>
+                <td>$currentTestMethodPrettified</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(mixed $out = null, array $groups = [], array $excludeGroups = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_flush">flush</a>()
+        
+                                            <p>Flush buffer and close output.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_incrementalFlush">incrementalFlush</a>()
+        
+                                            <p>Performs a safe, incremental flush.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/Printer.html#method_incrementalFlush"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_write">write</a>(string $buffer)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/Printer.html#method_write"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAutoFlush">getAutoFlush</a>()
+        
+                                            <p>Check auto-flush mode.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/Printer.html#method_getAutoFlush"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAutoFlush">setAutoFlush</a>(bool $autoFlush)
+        
+                                            <p>Set auto-flushing mode.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PHPUnit/Util/Printer.html#method_setAutoFlush"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addError">addError</a>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a target="_blank" href="http://php.net/Exception">Exception</a> $e, float $time)
+        
+                                            <p>An error occurred.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addWarning">addWarning</a>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a href="../../../PHPUnit/Framework/Warning.html"><abbr title="PHPUnit\Framework\Warning">Warning</abbr></a> $e, float $time)
+        
+                                            <p>A warning occurred.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addFailure">addFailure</a>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a href="../../../PHPUnit/Framework/AssertionFailedError.html"><abbr title="PHPUnit\Framework\AssertionFailedError">AssertionFailedError</abbr></a> $e, float $time)
+        
+                                            <p>A failure occurred.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addIncompleteTest">addIncompleteTest</a>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a target="_blank" href="http://php.net/Exception">Exception</a> $e, float $time)
+        
+                                            <p>Incomplete test.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addRiskyTest">addRiskyTest</a>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a target="_blank" href="http://php.net/Exception">Exception</a> $e, float $time)
+        
+                                            <p>Risky test.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addSkippedTest">addSkippedTest</a>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a target="_blank" href="http://php.net/Exception">Exception</a> $e, float $time)
+        
+                                            <p>Skipped test.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startTestSuite">startTestSuite</a>(<a href="../../../PHPUnit/Framework/TestSuite.html"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> $suite)
+        
+                                            <p>A testsuite started.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_endTestSuite">endTestSuite</a>(<a href="../../../PHPUnit/Framework/TestSuite.html"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> $suite)
+        
+                                            <p>A testsuite ended.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startTest">startTest</a>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test)
+        
+                                            <p>A test started.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_endTest">endTest</a>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, float $time)
+        
+                                            <p>A test ended.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doEndClass">doEndClass</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startRun">startRun</a>()
+        
+                                            <p>Handler for 'start run' event.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startClass">startClass</a>(string $name)
+        
+                                            <p>Handler for 'start class' event.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onTest">onTest</a>(string $name, bool $success = true)
+        
+                                            <p>Handler for 'on test' event.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_endClass">endClass</a>(string $name)
+        
+                                            <p>Handler for 'end class' event.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_endRun">endRun</a>()
+        
+                                            <p>Handler for 'end run' event.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 102</div>
+        <code>                    
+    <strong>__construct</strong>(mixed $out = null, array $groups = [], array $excludeGroups = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$out</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$groups</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$excludeGroups</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flush">
+        <div class="location">at         line 116</div>
+        <code>                    
+    <strong>flush</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Flush buffer and close output.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_incrementalFlush">
+        <div class="location">in <a href="../../../PHPUnit/Util/Printer.html#method_incrementalFlush"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a> at         line 87</div>
+        <code>                    
+    <strong>incrementalFlush</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Performs a safe, incremental flush.</p>                    <p>Do not confuse this function with the flush() function of this class,
+since the flush() function may close the file being written to, rendering
+the current object no longer usable.</p>                            </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_write">
+        <div class="location">in <a href="../../../PHPUnit/Util/Printer.html#method_write"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a> at         line 99</div>
+        <code>                    
+    <strong>write</strong>(string $buffer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$buffer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAutoFlush">
+        <div class="location">in <a href="../../../PHPUnit/Util/Printer.html#method_getAutoFlush"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a> at         line 125</div>
+        <code>                    bool
+    <strong>getAutoFlush</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check auto-flush mode.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAutoFlush">
+        <div class="location">in <a href="../../../PHPUnit/Util/Printer.html#method_setAutoFlush"><abbr title="PHPUnit\Util\Printer">Printer</abbr></a> at         line 138</div>
+        <code>                    
+    <strong>setAutoFlush</strong>(bool $autoFlush)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set auto-flushing mode.</p>                    <p>If set, <em>incremental</em> flushes will be done after each write. This should
+not be confused with the different effects of this class' flush() method.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$autoFlush</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addError">
+        <div class="location">at         line 131</div>
+        <code>                    
+    <strong>addError</strong>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a target="_blank" href="http://php.net/Exception">Exception</a> $e, float $time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>An error occurred.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addWarning">
+        <div class="location">at         line 148</div>
+        <code>                    
+    <strong>addWarning</strong>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a href="../../../PHPUnit/Framework/Warning.html"><abbr title="PHPUnit\Framework\Warning">Warning</abbr></a> $e, float $time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A warning occurred.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Warning.html"><abbr title="PHPUnit\Framework\Warning">Warning</abbr></a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addFailure">
+        <div class="location">at         line 165</div>
+        <code>                    
+    <strong>addFailure</strong>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a href="../../../PHPUnit/Framework/AssertionFailedError.html"><abbr title="PHPUnit\Framework\AssertionFailedError">AssertionFailedError</abbr></a> $e, float $time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A failure occurred.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/AssertionFailedError.html"><abbr title="PHPUnit\Framework\AssertionFailedError">AssertionFailedError</abbr></a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addIncompleteTest">
+        <div class="location">at         line 182</div>
+        <code>                    
+    <strong>addIncompleteTest</strong>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a target="_blank" href="http://php.net/Exception">Exception</a> $e, float $time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Incomplete test.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addRiskyTest">
+        <div class="location">at         line 199</div>
+        <code>                    
+    <strong>addRiskyTest</strong>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a target="_blank" href="http://php.net/Exception">Exception</a> $e, float $time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Risky test.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addSkippedTest">
+        <div class="location">at         line 216</div>
+        <code>                    
+    <strong>addSkippedTest</strong>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, <a target="_blank" href="http://php.net/Exception">Exception</a> $e, float $time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Skipped test.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startTestSuite">
+        <div class="location">at         line 231</div>
+        <code>                    
+    <strong>startTestSuite</strong>(<a href="../../../PHPUnit/Framework/TestSuite.html"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> $suite)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A testsuite started.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestSuite.html"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></td>
+                <td>$suite</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_endTestSuite">
+        <div class="location">at         line 240</div>
+        <code>                    
+    <strong>endTestSuite</strong>(<a href="../../../PHPUnit/Framework/TestSuite.html"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a> $suite)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A testsuite ended.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/TestSuite.html"><abbr title="PHPUnit\Framework\TestSuite">TestSuite</abbr></a></td>
+                <td>$suite</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startTest">
+        <div class="location">at         line 249</div>
+        <code>                    
+    <strong>startTest</strong>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A test started.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_endTest">
+        <div class="location">at         line 298</div>
+        <code>                    
+    <strong>endTest</strong>(<a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a> $test, float $time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A test ended.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PHPUnit/Framework/Test.html"><abbr title="PHPUnit\Framework\Test">Test</abbr></a></td>
+                <td>$test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doEndClass">
+        <div class="location">at         line 324</div>
+        <code>            protected        
+    <strong>doEndClass</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startRun">
+        <div class="location">at         line 336</div>
+        <code>            protected        
+    <strong>startRun</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Handler for 'start run' event.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startClass">
+        <div class="location">at         line 345</div>
+        <code>            protected        
+    <strong>startClass</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Handler for 'start class' event.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onTest">
+        <div class="location">at         line 355</div>
+        <code>            protected        
+    <strong>onTest</strong>(string $name, bool $success = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Handler for 'on test' event.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$success</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_endClass">
+        <div class="location">at         line 364</div>
+        <code>            protected        
+    <strong>endClass</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Handler for 'end class' event.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_endRun">
+        <div class="location">at         line 371</div>
+        <code>            protected        
+    <strong>endRun</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Handler for 'end run' event.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

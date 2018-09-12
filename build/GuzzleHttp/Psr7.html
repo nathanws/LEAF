@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>GuzzleHttp\Psr7 | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/sami.css">
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="namespace" data-name="namespace:GuzzleHttp_Psr7" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                                            <li><a href="../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                <div class="namespace-breadcrumbs">
+        <ol class="breadcrumb">
+            <li><span class="label label-default">Namespace</span></li>
+                    <li><a href="../GuzzleHttp.html">GuzzleHttp</a></li><li class="backslash">\</li><li><a href="../GuzzleHttp/Psr7.html">Psr7</a></li><li class="backslash">\</li>
+        </ol>
+    </div>
+            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>GuzzleHttp\Psr7</h1>
+    </div>
+
+    
+            <h2>Classes</h2>
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/AppendStream.html"><abbr title="GuzzleHttp\Psr7\AppendStream">AppendStream</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Reads from multiple streams, one after the other.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/BufferStream.html"><abbr title="GuzzleHttp\Psr7\BufferStream">BufferStream</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Provides a buffer stream that can be written to to fill a buffer, and read
+from to remove bytes from the buffer.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/CachingStream.html"><abbr title="GuzzleHttp\Psr7\CachingStream">CachingStream</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Stream decorator that can cache previously read bytes from a sequentially
+read stream.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/DroppingStream.html"><abbr title="GuzzleHttp\Psr7\DroppingStream">DroppingStream</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Stream decorator that begins dropping data once the size of the underlying
+stream becomes too full.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/FnStream.html"><abbr title="GuzzleHttp\Psr7\FnStream">FnStream</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Compose stream implementations based on a hash of functions.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/InflateStream.html"><abbr title="GuzzleHttp\Psr7\InflateStream">InflateStream</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Uses PHP's zlib.inflate filter to inflate deflate or gzipped content.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/LazyOpenStream.html"><abbr title="GuzzleHttp\Psr7\LazyOpenStream">LazyOpenStream</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Lazily reads or writes to a file that is opened only after an IO operation
+take place on the stream.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/LimitStream.html"><abbr title="GuzzleHttp\Psr7\LimitStream">LimitStream</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Decorator used to return only a subset of a stream
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/MessageTrait.html"><abbr title="GuzzleHttp\Psr7\MessageTrait">MessageTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Trait implementing functionality common to requests and responses.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/MultipartStream.html"><abbr title="GuzzleHttp\Psr7\MultipartStream">MultipartStream</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Stream that when read returns bytes for a streaming multipart or
+multipart/form-data stream.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/NoSeekStream.html"><abbr title="GuzzleHttp\Psr7\NoSeekStream">NoSeekStream</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Stream decorator that prevents a stream from being seeked
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/PumpStream.html"><abbr title="GuzzleHttp\Psr7\PumpStream">PumpStream</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Provides a read only stream that pumps data from a PHP callable.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/Request.html"><abbr title="GuzzleHttp\Psr7\Request">Request</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    PSR-7 request implementation.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/Response.html"><abbr title="GuzzleHttp\Psr7\Response">Response</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    PSR-7 response implementation.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/ServerRequest.html"><abbr title="GuzzleHttp\Psr7\ServerRequest">ServerRequest</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Server-side HTTP request
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/Stream.html"><abbr title="GuzzleHttp\Psr7\Stream">Stream</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    PHP stream implementation.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/StreamDecoratorTrait.html"><abbr title="GuzzleHttp\Psr7\StreamDecoratorTrait">StreamDecoratorTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Stream decorator trait
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/StreamWrapper.html"><abbr title="GuzzleHttp\Psr7\StreamWrapper">StreamWrapper</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Converts Guzzle streams into PHP stream resources.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/UploadedFile.html"><abbr title="GuzzleHttp\Psr7\UploadedFile">UploadedFile</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/Uri.html"><abbr title="GuzzleHttp\Psr7\Uri">Uri</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    PSR-7 URI implementation.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/UriNormalizer.html"><abbr title="GuzzleHttp\Psr7\UriNormalizer">UriNormalizer</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Provides methods to normalize and compare URIs.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../GuzzleHttp/Psr7/UriResolver.html"><abbr title="GuzzleHttp\Psr7\UriResolver">UriResolver</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Resolves a URI reference in the context of a base URI and the opposite way.
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

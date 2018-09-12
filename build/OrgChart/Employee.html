@@ -1,0 +1,2013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Orgchart\Employee | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/sami.css">
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Orgchart_Employee" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                                            <li><a href="../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../Orgchart.html">Orgchart</a></li><li class="backslash">\</li><li>Employee</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Employee
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Employee</strong>        extends <a href="../Orgchart/Data.html"><abbr title="Orgchart\Data">Data</abbr></a>
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_db">
+                                        protected                                        
+                </td>
+                <td>$db</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../Orgchart/Data.html#property_db"><abbr title="Orgchart\Data">Data</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_login">
+                                        protected                                        
+                </td>
+                <td>$login</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../Orgchart/Data.html#property_login"><abbr title="Orgchart\Data">Data</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dataTable">
+                                        protected                                        
+                </td>
+                <td>$dataTable</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dataHistoryTable">
+                                        protected                                        
+                </td>
+                <td>$dataHistoryTable</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dataTagTable">
+                                        protected                                        
+                </td>
+                <td>$dataTagTable</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../Orgchart/Data.html#property_dataTagTable"><abbr title="Orgchart\Data">Data</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dataTableUID">
+                                        protected                                        
+                </td>
+                <td>$dataTableUID</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dataTableDescription">
+                                        protected                                        
+                </td>
+                <td>$dataTableDescription</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dataTableCategoryID">
+                                        protected                                        
+                </td>
+                <td>$dataTableCategoryID</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debug">
+                                                                                
+                </td>
+                <td>$debug</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_position">
+                                                                                
+                </td>
+                <td>$position</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>($db, $login)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method___construct"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initialize">initialize</a>()
+        
+                                            <p>Initialize data table variables</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDataTable">setDataTable</a>($tableName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method_setDataTable"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDataHistoryTable">setDataHistoryTable</a>($tableName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method_setDataHistoryTable"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDataTagTable">setDataTagTable</a>($tableName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method_setDataTagTable"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDataTableUID">setDataTableUID</a>($uid)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method_setDataTableUID"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDataTableDescription">setDataTableDescription</a>($desc)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method_setDataTableDescription"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDataTableCategoryID">setDataTableCategoryID</a>($categoryID)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method_setDataTableCategoryID"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDataTableCategoryID">getDataTableCategoryID</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method_getDataTableCategoryID"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAllData">getAllData</a>(int $UID, int $indicatorID = 0)
+        
+                                            <p>Retrieve all data if no indicatorID is given</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method_getAllData"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sanitizeInput">sanitizeInput</a>(string $in)
+        
+                                            <p>Clean up html input, allow some tags</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method_sanitizeInput"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFileHash">getFileHash</a>($categoryID, $uid, $indicatorID, $fileName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method_getFileHash"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_modify">modify</a>(int $UID)
+        
+                                            <p>Modify data using $_POST superglobal
+$_POST Format: $_POST[indicatorID] = value</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method_modify"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAllTags">getAllTags</a>($uid)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method_getAllTags"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addTag">addTag</a>($uid, $tag)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method_addTag"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteTag">deleteTag</a>($uid, $tag)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method_deleteTag"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteAttachment">deleteAttachment</a>($categoryID, $UID, $indicatorID, $file)
+        
+                                            <p>Delete file/image attachment</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method_deleteAttachment"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateLastModified">updateLastModified</a>()
+        
+                                            <p>Updates last modified cache timestamp</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../Orgchart/Data.html#method_updateLastModified"><abbr title="Orgchart\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNoLimit">setNoLimit</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cleanWildcards">cleanWildcards</a>(string $input)
+        
+                                            <p>Clean up all wildcards</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addNew">addNew</a>($firstName, $lastName, $middleName = &#039;&#039;, $userName = &#039;&#039;, $bypassAdmin = false)
+        
+                                            <p>Add new employee</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_importFromNational">importFromNational</a>(string $userName)
+        
+                                            <p>Add new employee by importing from national DB</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disableAccount">disableAccount</a>(int $empUID)
+        
+                                            <p>Marks employee as deleted</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enableAccount">enableAccount</a>(int $empUID)
+        
+                                            <p>Marks employee as not deleted</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSummary">getSummary</a>($empUID)
+        
+                                            <p>Get employee summary</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPositions">getPositions</a>($empUID)
+        
+                                            <p>Get positions associated with an employee</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lookupLogin">lookupLogin</a>($login)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lookupEmpUID">lookupEmpUID</a>($empUID)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lookupLastName">lookupLastName</a>($lastName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lookupFirstName">lookupFirstName</a>($firstName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lookupName">lookupName</a>($lastName, $firstName, $middleName = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lookupEmail">lookupEmail</a>($email)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lookupPhone">lookupPhone</a>($phone)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lookupByIndicatorID">lookupByIndicatorID</a>($indicatorID, $query)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBackups">getBackups</a>(int $empUID)
+        
+                                            <p>Retrieve list of backup employees for a given employee</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBackupsFor">getBackupsFor</a>(int $empUID)
+        
+                                            <p>Retrieve list of employees for which a given employee is a backup for</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setBackup">setBackup</a>(int $primaryEmpUID, int $backupEmpUID)
+        
+                                            <p>Sets one employee to be the backup of another, and inheirts their access privileges</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeBackup">removeBackup</a>(int $primaryEmpUID, int $backupEmpUID)
+        
+                                            <p>Removes an employee's backup</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listGroups">listGroups</a>(int $empUID)
+        
+                                            <p>List groups that the employee is a member of</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_search">search</a>($input, $indicatorID = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../Orgchart/Data.html#method___construct"><abbr title="Orgchart\Data">Data</abbr></a> at         line 39</div>
+        <code>                    
+    <strong>__construct</strong>($db, $login)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$db</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$login</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initialize">
+        <div class="location">at         line 48</div>
+        <code>                    
+    <strong>initialize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initialize data table variables</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDataTable">
+        <div class="location">in <a href="../Orgchart/Data.html#method_setDataTable"><abbr title="Orgchart\Data">Data</abbr></a> at         line 51</div>
+        <code>                    
+    <strong>setDataTable</strong>($tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDataHistoryTable">
+        <div class="location">in <a href="../Orgchart/Data.html#method_setDataHistoryTable"><abbr title="Orgchart\Data">Data</abbr></a> at         line 56</div>
+        <code>                    
+    <strong>setDataHistoryTable</strong>($tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDataTagTable">
+        <div class="location">in <a href="../Orgchart/Data.html#method_setDataTagTable"><abbr title="Orgchart\Data">Data</abbr></a> at         line 61</div>
+        <code>                    
+    <strong>setDataTagTable</strong>($tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDataTableUID">
+        <div class="location">in <a href="../Orgchart/Data.html#method_setDataTableUID"><abbr title="Orgchart\Data">Data</abbr></a> at         line 66</div>
+        <code>                    
+    <strong>setDataTableUID</strong>($uid)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$uid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDataTableDescription">
+        <div class="location">in <a href="../Orgchart/Data.html#method_setDataTableDescription"><abbr title="Orgchart\Data">Data</abbr></a> at         line 71</div>
+        <code>                    
+    <strong>setDataTableDescription</strong>($desc)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$desc</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDataTableCategoryID">
+        <div class="location">in <a href="../Orgchart/Data.html#method_setDataTableCategoryID"><abbr title="Orgchart\Data">Data</abbr></a> at         line 76</div>
+        <code>                    
+    <strong>setDataTableCategoryID</strong>($categoryID)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$categoryID</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDataTableCategoryID">
+        <div class="location">in <a href="../Orgchart/Data.html#method_getDataTableCategoryID"><abbr title="Orgchart\Data">Data</abbr></a> at         line 81</div>
+        <code>                    
+    <strong>getDataTableCategoryID</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAllData">
+        <div class="location">in <a href="../Orgchart/Data.html#method_getAllData"><abbr title="Orgchart\Data">Data</abbr></a> at         line 92</div>
+        <code>                    array
+    <strong>getAllData</strong>(int $UID, int $indicatorID = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve all data if no indicatorID is given</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$UID</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$indicatorID</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sanitizeInput">
+        <div class="location">in <a href="../Orgchart/Data.html#method_sanitizeInput"><abbr title="Orgchart\Data">Data</abbr></a> at         line 252</div>
+        <code>                    string
+    <strong>sanitizeInput</strong>(string $in)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clean up html input, allow some tags</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$in</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFileHash">
+        <div class="location">in <a href="../Orgchart/Data.html#method_getFileHash"><abbr title="Orgchart\Data">Data</abbr></a> at         line 333</div>
+        <code>                    
+    <strong>getFileHash</strong>($categoryID, $uid, $indicatorID, $fileName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$categoryID</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$uid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$indicatorID</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fileName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modify">
+        <div class="location">in <a href="../Orgchart/Data.html#method_modify"><abbr title="Orgchart\Data">Data</abbr></a> at         line 353</div>
+        <code>                    
+    <strong>modify</strong>(int $UID)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Modify data using $_POST superglobal
+$_POST Format: $_POST[indicatorID] = value</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$UID</td>
+                <td>Unique ID of the current table (aka "record ID", empUID/groupID/positionID)</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Orgchart\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAllTags">
+        <div class="location">in <a href="../Orgchart/Data.html#method_getAllTags"><abbr title="Orgchart\Data">Data</abbr></a> at         line 511</div>
+        <code>                    
+    <strong>getAllTags</strong>($uid)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$uid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addTag">
+        <div class="location">in <a href="../Orgchart/Data.html#method_addTag"><abbr title="Orgchart\Data">Data</abbr></a> at         line 525</div>
+        <code>                    
+    <strong>addTag</strong>($uid, $tag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$uid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$tag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteTag">
+        <div class="location">in <a href="../Orgchart/Data.html#method_deleteTag"><abbr title="Orgchart\Data">Data</abbr></a> at         line 564</div>
+        <code>                    
+    <strong>deleteTag</strong>($uid, $tag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$uid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$tag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteAttachment">
+        <div class="location">in <a href="../Orgchart/Data.html#method_deleteAttachment"><abbr title="Orgchart\Data">Data</abbr></a> at         line 605</div>
+        <code>                    int
+    <strong>deleteAttachment</strong>($categoryID, $UID, $indicatorID, $file)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete file/image attachment</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$categoryID</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$UID</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$indicatorID</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>1 for success, 0 for fail</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateLastModified">
+        <div class="location">in <a href="../Orgchart/Data.html#method_updateLastModified"><abbr title="Orgchart\Data">Data</abbr></a> at         line 660</div>
+        <code>                    boolean
+    <strong>updateLastModified</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Updates last modified cache timestamp</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNoLimit">
+        <div class="location">at         line 57</div>
+        <code>                    
+    <strong>setNoLimit</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cleanWildcards">
+        <div class="location">at         line 67</div>
+        <code>        static            string
+    <strong>cleanWildcards</strong>(string $input)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clean up all wildcards</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addNew">
+        <div class="location">at         line 87</div>
+        <code>                    int
+    <strong>addNew</strong>($firstName, $lastName, $middleName = &#039;&#039;, $userName = &#039;&#039;, $bypassAdmin = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add new employee</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$firstName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$lastName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$middleName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$userName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$bypassAdmin</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>New employee ID</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Orgchart\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_importFromNational">
+        <div class="location">at         line 126</div>
+        <code>                    int
+    <strong>importFromNational</strong>(string $userName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add new employee by importing from national DB</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>New employee ID</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Orgchart\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disableAccount">
+        <div class="location">at         line 226</div>
+        <code>                    bool
+    <strong>disableAccount</strong>(int $empUID)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Marks employee as deleted</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$empUID</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enableAccount">
+        <div class="location">at         line 253</div>
+        <code>                    bool
+    <strong>enableAccount</strong>(int $empUID)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Marks employee as not deleted</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$empUID</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSummary">
+        <div class="location">at         line 280</div>
+        <code>                    array
+    <strong>getSummary</strong>($empUID)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get employee summary</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$empUID</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPositions">
+        <div class="location">at         line 301</div>
+        <code>                    array
+    <strong>getPositions</strong>($empUID)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get positions associated with an employee</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$empUID</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lookupLogin">
+        <div class="location">at         line 310</div>
+        <code>                    
+    <strong>lookupLogin</strong>($login)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$login</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lookupEmpUID">
+        <div class="location">at         line 330</div>
+        <code>                    
+    <strong>lookupEmpUID</strong>($empUID)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$empUID</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lookupLastName">
+        <div class="location">at         line 352</div>
+        <code>                    
+    <strong>lookupLastName</strong>($lastName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$lastName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lookupFirstName">
+        <div class="location">at         line 391</div>
+        <code>                    
+    <strong>lookupFirstName</strong>($firstName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$firstName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lookupName">
+        <div class="location">at         line 422</div>
+        <code>                    
+    <strong>lookupName</strong>($lastName, $firstName, $middleName = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$lastName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$firstName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$middleName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lookupEmail">
+        <div class="location">at         line 469</div>
+        <code>                    
+    <strong>lookupEmail</strong>($email)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$email</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lookupPhone">
+        <div class="location">at         line 483</div>
+        <code>                    
+    <strong>lookupPhone</strong>($phone)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$phone</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lookupByIndicatorID">
+        <div class="location">at         line 497</div>
+        <code>                    
+    <strong>lookupByIndicatorID</strong>($indicatorID, $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$indicatorID</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBackups">
+        <div class="location">at         line 515</div>
+        <code>                    
+    <strong>getBackups</strong>(int $empUID)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve list of backup employees for a given employee</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$empUID</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBackupsFor">
+        <div class="location">at         line 536</div>
+        <code>                    
+    <strong>getBackupsFor</strong>(int $empUID)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve list of employees for which a given employee is a backup for</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$empUID</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBackup">
+        <div class="location">at         line 561</div>
+        <code>                    
+    <strong>setBackup</strong>(int $primaryEmpUID, int $backupEmpUID)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets one employee to be the backup of another, and inheirts their access privileges</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$primaryEmpUID</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$backupEmpUID</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeBackup">
+        <div class="location">at         line 588</div>
+        <code>                    
+    <strong>removeBackup</strong>(int $primaryEmpUID, int $backupEmpUID)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes an employee's backup</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$primaryEmpUID</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$backupEmpUID</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listGroups">
+        <div class="location">at         line 614</div>
+        <code>                    array
+    <strong>listGroups</strong>(int $empUID)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>List groups that the employee is a member of</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$empUID</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_search">
+        <div class="location">at         line 624</div>
+        <code>                    
+    <strong>search</strong>($input, $indicatorID = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$indicatorID</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

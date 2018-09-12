@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Smarty_Internal_Runtime_Inheritance | API</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Smarty_Internal_Runtime_Inheritance" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                            <li><a href="namespaces.html">Namespaces</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Smarty_Internal_Runtime_Inheritance
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Smarty_Internal_Runtime_Inheritance</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Inheritance Runtime Methods processBlock, endChild, init</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_state">
+                                                                                int
+                </td>
+                <td>$state</td>
+                <td class="last">State machine
+- 0 idle next extends will create a new inheritance tree
+- 1 processing child template
+- 2 wait for next inheritance template
+- 3 assume parent template, if child will loaded goto state 1
+    a call to a sub template resets the state to 0</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_childRoot">
+                                                                                <a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a>[]
+                </td>
+                <td>$childRoot</td>
+                <td class="last">Array of root child {block} objects</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_inheritanceLevel">
+                                                                                int
+                </td>
+                <td>$inheritanceLevel</td>
+                <td class="last">inheritance template nesting level</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tplIndex">
+                                                                                int
+                </td>
+                <td>$tplIndex</td>
+                <td class="last">inheritance template index</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sources">
+                                                                                <a href="Smarty_Template_Source.html">Smarty_Template_Source</a>[]
+                </td>
+                <td>$sources</td>
+                <td class="last">Array of template source objects
+- key template index</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sourceStack">
+                                                                                <a href="Smarty_Template_Source.html">Smarty_Template_Source</a>[]
+                </td>
+                <td>$sourceStack</td>
+                <td class="last">Stack of source objects while executing block code</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_init">init</a>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $tpl, bool $initChild, array $blockNames = array())
+        
+                                            <p>Initialize inheritance</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_endChild">endChild</a>()
+        
+                                            <p>End of child template(s)
+- if outer level is reached flush output buffer and switch to wait for parent template state</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_instanceBlock">instanceBlock</a>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $tpl, $className, string $name, int|null $tplIndex = null)
+        
+                                            <p>Smarty_Internal_Block constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_process">process</a>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $tpl, <a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a> $block, <a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a> $parent = null)
+        
+                                            <p>Goto child block or render this</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_callChild">callChild</a>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $tpl, <a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a> $block)
+        
+                                            <p>Render child on {$smarty.block.child}</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_callParent">callParent</a>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $tpl, <a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a> $block)
+        
+                                            <p>Render parent on {$smarty.block.parent} or {block append/prepend}     *</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_callBlock">callBlock</a>(<a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a> $block, <a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $tpl)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_init">
+        <div class="location">at         line 70</div>
+        <code>                    
+    <strong>init</strong>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $tpl, bool $initChild, array $blockNames = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initialize inheritance</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a></td>
+                <td>$tpl</td>
+                <td>template object of caller</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$initChild</td>
+                <td>if true init for child template</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$blockNames</td>
+                <td>outer level block name</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_endChild">
+        <div class="location">at         line 103</div>
+        <code>                    
+    <strong>endChild</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>End of child template(s)
+- if outer level is reached flush output buffer and switch to wait for parent template state</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_instanceBlock">
+        <div class="location">at         line 122</div>
+        <code>                    
+    <strong>instanceBlock</strong>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $tpl, $className, string $name, int|null $tplIndex = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Smarty_Internal_Block constructor.</p>                    <p><ul>
+<li>if outer level {block} of child template ($state == 1) save it as child root block</li>
+<li>otherwise process inheritance and render</li>
+</ul>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a></td>
+                <td>$tpl</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$className</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$tplIndex</td>
+                <td>index of outer level {block} if nested</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_process">
+        <div class="location">at         line 148</div>
+        <code>                    
+    <strong>process</strong>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $tpl, <a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a> $block, <a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a> $parent = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Goto child block or render this</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a></td>
+                <td>$tpl</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a></td>
+                <td>$block</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a></td>
+                <td>$parent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyException.html">SmartyException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_callChild">
+        <div class="location">at         line 187</div>
+        <code>                    
+    <strong>callChild</strong>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $tpl, <a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a> $block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Render child on {$smarty.block.child}</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a></td>
+                <td>$tpl</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a></td>
+                <td>$block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_callParent">
+        <div class="location">at         line 202</div>
+        <code>                    
+    <strong>callParent</strong>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $tpl, <a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a> $block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Render parent on {$smarty.block.parent} or {block append/prepend}     *</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a></td>
+                <td>$tpl</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a></td>
+                <td>$block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyException.html">SmartyException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_callBlock">
+        <div class="location">at         line 215</div>
+        <code>                    
+    <strong>callBlock</strong>(<a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a> $block, <a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $tpl)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Internal_Block.html">Smarty_Internal_Block</a></td>
+                <td>$block</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a></td>
+                <td>$tpl</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

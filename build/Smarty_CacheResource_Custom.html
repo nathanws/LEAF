@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Smarty_CacheResource_Custom | API</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Smarty_CacheResource_Custom" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                            <li><a href="namespaces.html">Namespaces</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Smarty_CacheResource_Custom
+                
+        </h1>
+    </div>
+
+    <p>abstract     class
+    <strong>Smarty_CacheResource_Custom</strong>        extends <a href="Smarty_CacheResource.html">Smarty_CacheResource</a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Cache Handler API</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_sysplugins">
+                    static                    protected                                        array
+                </td>
+                <td>$sysplugins</td>
+                <td class="last">resource types provided by the core</td>
+                <td><small>from&nbsp;<a href="Smarty_CacheResource.html#property_sysplugins">Smarty_CacheResource</a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_populate">populate</a>(<a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a> $cached, <a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $_template)
+        
+                                            <p>populate Cached Object with meta data from Resource</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_populateTimestamp">populateTimestamp</a>(<a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a> $cached)
+        
+                                            <p>populate Cached Object with timestamp and exists from Resource</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_process">process</a>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $_smarty_tpl, <a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a> $cached = null, boolean $update = false)
+        
+                                            <p>Read the cached template and process the header</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeCachedContent">writeCachedContent</a>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $_template, string $content)
+        
+                                            <p>Write the rendered template output to cache</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_readCachedContent">readCachedContent</a>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $_template)
+        
+                                            <p>Read cached template from cache</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCachedContent">getCachedContent</a>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $_template)
+        
+                                            <p>Return cached content</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Smarty_CacheResource.html#method_getCachedContent">Smarty_CacheResource</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearAll">clearAll</a>(<a href="Smarty.html">Smarty</a> $smarty, integer $exp_time = null)
+        
+                                            <p>Empty cache</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clear">clear</a>(<a href="Smarty.html">Smarty</a> $smarty, string $resource_name, string $cache_id, string $compile_id, integer $exp_time)
+        
+                                            <p>Empty cache for a specific template</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_locked">locked</a>(<a href="Smarty.html">Smarty</a> $smarty, <a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a> $cached)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Smarty_CacheResource.html#method_locked">Smarty_CacheResource</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasLock">hasLock</a>(<a href="Smarty.html">Smarty</a> $smarty, <a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a> $cached)
+        
+                                            <p>Check is cache is locked for this template</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_acquireLock">acquireLock</a>(<a href="Smarty.html">Smarty</a> $smarty, <a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a> $cached)
+        
+                                            <p>Lock cache for this template</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_releaseLock">releaseLock</a>(<a href="Smarty.html">Smarty</a> $smarty, <a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a> $cached)
+        
+                                            <p>Unlock cache for this template</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="Smarty_CacheResource.html">Smarty_CacheResource</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_load">load</a>(<a href="Smarty.html">Smarty</a> $smarty, string $type = null)
+        
+                                            <p>Load Cache Resource Handler</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Smarty_CacheResource.html#method_load">Smarty_CacheResource</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetch">fetch</a>(string $id, string $name, string $cache_id, string $compile_id, string $content, integer $mtime)
+        
+                                            <p>fetch cached content and its modification time from data source</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer|boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetchTimestamp">fetchTimestamp</a>(string $id, string $name, string $cache_id, string $compile_id)
+        
+                                            <p>Fetch cached content's modification timestamp from data source
+{@internal implementing this method is optional.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>(string $id, string $name, string $cache_id, string $compile_id, integer|null $exp_time, string $content)
+        
+                                            <p>Save content to cache</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(string|null $name, string|null $cache_id, string|null $compile_id, integer|null $exp_time)
+        
+                                            <p>Delete content from cache</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_populate">
+        <div class="location">at         line 83</div>
+        <code>                    void
+    <strong>populate</strong>(<a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a> $cached, <a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $_template)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>populate Cached Object with meta data from Resource</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a></td>
+                <td>$cached</td>
+                <td>cached object</td>
+            </tr>
+                    <tr>
+                <td><a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a></td>
+                <td>$_template</td>
+                <td>template object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_populateTimestamp">
+        <div class="location">at         line 102</div>
+        <code>                    void
+    <strong>populateTimestamp</strong>(<a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a> $cached)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>populate Cached Object with timestamp and exists from Resource</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a></td>
+                <td>$cached</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_process">
+        <div class="location">at         line 128</div>
+        <code>                    boolean
+    <strong>process</strong>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $_smarty_tpl, <a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a> $cached = null, boolean $update = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Read the cached template and process the header</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a></td>
+                <td>$_smarty_tpl</td>
+                <td>do not change variable name, is used by compiled template</td>
+            </tr>
+                    <tr>
+                <td><a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a></td>
+                <td>$cached</td>
+                <td>cached object</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$update</td>
+                <td>flag if called because cache update</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>true or false if the cached content does not exist</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeCachedContent">
+        <div class="location">at         line 157</div>
+        <code>                    boolean
+    <strong>writeCachedContent</strong>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $_template, string $content)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Write the rendered template output to cache</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a></td>
+                <td>$_template</td>
+                <td>template object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td>content to cache</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>success</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_readCachedContent">
+        <div class="location">at         line 170</div>
+        <code>                    string
+    <strong>readCachedContent</strong>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $_template)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Read cached template from cache</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a></td>
+                <td>$_template</td>
+                <td>template object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>content</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCachedContent">
+        <div class="location">in <a href="Smarty_CacheResource.html#method_getCachedContent">Smarty_CacheResource</a> at         line 82</div>
+        <code>                    null|string
+    <strong>getCachedContent</strong>(<a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a> $_template)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return cached content</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty_Internal_Template.html">Smarty_Internal_Template</a></td>
+                <td>$_template</td>
+                <td>template object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearAll">
+        <div class="location">at         line 193</div>
+        <code>                    integer
+    <strong>clearAll</strong>(<a href="Smarty.html">Smarty</a> $smarty, integer $exp_time = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Empty cache</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty.html">Smarty</a></td>
+                <td>$smarty</td>
+                <td>Smarty object</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$exp_time</td>
+                <td>expiration time (number of seconds, not timestamp)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td>number of cache files deleted</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clear">
+        <div class="location">at         line 209</div>
+        <code>                    integer
+    <strong>clear</strong>(<a href="Smarty.html">Smarty</a> $smarty, string $resource_name, string $cache_id, string $compile_id, integer $exp_time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Empty cache for a specific template</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty.html">Smarty</a></td>
+                <td>$smarty</td>
+                <td>Smarty object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$resource_name</td>
+                <td>template name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$cache_id</td>
+                <td>cache id</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$compile_id</td>
+                <td>compile id</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$exp_time</td>
+                <td>expiration time (number of seconds, not timestamp)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td>number of cache files deleted</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_locked">
+        <div class="location">in <a href="Smarty_CacheResource.html#method_locked">Smarty_CacheResource</a> at         line 123</div>
+        <code>                    bool|null
+    <strong>locked</strong>(<a href="Smarty.html">Smarty</a> $smarty, <a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a> $cached)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty.html">Smarty</a></td>
+                <td>$smarty</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a></td>
+                <td>$cached</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasLock">
+        <div class="location">at         line 233</div>
+        <code>                    bool
+    <strong>hasLock</strong>(<a href="Smarty.html">Smarty</a> $smarty, <a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a> $cached)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check is cache is locked for this template</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty.html">Smarty</a></td>
+                <td>$smarty</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a></td>
+                <td>$cached</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_acquireLock">
+        <div class="location">at         line 253</div>
+        <code>                    bool
+    <strong>acquireLock</strong>(<a href="Smarty.html">Smarty</a> $smarty, <a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a> $cached)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Lock cache for this template</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty.html">Smarty</a></td>
+                <td>$smarty</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a></td>
+                <td>$cached</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_releaseLock">
+        <div class="location">at         line 269</div>
+        <code>                    bool
+    <strong>releaseLock</strong>(<a href="Smarty.html">Smarty</a> $smarty, <a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a> $cached)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unlock cache for this template</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty.html">Smarty</a></td>
+                <td>$smarty</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="Smarty_Template_Cached.html">Smarty_Template_Cached</a></td>
+                <td>$cached</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_load">
+        <div class="location">in <a href="Smarty_CacheResource.html#method_load">Smarty_CacheResource</a> at         line 191</div>
+        <code>        static            <a href="Smarty_CacheResource.html">Smarty_CacheResource</a>
+    <strong>load</strong>(<a href="Smarty.html">Smarty</a> $smarty, string $type = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Load Cache Resource Handler</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Smarty.html">Smarty</a></td>
+                <td>$smarty</td>
+                <td>Smarty object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>name of the cache resource</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="Smarty_CacheResource.html">Smarty_CacheResource</a></td>
+            <td>Cache Resource Handler</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="SmartyException.html">SmartyException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetch">
+        <div class="location">at         line 30</div>
+        <code>    abstract        protected        void
+    <strong>fetch</strong>(string $id, string $name, string $cache_id, string $compile_id, string $content, integer $mtime)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>fetch cached content and its modification time from data source</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td>unique cache content identifier</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>template name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$cache_id</td>
+                <td>cache id</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$compile_id</td>
+                <td>compile id</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td>cached content</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$mtime</td>
+                <td>cache modification timestamp (epoch)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetchTimestamp">
+        <div class="location">at         line 44</div>
+        <code>            protected        integer|boolean
+    <strong>fetchTimestamp</strong>(string $id, string $name, string $cache_id, string $compile_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Fetch cached content's modification timestamp from data source
+{@internal implementing this method is optional.</p>                    <p>Only implement it if modification times can be accessed faster than loading the complete cached content.}}</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td>unique cache content identifier</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>template name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$cache_id</td>
+                <td>cache id</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$compile_id</td>
+                <td>compile id</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer|boolean</td>
+            <td>timestamp (epoch) the template was modified, or false if not found</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">at         line 61</div>
+        <code>    abstract        protected        boolean
+    <strong>save</strong>(string $id, string $name, string $cache_id, string $compile_id, integer|null $exp_time, string $content)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Save content to cache</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td>unique cache content identifier</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>template name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$cache_id</td>
+                <td>cache id</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$compile_id</td>
+                <td>compile id</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$exp_time</td>
+                <td>seconds till expiration or null</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td>content to cache</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>success</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at         line 73</div>
+        <code>    abstract        protected        integer
+    <strong>delete</strong>(string|null $name, string|null $cache_id, string|null $compile_id, integer|null $exp_time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete content from cache</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$name</td>
+                <td>template name</td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$cache_id</td>
+                <td>cache id</td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$compile_id</td>
+                <td>compile id</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$exp_time</td>
+                <td>seconds till expiration time in seconds or null</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td>number of deleted caches</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

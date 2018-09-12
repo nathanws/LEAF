@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>BarBucCommand | API</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:BarBucCommand" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                            <li><a href="namespaces.html">Namespaces</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            BarBucCommand
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>BarBucCommand</strong>        extends <a href="Symfony/Component/Console/Command/Command.html"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a>
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_defaultName">
+                    static                    protected                                        string|null
+                </td>
+                <td>$defaultName</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#property_defaultName"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultName">getDefaultName</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_getDefaultName"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $name = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method___construct"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ignoreValidationErrors">ignoreValidationErrors</a>()
+        
+                                            <p>Ignores validation errors.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_ignoreValidationErrors"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setApplication">setApplication</a>(<a href="Symfony/Component/Console/Application.html"><abbr title="Symfony\Component\Console\Application">Application</abbr></a> $application = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_setApplication"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHelperSet">setHelperSet</a>(<a href="Symfony/Component/Console/Helper/HelperSet.html"><abbr title="Symfony\Component\Console\Helper\HelperSet">HelperSet</abbr></a> $helperSet)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_setHelperSet"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="Symfony/Component/Console/Helper/HelperSet.html"><abbr title="Symfony\Component\Console\Helper\HelperSet">HelperSet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHelperSet">getHelperSet</a>()
+        
+                                            <p>Gets the helper set.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_getHelperSet"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="Symfony/Component/Console/Application.html"><abbr title="Symfony\Component\Console\Application">Application</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getApplication">getApplication</a>()
+        
+                                            <p>Gets the application instance for this command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_getApplication"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isEnabled">isEnabled</a>()
+        
+                                            <p>Checks whether the command is enabled or not in the current environment.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_isEnabled"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_configure">configure</a>()
+        
+                                            <p>Configures the current command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>(<a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input, <a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output)
+        
+                                            <p>Executes the current command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_execute"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_interact">interact</a>(<a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input, <a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output)
+        
+                                            <p>Interacts with the user.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_interact"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initialize">initialize</a>(<a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input, <a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output)
+        
+                                            <p>Initializes the command just after the input has been validated.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_initialize"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_run">run</a>(<a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input, <a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output)
+        
+                                            <p>Runs the command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_run"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCode">setCode</a>(callable $code)
+        
+                                            <p>Sets the code to execute when running this command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_setCode"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mergeApplicationDefinition">mergeApplicationDefinition</a>(bool $mergeArgs = true)
+        
+                                            <p>Merges the application definition with the command definition.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_mergeApplicationDefinition"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefinition">setDefinition</a>(array|<a href="Symfony/Component/Console/Input/InputDefinition.html"><abbr title="Symfony\Component\Console\Input\InputDefinition">InputDefinition</abbr></a> $definition)
+        
+                                            <p>Sets an array of argument and option instances.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_setDefinition"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="Symfony/Component/Console/Input/InputDefinition.html"><abbr title="Symfony\Component\Console\Input\InputDefinition">InputDefinition</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefinition">getDefinition</a>()
+        
+                                            <p>Gets the InputDefinition attached to this Command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_getDefinition"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="Symfony/Component/Console/Input/InputDefinition.html"><abbr title="Symfony\Component\Console\Input\InputDefinition">InputDefinition</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNativeDefinition">getNativeDefinition</a>()
+        
+                                            <p>Gets the InputDefinition to be used to create representations of this Command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_getNativeDefinition"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addArgument">addArgument</a>(string $name, int $mode = null, string $description = &#039;&#039;, mixed $default = null)
+        
+                                            <p>Adds an argument.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_addArgument"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addOption">addOption</a>(string $name, string $shortcut = null, int $mode = null, string $description = &#039;&#039;, mixed $default = null)
+        
+                                            <p>Adds an option.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_addOption"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setName">setName</a>(string $name)
+        
+                                            <p>Sets the name of the command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_setName"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setProcessTitle">setProcessTitle</a>(string $title)
+        
+                                            <p>Sets the process title of the command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_setProcessTitle"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Returns the command name.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_getName"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="Symfony/Component/Console/Command/Command.html"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHidden">setHidden</a>(bool $hidden)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_setHidden"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isHidden">isHidden</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_isHidden"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDescription">setDescription</a>(string $description)
+        
+                                            <p>Sets the description for the command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_setDescription"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDescription">getDescription</a>()
+        
+                                            <p>Returns the description for the command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_getDescription"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHelp">setHelp</a>(string $help)
+        
+                                            <p>Sets the help for the command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_setHelp"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHelp">getHelp</a>()
+        
+                                            <p>Returns the help for the command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_getHelp"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProcessedHelp">getProcessedHelp</a>()
+        
+                                            <p>Returns the processed help for the command replacing the %command.name% and
+%command.full_name% patterns with the real values dynamically.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_getProcessedHelp"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAliases">setAliases</a>(string[] $aliases)
+        
+                                            <p>Sets the aliases for the command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_setAliases"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAliases">getAliases</a>()
+        
+                                            <p>Returns the aliases for the command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_getAliases"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSynopsis">getSynopsis</a>(bool $short = false)
+        
+                                            <p>Returns the synopsis for the command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_getSynopsis"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addUsage">addUsage</a>(string $usage)
+        
+                                            <p>Add a command usage example.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_addUsage"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUsages">getUsages</a>()
+        
+                                            <p>Returns alternative usages of the command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_getUsages"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHelper">getHelper</a>(string $name)
+        
+                                            <p>Gets a helper instance by name.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="Symfony/Component/Console/Command/Command.html#method_getHelper"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getDefaultName">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_getDefaultName"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 56</div>
+        <code>        static            string|null
+    <strong>getDefaultName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td>The default command name or null when no default name is set</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method___construct"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 69</div>
+        <code>                    
+    <strong>__construct</strong>(string $name = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name of the command; passing null means it must be set in configure()</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Symfony/Component/Console/Exception/LogicException.html"><abbr title="Symfony\Component\Console\Exception\LogicException">LogicException</abbr></a></td>
+                <td>When the command name is empty</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ignoreValidationErrors">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_ignoreValidationErrors"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 85</div>
+        <code>                    
+    <strong>ignoreValidationErrors</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Ignores validation errors.</p>                    <p>This is mainly useful for the help command.</p>                            </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setApplication">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_setApplication"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 90</div>
+        <code>                    
+    <strong>setApplication</strong>(<a href="Symfony/Component/Console/Application.html"><abbr title="Symfony\Component\Console\Application">Application</abbr></a> $application = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Symfony/Component/Console/Application.html"><abbr title="Symfony\Component\Console\Application">Application</abbr></a></td>
+                <td>$application</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHelperSet">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_setHelperSet"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 100</div>
+        <code>                    
+    <strong>setHelperSet</strong>(<a href="Symfony/Component/Console/Helper/HelperSet.html"><abbr title="Symfony\Component\Console\Helper\HelperSet">HelperSet</abbr></a> $helperSet)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Symfony/Component/Console/Helper/HelperSet.html"><abbr title="Symfony\Component\Console\Helper\HelperSet">HelperSet</abbr></a></td>
+                <td>$helperSet</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHelperSet">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_getHelperSet"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 110</div>
+        <code>                    <a href="Symfony/Component/Console/Helper/HelperSet.html"><abbr title="Symfony\Component\Console\Helper\HelperSet">HelperSet</abbr></a>
+    <strong>getHelperSet</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the helper set.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="Symfony/Component/Console/Helper/HelperSet.html"><abbr title="Symfony\Component\Console\Helper\HelperSet">HelperSet</abbr></a></td>
+            <td>A HelperSet instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getApplication">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_getApplication"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 120</div>
+        <code>                    <a href="Symfony/Component/Console/Application.html"><abbr title="Symfony\Component\Console\Application">Application</abbr></a>
+    <strong>getApplication</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the application instance for this command.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="Symfony/Component/Console/Application.html"><abbr title="Symfony\Component\Console\Application">Application</abbr></a></td>
+            <td>An Application instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isEnabled">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_isEnabled"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 133</div>
+        <code>                    bool
+    <strong>isEnabled</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether the command is enabled or not in the current environment.</p>                    <p>Override this to check for x or y and return false if the command can not
+run properly under the current conditions.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_configure">
+        <div class="location">at         line 7</div>
+        <code>            protected        
+    <strong>configure</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Configures the current command.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_execute"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 159</div>
+        <code>            protected        null|int
+    <strong>execute</strong>(<a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input, <a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes the current command.</p>                    <p>This method is not abstract because you can use this class
+as a concrete class. In this case, instead of defining the
+execute() method, you set the code to execute by passing
+a Closure to the setCode() method.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|int</td>
+            <td>null or 0 if everything went fine, or an error code</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Symfony/Component/Console/Exception/LogicException.html"><abbr title="Symfony\Component\Console\Exception\LogicException">LogicException</abbr></a></td>
+                <td>When this abstract method is not implemented</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="Symfony\Component\Console\Command\setCode()">setCode()</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_interact">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_interact"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 171</div>
+        <code>            protected        
+    <strong>interact</strong>(<a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input, <a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Interacts with the user.</p>                    <p>This method is executed before the InputDefinition is validated.
+This means that this is the only place where the command can
+interactively ask for values of missing required arguments.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initialize">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_initialize"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 181</div>
+        <code>            protected        
+    <strong>initialize</strong>(<a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input, <a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initializes the command just after the input has been validated.</p>                    <p>This is mainly useful when a lot of commands extends one main command
+where some things need to be initialized based on the input arguments and options.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_run">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_run"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 199</div>
+        <code>                    int
+    <strong>run</strong>(<a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input, <a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Runs the command.</p>                    <p>The code to execute is either defined directly with the
+setCode() method or by overriding the execute() method
+in a sub-class.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>The command exit code</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>When binding input fails. Bypass this by calling {@link ignoreValidationErrors()}.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="Symfony\Component\Console\Command\setCode()">setCode()</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+                                            <abbr title="Symfony\Component\Console\Command\execute()">execute()</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCode">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_setCode"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 272</div>
+        <code>                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+    <strong>setCode</strong>(callable $code)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the code to execute when running this command.</p>                    <p>If this method is used, it overrides the code defined
+in the execute() method.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$code</td>
+                <td>A callable(InputInterface $input, OutputInterface $output)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Console\Command\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Symfony/Component/Console/Exception/InvalidArgumentException.html"><abbr title="Symfony\Component\Console\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="Symfony\Component\Console\Command\execute()">execute()</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mergeApplicationDefinition">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_mergeApplicationDefinition"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 293</div>
+        <code>                    
+    <strong>mergeApplicationDefinition</strong>(bool $mergeArgs = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Merges the application definition with the command definition.</p>                    <p>This method is not part of public API and should not be used directly.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$mergeArgs</td>
+                <td>Whether to merge or not the Application definition arguments to Command definition arguments</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefinition">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_setDefinition"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 320</div>
+        <code>                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+    <strong>setDefinition</strong>(array|<a href="Symfony/Component/Console/Input/InputDefinition.html"><abbr title="Symfony\Component\Console\Input\InputDefinition">InputDefinition</abbr></a> $definition)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets an array of argument and option instances.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|<a href="Symfony/Component/Console/Input/InputDefinition.html"><abbr title="Symfony\Component\Console\Input\InputDefinition">InputDefinition</abbr></a></td>
+                <td>$definition</td>
+                <td>An array of argument and option instances or a definition instance</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Console\Command\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefinition">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_getDefinition"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 338</div>
+        <code>                    <a href="Symfony/Component/Console/Input/InputDefinition.html"><abbr title="Symfony\Component\Console\Input\InputDefinition">InputDefinition</abbr></a>
+    <strong>getDefinition</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the InputDefinition attached to this Command.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="Symfony/Component/Console/Input/InputDefinition.html"><abbr title="Symfony\Component\Console\Input\InputDefinition">InputDefinition</abbr></a></td>
+            <td>An InputDefinition instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNativeDefinition">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_getNativeDefinition"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 353</div>
+        <code>                    <a href="Symfony/Component/Console/Input/InputDefinition.html"><abbr title="Symfony\Component\Console\Input\InputDefinition">InputDefinition</abbr></a>
+    <strong>getNativeDefinition</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the InputDefinition to be used to create representations of this Command.</p>                    <p>Can be overridden to provide the original command representation when it would otherwise
+be changed by merging with the application InputDefinition.</p>
+
+<p>This method is not part of public API and should not be used directly.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="Symfony/Component/Console/Input/InputDefinition.html"><abbr title="Symfony\Component\Console\Input\InputDefinition">InputDefinition</abbr></a></td>
+            <td>An InputDefinition instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addArgument">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_addArgument"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 368</div>
+        <code>                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+    <strong>addArgument</strong>(string $name, int $mode = null, string $description = &#039;&#039;, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds an argument.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The argument name</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$mode</td>
+                <td>The argument mode: InputArgument::REQUIRED or InputArgument::OPTIONAL</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$description</td>
+                <td>A description text</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td>The default value (for InputArgument::OPTIONAL mode only)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Console\Command\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addOption">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_addOption"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 386</div>
+        <code>                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+    <strong>addOption</strong>(string $name, string $shortcut = null, int $mode = null, string $description = &#039;&#039;, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds an option.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The option name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$shortcut</td>
+                <td>The shortcut (can be null)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$mode</td>
+                <td>The option mode: One of the InputOption::VALUE_* constants</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$description</td>
+                <td>A description text</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td>The default value (must be null for InputOption::VALUE_NONE)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Console\Command\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_setName"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 407</div>
+        <code>                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+    <strong>setName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the name of the command.</p>                    <p>This method can set both the namespace and the name if
+you separate them by a colon (:)</p>
+
+<pre><code>$command-&gt;setName('foo:bar');
+</code></pre>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The command name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Console\Command\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Symfony/Component/Console/Exception/InvalidArgumentException.html"><abbr title="Symfony\Component\Console\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>When the name is invalid</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setProcessTitle">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_setProcessTitle"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 428</div>
+        <code>                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+    <strong>setProcessTitle</strong>(string $title)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the process title of the command.</p>                    <p>This feature should be used only when creating a long process command,
+like a daemon.</p>
+
+<p>PHP 5.5+ or the proctitle PECL library is required</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$title</td>
+                <td>The process title</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Console\Command\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_getName"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 440</div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the command name.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The command name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHidden">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_setHidden"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 450</div>
+        <code>                    <a href="Symfony/Component/Console/Command/Command.html"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a>
+    <strong>setHidden</strong>(bool $hidden)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$hidden</td>
+                <td>Whether or not the command should be hidden from the list of commands</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="Symfony/Component/Console/Command/Command.html"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a></td>
+            <td>The current instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isHidden">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_isHidden"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 460</div>
+        <code>                    bool
+    <strong>isHidden</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>whether the command should be publicly shown or not</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDescription">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_setDescription"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 472</div>
+        <code>                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+    <strong>setDescription</strong>(string $description)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the description for the command.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$description</td>
+                <td>The description for the command</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Console\Command\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDescription">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_getDescription"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 484</div>
+        <code>                    string
+    <strong>getDescription</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the description for the command.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The description for the command</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHelp">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_setHelp"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 496</div>
+        <code>                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+    <strong>setHelp</strong>(string $help)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the help for the command.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$help</td>
+                <td>The help for the command</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Console\Command\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHelp">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_getHelp"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 508</div>
+        <code>                    string
+    <strong>getHelp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the help for the command.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The help for the command</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProcessedHelp">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_getProcessedHelp"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 519</div>
+        <code>                    string
+    <strong>getProcessedHelp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the processed help for the command replacing the %command.name% and
+%command.full_name% patterns with the real values dynamically.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The processed help for the command</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAliases">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_setAliases"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 544</div>
+        <code>                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+    <strong>setAliases</strong>(string[] $aliases)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the aliases for the command.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string[]</td>
+                <td>$aliases</td>
+                <td>An array of aliases for the command</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Console\Command\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Symfony/Component/Console/Exception/InvalidArgumentException.html"><abbr title="Symfony\Component\Console\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>When an alias is invalid</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAliases">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_getAliases"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 564</div>
+        <code>                    array
+    <strong>getAliases</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the aliases for the command.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>An array of aliases for the command</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSynopsis">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_getSynopsis"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 576</div>
+        <code>                    string
+    <strong>getSynopsis</strong>(bool $short = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the synopsis for the command.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$short</td>
+                <td>Whether to show the short version of the synopsis (with options folded) or not</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The synopsis</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addUsage">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_addUsage"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 594</div>
+        <code>                    <abbr title="Symfony\Component\Console\Command\$this">$this</abbr>
+    <strong>addUsage</strong>(string $usage)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a command usage example.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$usage</td>
+                <td>The usage, it'll be prefixed with the command name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Console\Command\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUsages">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_getUsages"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 610</div>
+        <code>                    array
+    <strong>getUsages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns alternative usages of the command.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHelper">
+        <div class="location">in <a href="Symfony/Component/Console/Command/Command.html#method_getHelper"><abbr title="Symfony\Component\Console\Command\Command">Command</abbr></a> at         line 625</div>
+        <code>                    mixed
+    <strong>getHelper</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets a helper instance by name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The helper name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The helper value</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="Symfony/Component/Console/Exception/LogicException.html"><abbr title="Symfony\Component\Console\Exception\LogicException">LogicException</abbr></a></td>
+                <td>if no HelperSet is defined</td>
+            </tr>
+                    <tr>
+                <td><a href="Symfony/Component/Console/Exception/InvalidArgumentException.html"><abbr title="Symfony\Component\Console\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>if the helper is not defined</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

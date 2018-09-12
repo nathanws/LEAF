@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>GuzzleHttp\RequestOptions | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/sami.css">
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:GuzzleHttp_RequestOptions" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                                            <li><a href="../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../GuzzleHttp.html">GuzzleHttp</a></li><li class="backslash">\</li><li>RequestOptions</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            RequestOptions
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>RequestOptions</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class contains a list of built-in Guzzle request options.</p>            <p>More documentation for each option can be found at http://guzzlephp.org/.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>ALLOW_REDIRECTS</td>
+                <td class="last">
+                    <p><em>allow_redirects: (bool|array) Controls redirect behavior. Pass false
+to disable redirects, pass true to enable redirects, pass an
+associative to provide custom redirect settings. Defaults to "false".</em></p>
+                    <p>This option only works if your handler has the RedirectMiddleware. When
+passing an associative array, you can provide the following key value
+pairs:</p>
+
+<ul>
+<li>max: (int, default=5) maximum number of allowed redirects.</li>
+<li>strict: (bool, default=false) Set to true to use strict redirects
+meaning redirect POST requests with POST requests vs. doing what most
+browsers do which is redirect POST requests with GET requests</li>
+<li>referer: (bool, default=true) Set to false to disable the Referer
+header.</li>
+<li>protocols: (array, default=['http', 'https']) Allowed redirect
+protocols.</li>
+<li>on_redirect: (callable) PHP callable that is invoked when a redirect
+is encountered. The callable is invoked with the request, the redirect
+response that was received, and the effective URI. Any return value
+from the on_redirect function is ignored.</li>
+</ul>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTH</td>
+                <td class="last">
+                    <p><em>auth: (array) Pass an array of HTTP authentication parameters to use
+with the request. The array must contain the username in index [0],
+the password in index [1], and you can optionally provide a built-in
+authentication type in index [2]. Pass null to disable authentication
+for a request.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>BODY</td>
+                <td class="last">
+                    <p><em>body: (resource|string|null|int|float|StreamInterface|callable|\Iterator)
+Body to send in the request.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CERT</td>
+                <td class="last">
+                    <p><em>cert: (string|array) Set to a string to specify the path to a file
+containing a PEM formatted SSL client side certificate. If a password
+is required, then set cert to an array containing the path to the PEM
+file in the first array element followed by the certificate password
+in the second array element.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COOKIES</td>
+                <td class="last">
+                    <p><em>cookies: (bool|GuzzleHttp\Cookie\CookieJarInterface, default=false)
+Specifies whether or not cookies are used in a request or what cookie
+jar to use or what cookies to send. This option only works if your
+handler has the <code>cookie</code> middleware. Valid values are <code>false</code> and
+an instance of {see GuzzleHttp\Cookie\CookieJarInterface}.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CONNECT_TIMEOUT</td>
+                <td class="last">
+                    <p><em>connect_timeout: (float, default=0) Float describing the number of
+seconds to wait while trying to connect to a server. Use 0 to wait
+indefinitely (the default behavior).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DEBUG</td>
+                <td class="last">
+                    <p><em>debug: (bool|resource) Set to true or set to a PHP stream returned by
+fopen()  enable debug output with the HTTP handler used to send a
+request.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DECODE_CONTENT</td>
+                <td class="last">
+                    <p><em>decode_content: (bool, default=true) Specify whether or not
+Content-Encoding responses (gzip, deflate, etc.) are automatically
+decoded.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DELAY</td>
+                <td class="last">
+                    <p><em>delay: (int) The amount of time to delay before sending in milliseconds.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>EXPECT</td>
+                <td class="last">
+                    <p><em>expect: (bool|integer) Controls the behavior of the
+"Expect: 100-Continue" header.</em></p>
+                    <p>Set to <code>true</code> to enable the "Expect: 100-Continue" header for all
+requests that sends a body. Set to <code>false</code> to disable the
+"Expect: 100-Continue" header for all requests. Set to a number so that
+the size of the payload must be greater than the number in order to send
+the Expect header. Setting to a number will send the Expect header for
+all requests in which the size of the payload cannot be determined or
+where the body is not rewindable.</p>
+
+<p>By default, Guzzle will add the "Expect: 100-Continue" header when the
+size of the body of a request is greater than 1 MB and a request is
+using HTTP/1.1.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORM_PARAMS</td>
+                <td class="last">
+                    <p><em>form_params: (array) Associative array of form field names to values
+where each value is a string or array of strings. Sets the Content-Type
+header to application/x-www-form-urlencoded when no Content-Type header
+is already present.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HEADERS</td>
+                <td class="last">
+                    <p><em>headers: (array) Associative array of HTTP headers. Each value MUST be
+a string or array of strings.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_ERRORS</td>
+                <td class="last">
+                    <p><em>http_errors: (bool, default=true) Set to false to disable exceptions
+when a non- successful HTTP response is received. By default,
+exceptions will be thrown for 4xx and 5xx responses. This option only
+works if your handler has the <code>httpErrors</code> middleware.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>JSON</td>
+                <td class="last">
+                    <p><em>json: (mixed) Adds JSON data to a request. The provided value is JSON
+encoded and a Content-Type header of application/json will be added to
+the request if no Content-Type header is already present.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MULTIPART</td>
+                <td class="last">
+                    <p><em>multipart: (array) Array of associative arrays, each containing a
+required "name" key mapping to the form field, name, a required
+"contents" key mapping to a StreamInterface|resource|string, an
+optional "headers" associative array of custom headers, and an
+optional "filename" key mapping to a string to send as the filename in
+the part. If no "filename" key is present, then no "filename" attribute
+will be added to the part.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ON_HEADERS</td>
+                <td class="last">
+                    <p><em>on_headers: (callable) A callable that is invoked when the HTTP headers
+of the response have been received but the body has not yet begun to
+download.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ON_STATS</td>
+                <td class="last">
+                    <p><em>on_stats: (callable) allows you to get access to transfer statistics of
+a request and access the lower level transfer details of the handler
+associated with your client. <code>on_stats</code> is a callable that is invoked
+when a handler has finished sending a request. The callback is invoked
+with transfer statistics about the request, the response received, or
+the error encountered. Included in the data is the total amount of time
+taken to send the request.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PROGRESS</td>
+                <td class="last">
+                    <p><em>progress: (callable) Defines a function to invoke when transfer
+progress is made. The function accepts the following positional
+arguments: the total number of bytes expected to be downloaded, the
+number of bytes downloaded so far, the number of bytes expected to be
+uploaded, the number of bytes uploaded so far.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PROXY</td>
+                <td class="last">
+                    <p><em>proxy: (string|array) Pass a string to specify an HTTP proxy, or an
+array to specify different proxies for different protocols (where the
+key is the protocol and the value is a proxy string).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>QUERY</td>
+                <td class="last">
+                    <p><em>query: (array|string) Associative array of query string values to add
+to the request. This option uses PHP's http_build_query() to create
+the string representation. Pass a string value if you need more
+control than what this method provides</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SINK</td>
+                <td class="last">
+                    <p><em>sink: (resource|string|StreamInterface) Where the data of the
+response is written to. Defaults to a PHP temp stream. Providing a
+string will write data to a file by the given name.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SYNCHRONOUS</td>
+                <td class="last">
+                    <p><em>synchronous: (bool) Set to true to inform HTTP handlers that you intend
+on waiting on the response. This can be useful for optimizations. Note
+that a promise is still returned if you are using one of the async
+client methods.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SSL_KEY</td>
+                <td class="last">
+                    <p><em>ssl_key: (array|string) Specify the path to a file containing a private
+SSL key in PEM format. If a password is required, then set to an array
+containing the path to the SSL key in the first array element followed
+by the password required for the certificate in the second element.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STREAM</td>
+                <td class="last">
+                    <p><em>stream: Set to true to attempt to stream a response rather than
+download it all up-front.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VERIFY</td>
+                <td class="last">
+                    <p><em>verify: (bool|string, default=true) Describes the SSL certificate
+verification behavior of a request. Set to true to enable SSL
+certificate verification using the system CA bundle when available
+(the default). Set to false to disable certificate verification (this
+is insecure!). Set to a string to provide the path to a CA bundle on
+disk to enable verification using a custom certificate.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TIMEOUT</td>
+                <td class="last">
+                    <p><em>timeout: (float, default=0) Float describing the timeout of the
+request in seconds. Use 0 to wait indefinitely (the default behavior).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>READ_TIMEOUT</td>
+                <td class="last">
+                    <p><em>read_timeout: (float, default=default_socket_timeout ini setting) Float describing
+the body read timeout, for stream requests.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VERSION</td>
+                <td class="last">
+                    <p><em>version: (float) Specifies the HTTP protocol version to attempt to use.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORCE_IP_RESOLVE</td>
+                <td class="last">
+                    <p><em>force_ip_resolve: (bool) Force client to use only ipv4 or ipv6 protocol</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

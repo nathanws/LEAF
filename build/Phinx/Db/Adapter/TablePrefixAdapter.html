@@ -1,0 +1,3315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Phinx\Db\Adapter\TablePrefixAdapter | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Phinx_Db_Adapter_TablePrefixAdapter" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Phinx.html">Phinx</a></li><li class="backslash">\</li><li><a href="../../../Phinx/Db.html">Db</a></li><li class="backslash">\</li><li><a href="../../../Phinx/Db/Adapter.html">Adapter</a></li><li class="backslash">\</li><li>TablePrefixAdapter</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            TablePrefixAdapter
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>TablePrefixAdapter</strong>        extends <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Table prefix/suffix adapter.</p>            <p>Used for inserting a prefix or suffix into table names.</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_adapter">
+                                        protected                                        <a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+                </td>
+                <td>$adapter</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#property_adapter"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a> $adapter)
+        
+                                            <p>Class constructor, must always wrap another adapter.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method___construct"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAdapter">setAdapter</a>(<a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a> $adapter)
+        
+                                            <p>Sets the database adapter to proxy commands to.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_setAdapter"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAdapter">getAdapter</a>()
+        
+                                            <p>Gets the database adapter.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getAdapter"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOptions">setOptions</a>(array $options)
+        
+                                            <p>Set adapter configuration options.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_setOptions"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>()
+        
+                                            <p>Get all adapter options.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getOptions"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasOption">hasOption</a>(string $name)
+        
+                                            <p>Check if an option has been set.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_hasOption"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOption">getOption</a>(string $name)
+        
+                                            <p>Get a single adapter option, or null if the option does not exist.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getOption"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setInput">setInput</a>(<a href="../../../Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input)
+        
+                                            <p>Sets the console input.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_setInput"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInput">getInput</a>()
+        
+                                            <p>Gets the console input.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getInput"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOutput">setOutput</a>(<a href="../../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output)
+        
+                                            <p>Sets the console output.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_setOutput"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOutput">getOutput</a>()
+        
+                                            <p>Gets the console output.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getOutput"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_connect">connect</a>()
+        
+                                            <p>Initializes the database connection.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_connect"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disconnect">disconnect</a>()
+        
+                                            <p>Closes the database connection.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_disconnect"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>(string $sql)
+        
+                                            <p>Executes a SQL statement and returns the number of affected rows.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_execute"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_query">query</a>(string $sql)
+        
+                                            <p>Executes a SQL statement and returns the result as an array.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_query"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insert">insert</a>(<a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a> $table, array $row)
+        
+                                            <p>Inserts data into a table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bulkinsert">bulkinsert</a>(<a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a> $table, array $rows)
+        
+                                            <p>Inserts data into a table in a bulk.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetchRow">fetchRow</a>(string $sql)
+        
+                                            <p>Executes a query and returns only one row as an array.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_fetchRow"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetchAll">fetchAll</a>(string $sql)
+        
+                                            <p>Executes a query and returns an array of rows.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_fetchAll"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getVersions">getVersions</a>()
+        
+                                            <p>Get all migrated version numbers.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getVersions"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getVersionLog">getVersionLog</a>()
+        
+                                            <p>Get all migration log entries, indexed by version creation time and sorted ascendingly by the configuration's
+version order option</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getVersionLog"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_migrated">migrated</a>(<a href="../../../Phinx/Migration/MigrationInterface.html"><abbr title="Phinx\Migration\MigrationInterface">MigrationInterface</abbr></a> $migration, string $direction, int $startTime, int $endTime)
+        
+                                            <p>Records a migration being run.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_migrated"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toggleBreakpoint">toggleBreakpoint</a>(<a href="../../../Phinx/Migration/MigrationInterface.html"><abbr title="Phinx\Migration\MigrationInterface">MigrationInterface</abbr></a> $migration)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_toggleBreakpoint"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resetAllBreakpoints">resetAllBreakpoints</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_resetAllBreakpoints"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasSchemaTable">hasSchemaTable</a>()
+        
+                                            <p>Does the schema table exist?</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_hasSchemaTable"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createSchemaTable">createSchemaTable</a>()
+        
+                                            <p>Creates the schema table.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_createSchemaTable"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getColumnTypes">getColumnTypes</a>()
+        
+                                            <p>Returns an array of the supported Phinx column types.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getColumnTypes"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isValidColumnType">isValidColumnType</a>(<a href="../../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a> $column)
+        
+                                            <p>Checks that the given column is of a supported type.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_isValidColumnType"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasTransactions">hasTransactions</a>()
+        
+                                            <p>Does the adapter support transactions?</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_hasTransactions"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_beginTransaction">beginTransaction</a>()
+        
+                                            <p>Begin a transaction.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_beginTransaction"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_commitTransaction">commitTransaction</a>()
+        
+                                            <p>Commit a transaction.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_commitTransaction"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rollbackTransaction">rollbackTransaction</a>()
+        
+                                            <p>Rollback a transaction.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_rollbackTransaction"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_quoteTableName">quoteTableName</a>(string $tableName)
+        
+                                            <p>Quotes a table name for use in a query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_quoteTableName"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_quoteColumnName">quoteColumnName</a>(string $columnName)
+        
+                                            <p>Quotes a column name for use in a query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_quoteColumnName"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasTable">hasTable</a>(string $tableName)
+        
+                                            <p>Checks to see if a table exists.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createTable">createTable</a>(<a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a> $table)
+        
+                                            <p>Creates the specified database table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renameTable">renameTable</a>(string $tableName, $newTableName)
+        
+                                            <p>Renames the specified database table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dropTable">dropTable</a>(string $tableName)
+        
+                                            <p>Drops the specified database table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_truncateTable">truncateTable</a>(string $tableName)
+        
+                                            <p>Truncates the specified table</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getColumns">getColumns</a>(string $tableName)
+        
+                                            <p>Returns table columns</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasColumn">hasColumn</a>(string $tableName, string $columnName)
+        
+                                            <p>Checks to see if a column exists.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addColumn">addColumn</a>(<a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a> $table, <a href="../../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a> $column)
+        
+                                            <p>Adds the specified column to a database table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renameColumn">renameColumn</a>(string $tableName, string $columnName, string $newColumnName)
+        
+                                            <p>Renames the specified column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_changeColumn">changeColumn</a>(string $tableName, string $columnName, <a href="../../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a> $newColumn)
+        
+                                            <p>Change a table column type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dropColumn">dropColumn</a>(string $tableName, string $columnName)
+        
+                                            <p>Drops the specified column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasIndex">hasIndex</a>(string $tableName, mixed $columns)
+        
+                                            <p>Checks to see if an index exists.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasIndexByName">hasIndexByName</a>(string $tableName, string $indexName)
+        
+                                            <p>Checks to see if an index specified by name exists.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addIndex">addIndex</a>(<a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a> $table, <a href="../../../Phinx/Db/Table/Index.html"><abbr title="Phinx\Db\Table\Index">Index</abbr></a> $index)
+        
+                                            <p>Adds the specified index to a database table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dropIndex">dropIndex</a>(string $tableName, mixed $columns)
+        
+                                            <p>Drops the specified index from a database table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dropIndexByName">dropIndexByName</a>(string $tableName, string $indexName)
+        
+                                            <p>Drops the index specified by name from a database table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasForeignKey">hasForeignKey</a>(string $tableName, string[] $columns, string $constraint = null)
+        
+                                            <p>Checks to see if a foreign key exists.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addForeignKey">addForeignKey</a>(<a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a> $table, <a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a> $foreignKey)
+        
+                                            <p>Adds the specified foreign key to a database table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dropForeignKey">dropForeignKey</a>(string $tableName, string[] $columns, string $constraint = null)
+        
+                                            <p>Drops the specified foreign key from a database table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSqlType">getSqlType</a>(string $type, int $limit = null)
+        
+                                            <p>Converts the Phinx logical type to the adapter's SQL type.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getSqlType"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createDatabase">createDatabase</a>(string $name, array $options = [])
+        
+                                            <p>Creates a new database.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_createDatabase"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasDatabase">hasDatabase</a>(string $name)
+        
+                                            <p>Checks to see if a database exists.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_hasDatabase"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dropDatabase">dropDatabase</a>(string $name)
+        
+                                            <p>Drops the specified database.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_dropDatabase"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createSchema">createSchema</a>(string $schemaName = &#039;public&#039;)
+        
+                                            <p>Creates the specified schema or throws an exception
+if there is no support for it.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_createSchema"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dropSchema">dropSchema</a>(string $schemaName)
+        
+                                            <p>Drops the specified schema table  or throws an exception
+if there is no support for it.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_dropSchema"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_castToBool">castToBool</a>(mixed $value)
+        
+                                            <p>Cast a value to a boolean appropriate for the adapter.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_castToBool"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/PDO">PDO</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConnection">getConnection</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getConnection"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAdapterType">getAdapterType</a>()
+        
+                                            <p>Returns the adapter type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPrefix">getPrefix</a>()
+        
+                                            <p>Gets the table prefix.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSuffix">getSuffix</a>()
+        
+                                            <p>Gets the table suffix.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAdapterTableName">getAdapterTableName</a>(string $tableName)
+        
+                                            <p>Applies the prefix and suffix to the table name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method___construct"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 57</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a> $adapter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class constructor, must always wrap another adapter.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a></td>
+                <td>$adapter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAdapter">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_setAdapter"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 65</div>
+        <code>                    <a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+    <strong>setAdapter</strong>(<a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a> $adapter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the database adapter to proxy commands to.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a></td>
+                <td>$adapter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAdapter">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getAdapter"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 75</div>
+        <code>                    <a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+    <strong>getAdapter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the database adapter.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td>if the adapter has not been set</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOptions">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_setOptions"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 83</div>
+        <code>                    <a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+    <strong>setOptions</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set adapter configuration options.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getOptions"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 93</div>
+        <code>                    array
+    <strong>getOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get all adapter options.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasOption">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_hasOption"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 101</div>
+        <code>                    bool
+    <strong>hasOption</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if an option has been set.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOption">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getOption"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 109</div>
+        <code>                    mixed
+    <strong>getOption</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a single adapter option, or null if the option does not exist.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInput">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_setInput"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 117</div>
+        <code>                    <a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+    <strong>setInput</strong>(<a href="../../../Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a> $input)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the console input.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a></td>
+                <td>$input</td>
+                <td>Input</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInput">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getInput"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 127</div>
+        <code>                    <a href="../../../Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a>
+    <strong>getInput</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the console input.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/Console/Input/InputInterface.html"><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOutput">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_setOutput"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 135</div>
+        <code>                    <a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+    <strong>setOutput</strong>(<a href="../../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the console output.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a></td>
+                <td>$output</td>
+                <td>Output</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOutput">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getOutput"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 145</div>
+        <code>                    <a href="../../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a>
+    <strong>getOutput</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the console output.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_connect">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_connect"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 153</div>
+        <code>                    void
+    <strong>connect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initializes the database connection.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td>When the requested database driver is not installed.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disconnect">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_disconnect"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 161</div>
+        <code>                    void
+    <strong>disconnect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Closes the database connection.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_execute"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 169</div>
+        <code>                    int
+    <strong>execute</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a SQL statement and returns the number of affected rows.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>SQL</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_query">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_query"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 177</div>
+        <code>                    mixed
+    <strong>query</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a SQL statement and returns the result as an array.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>SQL</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location">at         line 250</div>
+        <code>                    void
+    <strong>insert</strong>(<a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a> $table, array $row)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Inserts data into a table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+                <td>$table</td>
+                <td>where to insert data</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$row</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bulkinsert">
+        <div class="location">at         line 261</div>
+        <code>                    void
+    <strong>bulkinsert</strong>(<a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a> $table, array $rows)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Inserts data into a table in a bulk.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+                <td>$table</td>
+                <td>where to insert data</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$rows</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetchRow">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_fetchRow"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 201</div>
+        <code>                    array
+    <strong>fetchRow</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a query and returns only one row as an array.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>SQL</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetchAll">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_fetchAll"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 209</div>
+        <code>                    array
+    <strong>fetchAll</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a query and returns an array of rows.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>SQL</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVersions">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getVersions"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 217</div>
+        <code>                    array
+    <strong>getVersions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get all migrated version numbers.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVersionLog">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getVersionLog"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 225</div>
+        <code>                    array
+    <strong>getVersionLog</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get all migration log entries, indexed by version creation time and sorted ascendingly by the configuration's
+version order option</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_migrated">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_migrated"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 233</div>
+        <code>                    <a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+    <strong>migrated</strong>(<a href="../../../Phinx/Migration/MigrationInterface.html"><abbr title="Phinx\Migration\MigrationInterface">MigrationInterface</abbr></a> $migration, string $direction, int $startTime, int $endTime)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Records a migration being run.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Phinx/Migration/MigrationInterface.html"><abbr title="Phinx\Migration\MigrationInterface">MigrationInterface</abbr></a></td>
+                <td>$migration</td>
+                <td>Migration</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$direction</td>
+                <td>Direction</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$startTime</td>
+                <td>Start Time</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$endTime</td>
+                <td>End Time</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toggleBreakpoint">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_toggleBreakpoint"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 243</div>
+        <code>                    <a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a>
+    <strong>toggleBreakpoint</strong>(<a href="../../../Phinx/Migration/MigrationInterface.html"><abbr title="Phinx\Migration\MigrationInterface">MigrationInterface</abbr></a> $migration)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Phinx/Migration/MigrationInterface.html"><abbr title="Phinx\Migration\MigrationInterface">MigrationInterface</abbr></a></td>
+                <td>$migration</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Adapter/AdapterInterface.html"><abbr title="Phinx\Db\Adapter\AdapterInterface">AdapterInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resetAllBreakpoints">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_resetAllBreakpoints"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 253</div>
+        <code>                    int
+    <strong>resetAllBreakpoints</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>The number of breakpoints reset</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasSchemaTable">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_hasSchemaTable"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 261</div>
+        <code>                    bool
+    <strong>hasSchemaTable</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Does the schema table exist?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createSchemaTable">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_createSchemaTable"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 269</div>
+        <code>                    void
+    <strong>createSchemaTable</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates the schema table.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getColumnTypes">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getColumnTypes"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 277</div>
+        <code>                    array
+    <strong>getColumnTypes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns an array of the supported Phinx column types.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isValidColumnType">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_isValidColumnType"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 285</div>
+        <code>                    bool
+    <strong>isValidColumnType</strong>(<a href="../../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a> $column)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks that the given column is of a supported type.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a></td>
+                <td>$column</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasTransactions">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_hasTransactions"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 293</div>
+        <code>                    bool
+    <strong>hasTransactions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Does the adapter support transactions?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_beginTransaction">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_beginTransaction"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 301</div>
+        <code>                    void
+    <strong>beginTransaction</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Begin a transaction.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_commitTransaction">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_commitTransaction"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 309</div>
+        <code>                    void
+    <strong>commitTransaction</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Commit a transaction.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rollbackTransaction">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_rollbackTransaction"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 317</div>
+        <code>                    void
+    <strong>rollbackTransaction</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Rollback a transaction.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_quoteTableName">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_quoteTableName"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 325</div>
+        <code>                    string
+    <strong>quoteTableName</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Quotes a table name for use in a query.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>Table Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_quoteColumnName">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_quoteColumnName"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 333</div>
+        <code>                    string
+    <strong>quoteColumnName</strong>(string $columnName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Quotes a column name for use in a query.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$columnName</td>
+                <td>Table Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasTable">
+        <div class="location">at         line 56</div>
+        <code>                    bool
+    <strong>hasTable</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks to see if a table exists.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>Table Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createTable">
+        <div class="location">at         line 66</div>
+        <code>                    void
+    <strong>createTable</strong>(<a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a> $table)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates the specified database table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+                <td>$table</td>
+                <td>Table</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renameTable">
+        <div class="location">at         line 84</div>
+        <code>                    void
+    <strong>renameTable</strong>(string $tableName, $newTableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Renames the specified database table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>Table Name</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$newTableName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dropTable">
+        <div class="location">at         line 94</div>
+        <code>                    void
+    <strong>dropTable</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Drops the specified database table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>Table Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_truncateTable">
+        <div class="location">at         line 103</div>
+        <code>                    void
+    <strong>truncateTable</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Truncates the specified table</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getColumns">
+        <div class="location">at         line 112</div>
+        <code>                    <a href="../../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a>[]
+    <strong>getColumns</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns table columns</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>Table Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasColumn">
+        <div class="location">at         line 122</div>
+        <code>                    bool
+    <strong>hasColumn</strong>(string $tableName, string $columnName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks to see if a column exists.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>Table Name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$columnName</td>
+                <td>Column Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addColumn">
+        <div class="location">at         line 132</div>
+        <code>                    void
+    <strong>addColumn</strong>(<a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a> $table, <a href="../../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a> $column)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds the specified column to a database table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+                <td>$table</td>
+                <td>Table</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a></td>
+                <td>$column</td>
+                <td>Column</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renameColumn">
+        <div class="location">at         line 143</div>
+        <code>                    void
+    <strong>renameColumn</strong>(string $tableName, string $columnName, string $newColumnName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Renames the specified column.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>Table Name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$columnName</td>
+                <td>Column Name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$newColumnName</td>
+                <td>New Column Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_changeColumn">
+        <div class="location">at         line 152</div>
+        <code>                    <a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a>
+    <strong>changeColumn</strong>(string $tableName, string $columnName, <a href="../../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a> $newColumn)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Change a table column type.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>Table Name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$columnName</td>
+                <td>Column Name</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Phinx/Db/Table/Column.html"><abbr title="Phinx\Db\Table\Column">Column</abbr></a></td>
+                <td>$newColumn</td>
+                <td>New Column</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dropColumn">
+        <div class="location">at         line 162</div>
+        <code>                    void
+    <strong>dropColumn</strong>(string $tableName, string $columnName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Drops the specified column.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>Table Name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$columnName</td>
+                <td>Column Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasIndex">
+        <div class="location">at         line 171</div>
+        <code>                    bool
+    <strong>hasIndex</strong>(string $tableName, mixed $columns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks to see if an index exists.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>Table Name</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$columns</td>
+                <td>Column(s)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasIndexByName">
+        <div class="location">at         line 181</div>
+        <code>                    bool
+    <strong>hasIndexByName</strong>(string $tableName, string $indexName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks to see if an index specified by name exists.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>Table Name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$indexName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addIndex">
+        <div class="location">at         line 191</div>
+        <code>                    void
+    <strong>addIndex</strong>(<a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a> $table, <a href="../../../Phinx/Db/Table/Index.html"><abbr title="Phinx\Db\Table\Index">Index</abbr></a> $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds the specified index to a database table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+                <td>$table</td>
+                <td>Table</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Phinx/Db/Table/Index.html"><abbr title="Phinx\Db\Table\Index">Index</abbr></a></td>
+                <td>$index</td>
+                <td>Index</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dropIndex">
+        <div class="location">at         line 202</div>
+        <code>                    void
+    <strong>dropIndex</strong>(string $tableName, mixed $columns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Drops the specified index from a database table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$columns</td>
+                <td>Column(s)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dropIndexByName">
+        <div class="location">at         line 211</div>
+        <code>                    void
+    <strong>dropIndexByName</strong>(string $tableName, string $indexName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Drops the index specified by name from a database table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$indexName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasForeignKey">
+        <div class="location">at         line 220</div>
+        <code>                    bool
+    <strong>hasForeignKey</strong>(string $tableName, string[] $columns, string $constraint = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks to see if a foreign key exists.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string[]</td>
+                <td>$columns</td>
+                <td>Column(s)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$constraint</td>
+                <td>Constraint name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addForeignKey">
+        <div class="location">at         line 230</div>
+        <code>                    void
+    <strong>addForeignKey</strong>(<a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a> $table, <a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a> $foreignKey)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds the specified foreign key to a database table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Phinx/Db/Table.html"><abbr title="Phinx\Db\Table">Table</abbr></a></td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Phinx/Db/Table/ForeignKey.html"><abbr title="Phinx\Db\Table\ForeignKey">ForeignKey</abbr></a></td>
+                <td>$foreignKey</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dropForeignKey">
+        <div class="location">at         line 241</div>
+        <code>                    void
+    <strong>dropForeignKey</strong>(string $tableName, string[] $columns, string $constraint = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Drops the specified foreign key from a database table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string[]</td>
+                <td>$columns</td>
+                <td>Column(s)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$constraint</td>
+                <td>Constraint name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSqlType">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getSqlType"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 493</div>
+        <code>                    string[]
+    <strong>getSqlType</strong>(string $type, int $limit = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts the Phinx logical type to the adapter's SQL type.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$limit</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createDatabase">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_createDatabase"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 501</div>
+        <code>                    void
+    <strong>createDatabase</strong>(string $name, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a new database.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Database Name</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Options</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasDatabase">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_hasDatabase"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 509</div>
+        <code>                    bool
+    <strong>hasDatabase</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks to see if a database exists.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Database Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dropDatabase">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_dropDatabase"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 517</div>
+        <code>                    void
+    <strong>dropDatabase</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Drops the specified database.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Database Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createSchema">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_createSchema"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 525</div>
+        <code>                    void
+    <strong>createSchema</strong>(string $schemaName = &#039;public&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates the specified schema or throws an exception
+if there is no support for it.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$schemaName</td>
+                <td>Schema Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dropSchema">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_dropSchema"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 533</div>
+        <code>                    void
+    <strong>dropSchema</strong>(string $schemaName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Drops the specified schema table  or throws an exception
+if there is no support for it.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$schemaName</td>
+                <td>Schema name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_castToBool">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_castToBool"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 541</div>
+        <code>                    mixed
+    <strong>castToBool</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Cast a value to a boolean appropriate for the adapter.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to be cast</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnection">
+        <div class="location">in <a href="../../../Phinx/Db/Adapter/AdapterWrapper.html#method_getConnection"><abbr title="Phinx\Db\Adapter\AdapterWrapper">AdapterWrapper</abbr></a> at         line 549</div>
+        <code>                    <a target="_blank" href="http://php.net/PDO">PDO</a>
+    <strong>getConnection</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/PDO">PDO</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAdapterType">
+        <div class="location">at         line 48</div>
+        <code>                    string
+    <strong>getAdapterType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the adapter type.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrefix">
+        <div class="location">at         line 274</div>
+        <code>                    string
+    <strong>getPrefix</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the table prefix.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSuffix">
+        <div class="location">at         line 284</div>
+        <code>                    string
+    <strong>getSuffix</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the table suffix.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAdapterTableName">
+        <div class="location">at         line 295</div>
+        <code>                    string
+    <strong>getAdapterTableName</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Applies the prefix and suffix to the table name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

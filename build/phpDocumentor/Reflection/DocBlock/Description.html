@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>phpDocumentor\Reflection\DocBlock\Description | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:phpDocumentor_Reflection_DocBlock_Description" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../phpDocumentor.html">phpDocumentor</a></li><li class="backslash">\</li><li><a href="../../../phpDocumentor/Reflection.html">Reflection</a></li><li class="backslash">\</li><li><a href="../../../phpDocumentor/Reflection/DocBlock.html">DocBlock</a></li><li class="backslash">\</li><li>Description</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Description
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Description</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Object representing to description for a DocBlock.</p>            <p>A Description object can consist of plain text but can also include tags. A Description Formatter can then combine
+a body template with sprintf-style placeholders together with formatted tags in order to reconstitute a complete
+description text using the format that you would prefer.</p>
+
+<p>Because parsing a Description text can be a verbose process this is handled by the {see DescriptionFactory}. It is
+thus recommended to use that to create a Description object, like this:</p>
+
+<pre><code>$description = $descriptionFactory-&gt;create('This is a {see Description}', $context);
+</code></pre>
+
+<p>The description factory will interpret the given body and create a body template and list of tags from them, and pass
+that onto the constructor if this class.</p>
+
+<blockquote>
+  <p>The $context variable is a class of type {see \phpDocumentor\Reflection\Types\Context} and contains the namespace
+  and the namespace aliases that apply to this DocBlock. These are used by the Factory to resolve and expand partial
+  type names and FQSENs.</p>
+</blockquote>
+
+<p>If you do not want to use the DescriptionFactory you can pass a body template and tag listing like this:</p>
+
+<pre><code>$description = new Description(
+    'This is a %1$s',
+    [ new See(new Fqsen('\phpDocumentor\Reflection\DocBlock\Description')) ]
+);
+</code></pre>
+
+<p>It is generally recommended to use the Factory as that will also apply escaping rules, while the Description object
+is mainly responsible for rendering.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $bodyTemplate, array $tags = [])
+        
+                                            <p>Initializes a Description with its body (template) and a listing of the tags used in the body template.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../phpDocumentor/Reflection/DocBlock/Tag.html"><abbr title="phpDocumentor\Reflection\DocBlock\Tag">Tag</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTags">getTags</a>()
+        
+                                            <p>Returns the tags for this DocBlock.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_render">render</a>(<a href="../../../phpDocumentor/Reflection/DocBlock/Tags/Formatter.html"><abbr title="phpDocumentor\Reflection\DocBlock\Tags\Formatter">Formatter</abbr></a> $formatter = null)
+        
+                                            <p>Renders this description as a string where the provided formatter will format the tags in the expected string
+format.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p>Returns a plain string representation of this description.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 65</div>
+        <code>                    
+    <strong>__construct</strong>(string $bodyTemplate, array $tags = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initializes a Description with its body (template) and a listing of the tags used in the body template.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$bodyTemplate</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$tags</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTags">
+        <div class="location">at         line 78</div>
+        <code>                    <a href="../../../phpDocumentor/Reflection/DocBlock/Tag.html"><abbr title="phpDocumentor\Reflection\DocBlock\Tag">Tag</abbr></a>[]
+    <strong>getTags</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the tags for this DocBlock.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpDocumentor/Reflection/DocBlock/Tag.html"><abbr title="phpDocumentor\Reflection\DocBlock\Tag">Tag</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_render">
+        <div class="location">at         line 91</div>
+        <code>                    string
+    <strong>render</strong>(<a href="../../../phpDocumentor/Reflection/DocBlock/Tags/Formatter.html"><abbr title="phpDocumentor\Reflection\DocBlock\Tags\Formatter">Formatter</abbr></a> $formatter = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Renders this description as a string where the provided formatter will format the tags in the expected string
+format.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../phpDocumentor/Reflection/DocBlock/Tags/Formatter.html"><abbr title="phpDocumentor\Reflection\DocBlock\Tags\Formatter">Formatter</abbr></a></td>
+                <td>$formatter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">at         line 110</div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a plain string representation of this description.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

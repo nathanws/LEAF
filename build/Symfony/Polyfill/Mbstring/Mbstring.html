@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Symfony\Polyfill\Mbstring\Mbstring | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Symfony_Polyfill_Mbstring_Mbstring" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Symfony.html">Symfony</a></li><li class="backslash">\</li><li><a href="../../../Symfony/Polyfill.html">Polyfill</a></li><li class="backslash">\</li><li><a href="../../../Symfony/Polyfill/Mbstring.html">Mbstring</a></li><li class="backslash">\</li><li>Mbstring</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Mbstring
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Mbstring</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Partial mbstring implementation in PHP, iconv based, UTF-8 centric.</p>            <p>Implemented:
+- mb_chr                  - Returns a specific character from its Unicode code point
+- mb_convert_encoding     - Convert character encoding
+- mb_convert_variables    - Convert character code in variable(s)
+- mb_decode_mimeheader    - Decode string in MIME header field
+- mb_encode_mimeheader    - Encode string for MIME header XXX NATIVE IMPLEMENTATION IS REALLY BUGGED
+- mb_decode_numericentity - Decode HTML numeric string reference to character
+- mb_encode_numericentity - Encode character to HTML numeric string reference
+- mb_convert_case         - Perform case folding on a string
+- mb_detect_encoding      - Detect character encoding
+- mb_get_info             - Get internal settings of mbstring
+- mb_http_input           - Detect HTTP input character encoding
+- mb_http_output          - Set/Get HTTP output character encoding
+- mb_internal_encoding    - Set/Get internal character encoding
+- mb_list_encodings       - Returns an array of all supported encodings
+- mb_ord                  - Returns the Unicode code point of a character
+- mb_output_handler       - Callback function converts character encoding in output buffer
+- mb_scrub                - Replaces ill-formed byte sequences with substitute characters
+- mb_strlen               - Get string length
+- mb_strpos               - Find position of first occurrence of string in a string
+- mb_strrpos              - Find position of last occurrence of a string in a string
+- mb_strtolower           - Make a string lowercase
+- mb_strtoupper           - Make a string uppercase
+- mb_substitute_character - Set/Get substitution character
+- mb_substr               - Get part of string
+- mb_stripos              - Finds position of first occurrence of a string within another, case insensitive
+- mb_stristr              - Finds first occurrence of a string within another, case insensitive
+- mb_strrchr              - Finds the last occurrence of a character in a string within another
+- mb_strrichr             - Finds the last occurrence of a character in a string within another, case insensitive
+- mb_strripos             - Finds position of last occurrence of a string within another, case insensitive
+- mb_strstr               - Finds first occurrence of a string within anothers
+- mb_strwidth             - Return width of string
+- mb_substr_count         - Count the number of substring occurrences</p>
+
+<p>Not implemented:
+- mb_convert_kana         - Convert "kana" one from another ("zen-kaku", "han-kaku" and more)
+- mb_ereg_*               - Regular expression with multibyte support
+- mb_parse_str            - Parse GET/POST/COOKIE data and set global variable
+- mb_preferred_mime_name  - Get MIME charset string
+- mb_regex_encoding       - Returns current encoding for multibyte regex as string
+- mb_regex_set_options    - Set/Get the default options for mbregex functions
+- mb_send_mail            - Send encoded mail
+- mb_split                - Split multibyte string using regular expression
+- mb_strcut               - Get part of string
+- mb_strimwidth           - Get truncated string with specified width</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>MB_CASE_FOLD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_convert_encoding">mb_convert_encoding</a>($s, $toEncoding, $fromEncoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_convert_variables">mb_convert_variables</a>($toEncoding, $fromEncoding, $a = null, $b = null, $c = null, $d = null, $e = null, $f = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_decode_mimeheader">mb_decode_mimeheader</a>($s)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_encode_mimeheader">mb_encode_mimeheader</a>($s, $charset = null, $transferEncoding = null, $linefeed = null, $indent = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_decode_numericentity">mb_decode_numericentity</a>($s, $convmap, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_encode_numericentity">mb_encode_numericentity</a>($s, $convmap, $encoding = null, $is_hex = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_convert_case">mb_convert_case</a>($s, $mode, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_internal_encoding">mb_internal_encoding</a>($encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_language">mb_language</a>($lang = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_list_encodings">mb_list_encodings</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_encoding_aliases">mb_encoding_aliases</a>($encoding)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_check_encoding">mb_check_encoding</a>($var = null, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_detect_encoding">mb_detect_encoding</a>($str, $encodingList = null, $strict = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_detect_order">mb_detect_order</a>($encodingList = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_strlen">mb_strlen</a>($s, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_strpos">mb_strpos</a>($haystack, $needle, $offset = 0, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_strrpos">mb_strrpos</a>($haystack, $needle, $offset = 0, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_strtolower">mb_strtolower</a>($s, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_strtoupper">mb_strtoupper</a>($s, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_substitute_character">mb_substitute_character</a>($c = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_substr">mb_substr</a>($s, $start, $length = null, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_stripos">mb_stripos</a>($haystack, $needle, $offset = 0, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_stristr">mb_stristr</a>($haystack, $needle, $part = false, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_strrchr">mb_strrchr</a>($haystack, $needle, $part = false, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_strrichr">mb_strrichr</a>($haystack, $needle, $part = false, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_strripos">mb_strripos</a>($haystack, $needle, $offset = 0, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_strstr">mb_strstr</a>($haystack, $needle, $part = false, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_get_info">mb_get_info</a>($type = &#039;all&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_http_input">mb_http_input</a>($type = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_http_output">mb_http_output</a>($encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_strwidth">mb_strwidth</a>($s, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_substr_count">mb_substr_count</a>($haystack, $needle, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_output_handler">mb_output_handler</a>($contents, $status)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_chr">mb_chr</a>($code, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mb_ord">mb_ord</a>($s, $encoding = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_mb_convert_encoding">
+        <div class="location">at         line 79</div>
+        <code>        static            
+    <strong>mb_convert_encoding</strong>($s, $toEncoding, $fromEncoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$toEncoding</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fromEncoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_convert_variables">
+        <div class="location">at         line 117</div>
+        <code>        static            
+    <strong>mb_convert_variables</strong>($toEncoding, $fromEncoding, $a = null, $b = null, $c = null, $d = null, $e = null, $f = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$toEncoding</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fromEncoding</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$a</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$b</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$c</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$d</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$f</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_decode_mimeheader">
+        <div class="location">at         line 131</div>
+        <code>        static            
+    <strong>mb_decode_mimeheader</strong>($s)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_encode_mimeheader">
+        <div class="location">at         line 136</div>
+        <code>        static            
+    <strong>mb_encode_mimeheader</strong>($s, $charset = null, $transferEncoding = null, $linefeed = null, $indent = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$charset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$transferEncoding</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$linefeed</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$indent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_decode_numericentity">
+        <div class="location">at         line 141</div>
+        <code>        static            
+    <strong>mb_decode_numericentity</strong>($s, $convmap, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$convmap</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_encode_numericentity">
+        <div class="location">at         line 198</div>
+        <code>        static            
+    <strong>mb_encode_numericentity</strong>($s, $convmap, $encoding = null, $is_hex = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$convmap</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$is_hex</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_convert_case">
+        <div class="location">at         line 265</div>
+        <code>        static            
+    <strong>mb_convert_case</strong>($s, $mode, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$mode</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_internal_encoding">
+        <div class="location">at         line 340</div>
+        <code>        static            
+    <strong>mb_internal_encoding</strong>($encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_language">
+        <div class="location">at         line 357</div>
+        <code>        static            
+    <strong>mb_language</strong>($lang = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$lang</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_list_encodings">
+        <div class="location">at         line 374</div>
+        <code>        static            
+    <strong>mb_list_encodings</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_encoding_aliases">
+        <div class="location">at         line 379</div>
+        <code>        static            
+    <strong>mb_encoding_aliases</strong>($encoding)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_check_encoding">
+        <div class="location">at         line 390</div>
+        <code>        static            
+    <strong>mb_check_encoding</strong>($var = null, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$var</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_detect_encoding">
+        <div class="location">at         line 402</div>
+        <code>        static            
+    <strong>mb_detect_encoding</strong>($str, $encodingList = null, $strict = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$str</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encodingList</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$strict</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_detect_order">
+        <div class="location">at         line 438</div>
+        <code>        static            
+    <strong>mb_detect_order</strong>($encodingList = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$encodingList</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_strlen">
+        <div class="location">at         line 466</div>
+        <code>        static            
+    <strong>mb_strlen</strong>($s, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_strpos">
+        <div class="location">at         line 476</div>
+        <code>        static            
+    <strong>mb_strpos</strong>($haystack, $needle, $offset = 0, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$haystack</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_strrpos">
+        <div class="location">at         line 493</div>
+        <code>        static            
+    <strong>mb_strrpos</strong>($haystack, $needle, $offset = 0, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$haystack</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_strtolower">
+        <div class="location">at         line 516</div>
+        <code>        static            
+    <strong>mb_strtolower</strong>($s, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_strtoupper">
+        <div class="location">at         line 521</div>
+        <code>        static            
+    <strong>mb_strtoupper</strong>($s, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_substitute_character">
+        <div class="location">at         line 526</div>
+        <code>        static            
+    <strong>mb_substitute_character</strong>($c = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$c</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_substr">
+        <div class="location">at         line 535</div>
+        <code>        static            
+    <strong>mb_substr</strong>($s, $start, $length = null, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$start</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$length</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_stripos">
+        <div class="location">at         line 561</div>
+        <code>        static            
+    <strong>mb_stripos</strong>($haystack, $needle, $offset = 0, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$haystack</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_stristr">
+        <div class="location">at         line 569</div>
+        <code>        static            
+    <strong>mb_stristr</strong>($haystack, $needle, $part = false, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$haystack</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$part</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_strrchr">
+        <div class="location">at         line 576</div>
+        <code>        static            
+    <strong>mb_strrchr</strong>($haystack, $needle, $part = false, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$haystack</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$part</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_strrichr">
+        <div class="location">at         line 588</div>
+        <code>        static            
+    <strong>mb_strrichr</strong>($haystack, $needle, $part = false, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$haystack</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$part</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_strripos">
+        <div class="location">at         line 596</div>
+        <code>        static            
+    <strong>mb_strripos</strong>($haystack, $needle, $offset = 0, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$haystack</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_strstr">
+        <div class="location">at         line 604</div>
+        <code>        static            
+    <strong>mb_strstr</strong>($haystack, $needle, $part = false, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$haystack</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$part</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_get_info">
+        <div class="location">at         line 617</div>
+        <code>        static            
+    <strong>mb_get_info</strong>($type = &#039;all&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_http_input">
+        <div class="location">at         line 646</div>
+        <code>        static            
+    <strong>mb_http_input</strong>($type = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_http_output">
+        <div class="location">at         line 651</div>
+        <code>        static            
+    <strong>mb_http_output</strong>($encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_strwidth">
+        <div class="location">at         line 656</div>
+        <code>        static            
+    <strong>mb_strwidth</strong>($s, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_substr_count">
+        <div class="location">at         line 669</div>
+        <code>        static            
+    <strong>mb_substr_count</strong>($haystack, $needle, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$haystack</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_output_handler">
+        <div class="location">at         line 674</div>
+        <code>        static            
+    <strong>mb_output_handler</strong>($contents, $status)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$contents</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_chr">
+        <div class="location">at         line 679</div>
+        <code>        static            
+    <strong>mb_chr</strong>($code, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$code</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mb_ord">
+        <div class="location">at         line 698</div>
+        <code>        static            
+    <strong>mb_ord</strong>($s, $encoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

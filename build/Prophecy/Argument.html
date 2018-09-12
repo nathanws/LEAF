@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Prophecy\Argument | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/sami.css">
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Prophecy_Argument" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                                            <li><a href="../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../Prophecy.html">Prophecy</a></li><li class="backslash">\</li><li>Argument</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Argument
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Argument</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Argument tokens shortcuts.</p>                                </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Prophecy/Argument/Token/ExactValueToken.html"><abbr title="Prophecy\Argument\Token\ExactValueToken">ExactValueToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exact">exact</a>(mixed $value)
+        
+                                            <p>Checks that argument is exact value or object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Prophecy/Argument/Token/TypeToken.html"><abbr title="Prophecy\Argument\Token\TypeToken">TypeToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_type">type</a>(string $type)
+        
+                                            <p>Checks that argument is of specific type or instance of specific class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Prophecy/Argument/Token/ObjectStateToken.html"><abbr title="Prophecy\Argument\Token\ObjectStateToken">ObjectStateToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_which">which</a>(string $methodName, mixed $value)
+        
+                                            <p>Checks that argument object has specific state.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Prophecy/Argument/Token/CallbackToken.html"><abbr title="Prophecy\Argument\Token\CallbackToken">CallbackToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_that">that</a>(callable $callback)
+        
+                                            <p>Checks that argument matches provided callback.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Prophecy/Argument/Token/AnyValueToken.html"><abbr title="Prophecy\Argument\Token\AnyValueToken">AnyValueToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_any">any</a>()
+        
+                                            <p>Matches any single value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Prophecy/Argument/Token/AnyValuesToken.html"><abbr title="Prophecy\Argument\Token\AnyValuesToken">AnyValuesToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cetera">cetera</a>()
+        
+                                            <p>Matches all values to the rest of the signature.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Prophecy/Argument/Token/LogicalAndToken.html"><abbr title="Prophecy\Argument\Token\LogicalAndToken">LogicalAndToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_allOf">allOf</a>()
+        
+                                            <p>Checks that argument matches all tokens</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Prophecy/Argument/Token/ArrayCountToken.html"><abbr title="Prophecy\Argument\Token\ArrayCountToken">ArrayCountToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_size">size</a>(integer $value)
+        
+                                            <p>Checks that argument array or countable object has exact number of elements.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Prophecy/Argument/Token/ArrayEntryToken.html"><abbr title="Prophecy\Argument\Token\ArrayEntryToken">ArrayEntryToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withEntry">withEntry</a>(mixed $key, mixed $value)
+        
+                                            <p>Checks that argument array contains (key, value) pair</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Prophecy/Argument/Token/ArrayEveryEntryToken.html"><abbr title="Prophecy\Argument\Token\ArrayEveryEntryToken">ArrayEveryEntryToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withEveryEntry">withEveryEntry</a>(mixed $value)
+        
+                                            <p>Checks that arguments array entries all match value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Prophecy/Argument/Token/ArrayEntryToken.html"><abbr title="Prophecy\Argument\Token\ArrayEntryToken">ArrayEntryToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_containing">containing</a>(mixed $value)
+        
+                                            <p>Checks that argument array contains value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Prophecy/Argument/Token/ArrayEntryToken.html"><abbr title="Prophecy\Argument\Token\ArrayEntryToken">ArrayEntryToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withKey">withKey</a>(mixed $key)
+        
+                                            <p>Checks that argument array has key</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Prophecy/Argument/Token/LogicalNotToken.html"><abbr title="Prophecy\Argument\Token\LogicalNotToken">LogicalNotToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_not">not</a>(mixed $value)
+        
+                                            <p>Checks that argument does not match the value|token.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Prophecy/Argument/Token/StringContainsToken.html"><abbr title="Prophecy\Argument\Token\StringContainsToken">StringContainsToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_containingString">containingString</a>(string $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Prophecy/Argument/Token/IdenticalValueToken.html"><abbr title="Prophecy\Argument\Token\IdenticalValueToken">IdenticalValueToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is">is</a>(mixed $value)
+        
+                                            <p>Checks that argument is identical value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Prophecy/Argument/Token/ApproximateValueToken.html"><abbr title="Prophecy\Argument\Token\ApproximateValueToken">ApproximateValueToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_approximate">approximate</a>(float $value, float $precision = 0)
+        
+                                            <p>Check that argument is same value when rounding to the
+given precision.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_exact">
+        <div class="location">at         line 30</div>
+        <code>        static            <a href="../Prophecy/Argument/Token/ExactValueToken.html"><abbr title="Prophecy\Argument\Token\ExactValueToken">ExactValueToken</abbr></a>
+    <strong>exact</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks that argument is exact value or object.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Prophecy/Argument/Token/ExactValueToken.html"><abbr title="Prophecy\Argument\Token\ExactValueToken">ExactValueToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_type">
+        <div class="location">at         line 42</div>
+        <code>        static            <a href="../Prophecy/Argument/Token/TypeToken.html"><abbr title="Prophecy\Argument\Token\TypeToken">TypeToken</abbr></a>
+    <strong>type</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks that argument is of specific type or instance of specific class.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>Type name (<code>integer</code>, <code>string</code>) or full class name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Prophecy/Argument/Token/TypeToken.html"><abbr title="Prophecy\Argument\Token\TypeToken">TypeToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_which">
+        <div class="location">at         line 55</div>
+        <code>        static            <a href="../Prophecy/Argument/Token/ObjectStateToken.html"><abbr title="Prophecy\Argument\Token\ObjectStateToken">ObjectStateToken</abbr></a>
+    <strong>which</strong>(string $methodName, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks that argument object has specific state.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$methodName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Prophecy/Argument/Token/ObjectStateToken.html"><abbr title="Prophecy\Argument\Token\ObjectStateToken">ObjectStateToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_that">
+        <div class="location">at         line 67</div>
+        <code>        static            <a href="../Prophecy/Argument/Token/CallbackToken.html"><abbr title="Prophecy\Argument\Token\CallbackToken">CallbackToken</abbr></a>
+    <strong>that</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks that argument matches provided callback.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Prophecy/Argument/Token/CallbackToken.html"><abbr title="Prophecy\Argument\Token\CallbackToken">CallbackToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_any">
+        <div class="location">at         line 77</div>
+        <code>        static            <a href="../Prophecy/Argument/Token/AnyValueToken.html"><abbr title="Prophecy\Argument\Token\AnyValueToken">AnyValueToken</abbr></a>
+    <strong>any</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Matches any single value.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Prophecy/Argument/Token/AnyValueToken.html"><abbr title="Prophecy\Argument\Token\AnyValueToken">AnyValueToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cetera">
+        <div class="location">at         line 87</div>
+        <code>        static            <a href="../Prophecy/Argument/Token/AnyValuesToken.html"><abbr title="Prophecy\Argument\Token\AnyValuesToken">AnyValuesToken</abbr></a>
+    <strong>cetera</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Matches all values to the rest of the signature.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Prophecy/Argument/Token/AnyValuesToken.html"><abbr title="Prophecy\Argument\Token\AnyValuesToken">AnyValuesToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_allOf">
+        <div class="location">at         line 99</div>
+        <code>        static            <a href="../Prophecy/Argument/Token/LogicalAndToken.html"><abbr title="Prophecy\Argument\Token\LogicalAndToken">LogicalAndToken</abbr></a>
+    <strong>allOf</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks that argument matches all tokens</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Prophecy/Argument/Token/LogicalAndToken.html"><abbr title="Prophecy\Argument\Token\LogicalAndToken">LogicalAndToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_size">
+        <div class="location">at         line 111</div>
+        <code>        static            <a href="../Prophecy/Argument/Token/ArrayCountToken.html"><abbr title="Prophecy\Argument\Token\ArrayCountToken">ArrayCountToken</abbr></a>
+    <strong>size</strong>(integer $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks that argument array or countable object has exact number of elements.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$value</td>
+                <td>array elements count</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Prophecy/Argument/Token/ArrayCountToken.html"><abbr title="Prophecy\Argument\Token\ArrayCountToken">ArrayCountToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withEntry">
+        <div class="location">at         line 124</div>
+        <code>        static            <a href="../Prophecy/Argument/Token/ArrayEntryToken.html"><abbr title="Prophecy\Argument\Token\ArrayEntryToken">ArrayEntryToken</abbr></a>
+    <strong>withEntry</strong>(mixed $key, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks that argument array contains (key, value) pair</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$key</td>
+                <td>exact value or token</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>exact value or token</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Prophecy/Argument/Token/ArrayEntryToken.html"><abbr title="Prophecy\Argument\Token\ArrayEntryToken">ArrayEntryToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withEveryEntry">
+        <div class="location">at         line 136</div>
+        <code>        static            <a href="../Prophecy/Argument/Token/ArrayEveryEntryToken.html"><abbr title="Prophecy\Argument\Token\ArrayEveryEntryToken">ArrayEveryEntryToken</abbr></a>
+    <strong>withEveryEntry</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks that arguments array entries all match value</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Prophecy/Argument/Token/ArrayEveryEntryToken.html"><abbr title="Prophecy\Argument\Token\ArrayEveryEntryToken">ArrayEveryEntryToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_containing">
+        <div class="location">at         line 148</div>
+        <code>        static            <a href="../Prophecy/Argument/Token/ArrayEntryToken.html"><abbr title="Prophecy\Argument\Token\ArrayEntryToken">ArrayEntryToken</abbr></a>
+    <strong>containing</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks that argument array contains value</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Prophecy/Argument/Token/ArrayEntryToken.html"><abbr title="Prophecy\Argument\Token\ArrayEntryToken">ArrayEntryToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withKey">
+        <div class="location">at         line 160</div>
+        <code>        static            <a href="../Prophecy/Argument/Token/ArrayEntryToken.html"><abbr title="Prophecy\Argument\Token\ArrayEntryToken">ArrayEntryToken</abbr></a>
+    <strong>withKey</strong>(mixed $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks that argument array has key</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$key</td>
+                <td>exact value or token</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Prophecy/Argument/Token/ArrayEntryToken.html"><abbr title="Prophecy\Argument\Token\ArrayEntryToken">ArrayEntryToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_not">
+        <div class="location">at         line 172</div>
+        <code>        static            <a href="../Prophecy/Argument/Token/LogicalNotToken.html"><abbr title="Prophecy\Argument\Token\LogicalNotToken">LogicalNotToken</abbr></a>
+    <strong>not</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks that argument does not match the value|token.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>either exact value or argument token</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Prophecy/Argument/Token/LogicalNotToken.html"><abbr title="Prophecy\Argument\Token\LogicalNotToken">LogicalNotToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_containingString">
+        <div class="location">at         line 182</div>
+        <code>        static            <a href="../Prophecy/Argument/Token/StringContainsToken.html"><abbr title="Prophecy\Argument\Token\StringContainsToken">StringContainsToken</abbr></a>
+    <strong>containingString</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Prophecy/Argument/Token/StringContainsToken.html"><abbr title="Prophecy\Argument\Token\StringContainsToken">StringContainsToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is">
+        <div class="location">at         line 194</div>
+        <code>        static            <a href="../Prophecy/Argument/Token/IdenticalValueToken.html"><abbr title="Prophecy\Argument\Token\IdenticalValueToken">IdenticalValueToken</abbr></a>
+    <strong>is</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks that argument is identical value.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Prophecy/Argument/Token/IdenticalValueToken.html"><abbr title="Prophecy\Argument\Token\IdenticalValueToken">IdenticalValueToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_approximate">
+        <div class="location">at         line 208</div>
+        <code>        static            <a href="../Prophecy/Argument/Token/ApproximateValueToken.html"><abbr title="Prophecy\Argument\Token\ApproximateValueToken">ApproximateValueToken</abbr></a>
+    <strong>approximate</strong>(float $value, float $precision = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check that argument is same value when rounding to the
+given precision.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$precision</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Prophecy/Argument/Token/ApproximateValueToken.html"><abbr title="Prophecy\Argument\Token\ApproximateValueToken">ApproximateValueToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
